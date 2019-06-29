@@ -2,6 +2,7 @@
 document.getElementById("button1").addEventListener("click", ScrolltoQuestion2);
 document.getElementById("button2").addEventListener("click", ScrolltoQuestion3);
 document.getElementById("button4").addEventListener("click", ScrolltoResults);
+document.getElementById("button5").addEventListener("click", ScrolltoTop);
 
 function myFunction() {
   alert ("Hello World!");
@@ -50,6 +51,17 @@ function ScrolltoQuestion4(){
 
 
     window.location.hash = '#functions';
+  });
+};
+
+function ScrolltoTop(){
+
+  $('html, body').animate({
+    scrollTop: $("#functions").offset().top
+  }, 800, function(){
+
+
+    window.location.hash = '#top';
   });
 };
 

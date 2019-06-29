@@ -6,28 +6,31 @@
   <title>MBTI Quiz</title>
 
 
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 </head>
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <body>
 
 
 
-  <div>
-    <h1>Myers Briggs Personality Identifier</h1><br><br>
-  </div>
+  <div class = "text-center">
+    <h1 id = "top">Myers Briggs Personality Identifier</h1><br><br>
+
 
   <h4>Try answer as many questions you can to help identify the persons myers briggs type. </h4>
   <h4>If you don't know the answer, skip it and move on to the next. </h4><br>
-  <p>What letters do you think this person has?</p>
+  <h4>What letters do you think this person has?</h4>
 
 </div>
 
+<section style="text-align: center; width: 100%;">
+		<div style="margin: 0 auto; width:20em; text-align:left;">
 <div>
   <input type="radio" name="intro-extro" id="introverted" class="radio"/>
   <label for="introverted">I</label>
@@ -67,13 +70,18 @@
   <input type="radio" name="P-J" id="judging" class="radio"/>
   <label for="judging">J</label>
 </div>
-
 <button id = "button1" >Next</button>
+</div>
+</section>
+
+
 
 <div class = "padding"></div>
 
-<p id="traits"> What Traits does this peron have? (Select one or more)</p>
+<h4 id="traits" class = "text-center"> What Traits does this peron have? (Select one or more)</h4>
 
+<section style="text-align: center; width: 100%;">
+		<div style="margin: 0 auto; width:20em; text-align:left;">
 <div>
   <input type="radio" name="outgoing-shy" id="outgoing" class="radio"/>
   <label for="outgoing">Outgoing</label>
@@ -113,14 +121,18 @@
   <input type="radio" name="messy-organised" id="organised" class="radio"/>
   <label for="organised">Organised</label>
 </div>
-
-
 <button id = "button2" >Next</button>
+</div>
+</section>
 
 
 
-<p id="career"> What career do they have?</p>
 
+
+<h4 id="career" class = "text-center"> What career do they have?</h4>
+
+<section style="text-align: center; width: 100%;">
+		<div style="margin: 0 auto; width:20em; text-align:left;">
 <div>
   <input type="radio" name="career" id="developer" class="radio"/>
   <label for="developer">Developer</label>
@@ -160,17 +172,20 @@
   <input type="radio" name="career" id="realestateagent" class="radio"/>
   <label for="realestateagent">Real Estate Agent</label>
 </div>
-
-
 <button id = "button4" >Next</button>
+</div>
+</section>
 
 
 
 
-<p id="results"> Your Result</p>
-<p id ="resultsmessage"></p>
 
 
+
+<h4 id="results" class = "text-center"> Your Result</h4>
+<h4 id ="resultsmessage" class = "text-center"></h4>
+
+<section class = 'text-center'>
 <div id = "ISTJ" style = "display: none">
   <h2>ISTJ - The Duty Fulfiller</h2>
   <p>
@@ -357,6 +372,9 @@
       with inefficiency or disorganization.
     </p>
   </div>
+</section>
+
+<button id = "button5" >Back to the Top</button>
 
 
   <script src="../js/script.js"></script>
