@@ -5,11 +5,16 @@
   <meta charset="UTF-8">
   <title>MBTI Quiz</title>
 
-
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="./style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+  <!-- Libraries CSS Files -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">-->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
@@ -19,18 +24,27 @@
 
 
 
-  <div class = "text-center">
-    <h1 id = "top">Myers Briggs Personality Identifier</h1><br><br>
 
 
-  <h4>Try answer as many questions you can to help identify the persons myers briggs type. </h4>
-  <h4>If you don't know the answer, skip it and move on to the next. </h4><br>
-  <h4>What letters do you think this person has?</h4>
+<section class = "question1 myContainer" >
+		<div class = "center">
 
-</div>
+      <div>
+      <div class = "text-center">
+        <br><br>
 
-<section style="text-align: center; width: 100%;">
-		<div style="margin: 0 auto; width:20em; text-align:left;">
+      <div class="card panel shadow">
+      <div class="card-body">
+        <h2 id = "top">Myers Briggs Personality Identifier</h2><br><br>
+        <h5>Try answer as many questions you can to help identify the persons myers briggs type. </h5>
+        <h5>If you don't know the answer, skip it and move on to the next. </h5><br>
+        <h5>What letters do you think this person has?</h5>
+      </div>
+      </div>
+
+      </div>
+      </div>
+
 <div>
   <input type="radio" name="intro-extro" id="introverted" class="radio"/>
   <label for="introverted">I</label>
@@ -70,18 +84,36 @@
   <input type="radio" name="P-J" id="judging" class="radio"/>
   <label for="judging">J</label>
 </div>
+
 <button id = "button1" >Next</button>
 </div>
 </section>
 
 
 
+
+
 <div class = "padding"></div>
 
-<h4 id="traits" class = "text-center"> What Traits does this peron have? (Select one or more)</h4>
 
-<section style="text-align: center; width: 100%;">
-		<div style="margin: 0 auto; width:20em; text-align:left;">
+
+<section id="traits" class = "question2 myContainer" >
+<div class = "center">
+  <div>
+  <div class = "text-center">
+    <br><br>
+
+  <div class="card panel shadow">
+  <div class="card-body">
+    <h4 class = "text-center"> What Traits does this peron have? (Select one or more)</h4>
+  </div>
+  </div>
+
+  </div>
+  </div>
+
+
+
 <div>
   <input type="radio" name="outgoing-shy" id="outgoing" class="radio"/>
   <label for="outgoing">Outgoing</label>
@@ -129,10 +161,24 @@
 
 
 
-<h4 id="career" class = "text-center"> What career do they have?</h4>
 
-<section style="text-align: center; width: 100%;">
-		<div style="margin: 0 auto; width:20em; text-align:left;">
+
+<section id="career" class = "question3 myContainer" >
+<div class = "center">
+  <div>
+  <div class = "text-center">
+    <br><br>
+
+  <div class="card panel shadow">
+  <div class="card-body">
+    <h4 class = "text-center"> What career do they have or would they like to pursue?</h4>
+  </div>
+  </div>
+
+  </div>
+  </div>
+
+
 <div>
   <input type="radio" name="career" id="developer" class="radio"/>
   <label for="developer">Developer</label>
@@ -181,11 +227,18 @@
 
 
 
+<section id="results" class = 'result'>
+  <br><br>
 
-<h4 id="results" class = "text-center"> Your Result</h4>
+  <div class = 'text-center card shadow'>
+    <div class="card-body">
+<h4 class = "text-center"> Your Result</h4>
 <h4 id ="resultsmessage" class = "text-center"></h4>
+</div>
+</div>
 
-<section class = 'text-center'>
+<div class = 'text-center card shadow'>
+  <div class="card-body">
 <div id = "ISTJ" style = "display: none">
   <h2>ISTJ - The Duty Fulfiller</h2>
   <p>
@@ -372,10 +425,37 @@
       with inefficiency or disorganization.
     </p>
   </div>
+</div>
+</div>
+<button id = "button5" >Back to the Top</button>
 </section>
 
-<button id = "button5" >Back to the Top</button>
+<!--==========================
+  Footer
+============================-->
+<footer id="footer">
+  <div class="footer-top">
+      <div class="copyright">
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <br>
+        &copy; Copyright 2019 <strong>Mastered</strong> All Rights Reserved
+      </div>
+      <div class="credits">
+        Made with <span style="color: #e25555;"> &hearts; </span> by <a href="https://www.mastered.ie">Mastered</a>
+      <!--  Made with <span class ="pulse" style="color: #e25555; ">&hearts;</span> by <a href="https://www.mastered.ie">Mastered</a>-->
+    </div>
+    </div>
 
+
+  </div>
+
+
+</footer><!-- #footer -->
 
   <script src="../js/script.js"></script>
 

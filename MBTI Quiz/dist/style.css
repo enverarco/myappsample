@@ -1,9 +1,78 @@
 body {
-	font-family: sans-serif;
+	font-family: 'Open Sans',serif;
 	font-weight: normal;
 	margin: 10px;
-	color: #999;
-	background-color: #eee;
+	/*color: #999;*/
+	/*background:
+	linear-gradient(
+	      rgba(0, 0, 0, 0.2),
+	      rgba(0, 0, 0, 0.2)
+	    ),
+
+	url("../images/pattern.png");
+	background-repeat: repeat; */
+  /*background-size: 140em 80em; */
+	/*background-color: #eee;*/
+}
+
+.panel {
+	width: 60em;
+	margin-left: -25em
+}
+
+.myContainer {
+	text-align: center;
+	width: 100%;
+}
+
+.center {
+	margin: 0 auto;
+	width:20em;
+	text-align:left;
+}
+
+.question1{
+	background:
+	linear-gradient(
+				rgba(0, 0, 0, 0.15),
+				rgba(0, 0, 0, 0.15)
+			),
+
+	url("../images/pattern.png");
+	background-repeat: repeat;
+}
+
+.question2{
+	background:
+	linear-gradient(
+				rgba(0, 0, 0, 0.15),
+				rgba(0, 0, 0, 0.15)
+			),
+
+	url("../images/whitewood.jpg");
+	background-repeat: repeat;
+}
+
+.question3{
+	background:
+	linear-gradient(
+				rgba(0, 0, 0, 0.15),
+				rgba(0, 0, 0, 0.15)
+			),
+
+	url("../images/hodgepodge.png");
+	background-repeat: repeat;
+}
+
+.result{
+	background:
+	linear-gradient(
+				rgba(0, 0, 0, 0.15),
+				rgba(0, 0, 0, 0.15)
+			),
+
+	url("../images/greengoblin.png");
+	background-repeat: repeat;
 }
 
 form {
@@ -11,7 +80,7 @@ form {
 }
 
 button {
-	
+
   margin-top: 4em;
   margin-bottom: 80em;
 }
@@ -44,6 +113,8 @@ input.radio:empty ~ label {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	background-color: white;
+
 }
 
 input.radio:empty ~ label:before {
@@ -84,4 +155,48 @@ input.radio:checked ~ label {
 /* radio focus */
 input.radio:focus ~ label:before {
 	box-shadow: 0 0 0 3px #999;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+
+#footer .footer-top {
+  padding: 30px 0 30px 0;
+  background: #000000;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 36px;
+  display: inline-block;
+  background: #1bb1dc;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #0a98c0;
+  color: #fff;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  color: #535074;
+  font-size: 15px;
+}
+
+#footer .credits {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 4px;
+  color: #8582a8;
 }
