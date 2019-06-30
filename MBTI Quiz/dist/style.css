@@ -1,7 +1,6 @@
 body {
 	font-family: 'Open Sans',serif;
 	font-weight: normal;
-	margin: 10px;
 	/*color: #999;*/
 	/*background:
 	linear-gradient(
@@ -15,18 +14,51 @@ body {
 	/*background-color: #eee;*/
 }
 
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #eee;
+  }
+}
+
+/* NAV Var */
+
+
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+
+.navbar-custom {
+    background-color: #0D0B0B;
+	/*	background-color: #E33F3F; */
+}
+
+
+/* Main */
+
 .panel {
 	width: 60em;
-	margin-left: -25em
+	margin-left: -20em
 }
 
-.myContainer {
-	text-align: center;
-	width: 100%;
-}
+
 
 .center {
-	margin: 0 auto;
+	margin: auto;
 	width:20em;
 	text-align:left;
 }
@@ -87,7 +119,6 @@ button {
 
 div {
 	clear: both;
-	margin: 0 50px;
 }
 
 label {
@@ -104,6 +135,7 @@ input.radio:empty {
 /* style label */
 input.radio:empty ~ label {
 	position: relative;
+	align-items: center;
 	float: left;
 	line-height: 2.5em;
 	text-indent: 3.25em;
