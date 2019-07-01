@@ -24,6 +24,12 @@ if(document.getElementById('gender_Male').checked) {
 
 function ScrolltoQuestion2(){
 
+  var q2class = document.getElementsByClassName('question2');
+
+  for(var i = 0; i < q2class.length; i = i + 1) {
+      q2class[i].style.display='block';
+  }
+
   $('html, body').animate({
     scrollTop: $("#traits").offset().top
   }, 800, function(){
@@ -33,6 +39,12 @@ function ScrolltoQuestion2(){
 };
 
 function ScrolltoQuestion3(){
+
+  var q3class = document.getElementsByClassName('question3');
+
+  for(var i = 0; i < q3class.length; i = i + 1) {
+      q3class[i].style.display='block';
+  }
 
   $('html, body').animate({
     scrollTop: $("#career").offset().top
@@ -44,6 +56,8 @@ function ScrolltoQuestion3(){
 };
 
 function ScrolltoQuestion4(){
+
+
 
   $('html, body').animate({
     scrollTop: $("#functions").offset().top
@@ -66,6 +80,13 @@ function ScrolltoTop(){
 };
 
 function ScrolltoResults(){
+
+  var q5class = document.getElementsByClassName('result');
+
+  for(var i = 0; i < q5class.length; i = i + 1) {
+      q5class[i].style.display='block';
+    }
+
   introverted = extraverted = sensory = intuitive = feeling = thinking = judging = prospecting = 0;
 
 if(document.getElementById('introverted').checked){
@@ -194,6 +215,38 @@ document.getElementById('resultsmessage').innerHTML = type;
 
     if (!type.includes('X')){
       document.getElementById(type).style = "";
+    }
+
+    if(type.includes('X')){
+      // if type inclues X
+      //console.log("The X is located at index " + type.indexOf('X'));
+
+        var pos = type.indexOf("X");
+
+        while(pos > -1) {
+        console.log("The X is located at index " + pos);
+        pos = type.indexOf("X", pos+1);
+      }
+
+    //  var checkAgainstISTJ = document.getElementById("ISTJ").innerHTML;
+    //  var n = checkAgainstISTJ.includes(type);
+
+
+      //if X is located at 0 and not anywhere else
+      // then type = I+secondLetter+thirdLetter+fourthLetter
+      // document.getElementById(type).style = "";
+      // then type = E+secondLetter+thirdLetter+fourthLetter
+      // document.getElementById(type).style = "";
+
+
+
+      // test type agaisnt the 16 types and
+      // if match it to letters it .contains
+
+      // reveal the ones it contains
+
+
+
     }
 
 

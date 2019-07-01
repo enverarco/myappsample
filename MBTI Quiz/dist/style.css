@@ -83,6 +83,7 @@ li a:hover {
 
 	url("../images/whitewood.jpg");
 	background-repeat: repeat;
+	display: none;
 }
 
 .question3{
@@ -94,6 +95,7 @@ li a:hover {
 
 	url("../images/hodgepodge.png");
 	background-repeat: repeat;
+	display: none;
 }
 
 .result{
@@ -105,16 +107,23 @@ li a:hover {
 
 	url("../images/greengoblin.png");
 	background-repeat: repeat;
+	display: none;
 }
 
 form {
 	margin: 40px 0;
 }
 
+
+
+
 button {
 
   margin-top: 4em;
   margin-bottom: 80em;
+	height: 4em;
+	width: 12em;
+
 }
 
 div {
@@ -130,6 +139,7 @@ label {
 /* hide input */
 input.radio:empty {
 	margin-left: -999px;
+	visibility: hidden;
 }
 
 /* style label */
