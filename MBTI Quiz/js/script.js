@@ -228,8 +228,102 @@ document.getElementById('resultsmessage').innerHTML = type;
         pos = type.indexOf("X", pos+1);
       }
 
-    //  var checkAgainstISTJ = document.getElementById("ISTJ").innerHTML;
-    //  var n = checkAgainstISTJ.includes(type);
+      //var checkAgainstISTJ = document.getElementById("ISTJ").innerHTML;
+      var checkAgainstISTJ = document.getElementById("ISTJ").childNodes[1].innerHTML;
+      var checkAgainstISTP = document.getElementById("ISTP").childNodes[1].innerHTML;
+      var checkAgainstISFJ = document.getElementById("ISFJ").childNodes[1].innerHTML;
+      var checkAgainstISFP = document.getElementById("ISFP").childNodes[1].innerHTML;
+      var checkAgainstINFJ = document.getElementById("INFJ").childNodes[1].innerHTML;
+      var checkAgainstINFP = document.getElementById("INFP").childNodes[1].innerHTML;
+      var checkAgainstENTJ = document.getElementById("ENTJ").childNodes[1].innerHTML;
+      var checkAgainstINTP = document.getElementById("INTP").childNodes[1].innerHTML;
+      var checkAgainstESTP = document.getElementById("ESTP").childNodes[1].innerHTML;
+      var checkAgainstESFP = document.getElementById("ESFP").childNodes[1].innerHTML;
+      var checkAgainstESFJ = document.getElementById("ESFJ").childNodes[1].innerHTML;
+      var checkAgainstENFP = document.getElementById("ENFP").childNodes[1].innerHTML;
+      var checkAgainstENFJ = document.getElementById("ENFJ").childNodes[1].innerHTML;
+      var checkAgainstENTP = document.getElementById("ENTP").childNodes[1].innerHTML;
+      var checkAgainstINTJ = document.getElementById("INTJ").childNodes[1].innerHTML;
+      var checkAgainstESTJ = document.getElementById("ESTJ").childNodes[1].innerHTML;
+
+      //get rid of all the X's from type
+      var noXtype = type.replace('X', '');
+      var noXtype = noXtype.replace('X', '');
+      var noXtype = noXtype.replace('X', '');
+      
+
+     if (checkAgainstISTJ.includes(noXtype)){
+      document.getElementById("ISTJ").style = "";
+    }
+
+    if (checkAgainstISTP.includes(noXtype)){
+     document.getElementById("ISTP").style = "";
+   }
+
+   if (checkAgainstISFJ.includes(noXtype)){
+    document.getElementById("ISFJ").style = "";
+  }
+
+    if (checkAgainstISFP.includes(noXtype)){
+     document.getElementById("ISFP").style = "";
+   }
+
+     if (checkAgainstINFJ.includes(noXtype)){
+      document.getElementById("INFJ").style = "";
+    }
+
+    if (checkAgainstINFP.includes(noXtype)){
+     document.getElementById("INFP").style = "";
+    }
+
+    if (checkAgainstENTJ.includes(noXtype)){
+     document.getElementById("ENTJ").style = "";
+    }
+
+    if (checkAgainstINTP.includes(noXtype)){
+     document.getElementById("INTP").style = "";
+    }
+
+    if (checkAgainstESTP.includes(noXtype)){
+     document.getElementById("ESTP").style = "";
+    }
+
+    if (checkAgainstESFP.includes(noXtype)){
+     document.getElementById("ESFP").style = "";
+    }
+
+    if (checkAgainstESFJ.includes(noXtype)){
+     document.getElementById("ESFJ").style = "";
+    }
+
+    if (checkAgainstENFP.includes(noXtype)){
+     document.getElementById("ENFP").style = "";
+    }
+
+    if (checkAgainstENFJ.includes(noXtype)){
+     document.getElementById("ENFJ").style = "";
+    }
+
+    if (checkAgainstENTP.includes(noXtype)){
+     document.getElementById("ENTP").style = "";
+    }
+
+    if (checkAgainstINTJ.includes(noXtype)){
+     document.getElementById("INTJ").style = "";
+    }
+
+    if (checkAgainstESTJ.includes(noXtype)){
+     document.getElementById("ESTJ").style = "";
+   }
+
+     //do this for each 16 types and reveal the ones that match
+
+
+
+
+
+
+
 
 
       //if X is located at 0 and not anywhere else
