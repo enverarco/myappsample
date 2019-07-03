@@ -24,12 +24,35 @@ if(document.getElementById('gender_Male').checked) {
 
 function ScrolltoQuestion2(){
 
+
+  //check if question 1 option is selected
+
+
+
+
+  /*for (var i = 0; i < 8; i++) {
+    if(document.getElementById('radiobutton1').childNodes[i+1].checked)
+    {
+      console.log("checked");
+    }
+  }*/
+
+
+
+
+
+  //loop through all the radio buttons and if any are
+  //checked then set bool to true
+  //next button only works if that bool is true
+
+  //Reveal question 2
   var q2class = document.getElementsByClassName('question2');
 
   for(var i = 0; i < q2class.length; i = i + 1) {
       q2class[i].style.display='block';
   }
 
+  //scroll to question 2
   $('html, body').animate({
     scrollTop: $("#traits").offset().top
   }, 800, function(){
@@ -213,23 +236,66 @@ document.getElementById('resultsmessage').innerHTML = type;
 
 
 
+
+
+
     if (!type.includes('X')){
       document.getElementById(type).style = "";
     }
+
+
+      var pos = type.indexOf("X");
+      var indexes = [];
+
+
+
+
+    function createVariables(){
+
+
+      while(pos > -1) {
+    //  indexes[pos] = pos;
+
+
+      console.log("The X is located at index " + pos);
+    //  console.log("First index logged is " + indexes[pos]);
+      pos = type.indexOf("X", pos+1);
+      indexes.push[pos];
+
+
+
+
+    }
+
+      return indexes;
+    }
+
+
+    if (type.indexOf("X")){
+
+    }
+
+    // if index is at 2 and 3 then run this
+
+    // if index is at 1
+
+    // if index is at 2
+
+    // if index is at 3
+
+    // if index is at 4
+
+    // if index is at 2 and 4
 
     if(type.includes('X')){
       // if type inclues X
       //console.log("The X is located at index " + type.indexOf('X'));
 
-        var pos = type.indexOf("X");
-
-        while(pos > -1) {
-        console.log("The X is located at index " + pos);
-        pos = type.indexOf("X", pos+1);
-      }
+      createVariables();
+      console.log("this is the index outside the loop" + indexes[0]);
 
       //var checkAgainstISTJ = document.getElementById("ISTJ").innerHTML;
-      var checkAgainstISTJ = document.getElementById("ISTJ").childNodes[1].innerHTML;
+    /*  var checkAgainstISTJ = document.getElementById("ISTJ").childNodes[1].innerHTML;
       var checkAgainstISTP = document.getElementById("ISTP").childNodes[1].innerHTML;
       var checkAgainstISFJ = document.getElementById("ISFJ").childNodes[1].innerHTML;
       var checkAgainstISFP = document.getElementById("ISFP").childNodes[1].innerHTML;
@@ -249,79 +315,239 @@ document.getElementById('resultsmessage').innerHTML = type;
       //get rid of all the X's from type
       var noXtype = type.replace('X', '');
       var noXtype = noXtype.replace('X', '');
-      var noXtype = noXtype.replace('X', '');
-      
+      var noXtype = noXtype.replace('X', '');*/
 
-     if (checkAgainstISTJ.includes(noXtype)){
+
+     if (firstLetter !== 'E' && secondLetter !== 'N' && thirdLetter !== 'F' && fourthLetter !== 'P'){
       document.getElementById("ISTJ").style = "";
     }
 
-    if (checkAgainstISTP.includes(noXtype)){
+    if (firstLetter !== 'E' && secondLetter !== 'N' && thirdLetter !== 'F' && fourthLetter !== 'J'){
      document.getElementById("ISTP").style = "";
    }
 
-   if (checkAgainstISFJ.includes(noXtype)){
+   if (firstLetter !== 'E' && secondLetter !== 'N' && thirdLetter !== 'T' && fourthLetter !== 'P'){
     document.getElementById("ISFJ").style = "";
   }
 
-    if (checkAgainstISFP.includes(noXtype)){
+  if (firstLetter !== 'E' && secondLetter !== 'N' && thirdLetter !== 'T' && fourthLetter !== 'J'){
      document.getElementById("ISFP").style = "";
    }
 
-     if (checkAgainstINFJ.includes(noXtype)){
+   if (firstLetter !== 'E' && secondLetter !== 'S' && thirdLetter !== 'T' && fourthLetter !== 'P'){
       document.getElementById("INFJ").style = "";
     }
 
-    if (checkAgainstINFP.includes(noXtype)){
+    if (firstLetter !== 'E' && secondLetter !== 'S' && thirdLetter !== 'T' && fourthLetter !== 'J'){
      document.getElementById("INFP").style = "";
     }
 
-    if (checkAgainstENTJ.includes(noXtype)){
+    if (firstLetter !== 'I' && secondLetter !== 'S' && thirdLetter !== 'F' && fourthLetter !== 'P'){
      document.getElementById("ENTJ").style = "";
     }
 
-    if (checkAgainstINTP.includes(noXtype)){
+    if (firstLetter !== 'E' && secondLetter !== 'S' && thirdLetter !== 'F' && fourthLetter !== 'J'){
      document.getElementById("INTP").style = "";
     }
 
-    if (checkAgainstESTP.includes(noXtype)){
+    if (firstLetter !== 'I' && secondLetter !== 'N' && thirdLetter !== 'F' && fourthLetter !== 'J'){
      document.getElementById("ESTP").style = "";
     }
 
-    if (checkAgainstESFP.includes(noXtype)){
+    if (firstLetter !== 'I' && secondLetter !== 'N' && thirdLetter !== 'T' && fourthLetter !== 'J'){
      document.getElementById("ESFP").style = "";
     }
 
-    if (checkAgainstESFJ.includes(noXtype)){
+    if (firstLetter !== 'I' && secondLetter !== 'N' && thirdLetter !== 'T' && fourthLetter !== 'P'){
      document.getElementById("ESFJ").style = "";
     }
 
-    if (checkAgainstENFP.includes(noXtype)){
+    if (firstLetter !== 'I' && secondLetter !== 'S' && thirdLetter !== 'T' && fourthLetter !== 'J'){
      document.getElementById("ENFP").style = "";
     }
 
-    if (checkAgainstENFJ.includes(noXtype)){
+    if (firstLetter !== 'I' && secondLetter !== 'S' && thirdLetter !== 'T' && fourthLetter !== 'P'){
      document.getElementById("ENFJ").style = "";
     }
 
-    if (checkAgainstENTP.includes(noXtype)){
+    if (firstLetter !== 'I' && secondLetter !== 'S' && thirdLetter !== 'F' && fourthLetter !== 'J'){
      document.getElementById("ENTP").style = "";
     }
 
-    if (checkAgainstINTJ.includes(noXtype)){
+    if (firstLetter !== 'E' && secondLetter !== 'S' && thirdLetter !== 'F' && fourthLetter !== 'P'){
      document.getElementById("INTJ").style = "";
     }
 
-    if (checkAgainstESTJ.includes(noXtype)){
+    if (firstLetter !== 'I' && secondLetter !== 'N' && thirdLetter !== 'F' && fourthLetter !== 'P'){
      document.getElementById("ESTJ").style = "";
    }
 
      //do this for each 16 types and reveal the ones that match
 
 
+     /*
+
+    if (firstLetter != 'X'){
+    If (checkAgainstISTJ.includes(firstLetter)){
+     //reveal it
+     else {
+     //hide it
+   }
+  }
+
+  if (secondLetter != 'X'){
+  If (checkAgainstISTJ.includes(secondLetter)){
+   //reveal it
+   else {
+   //hide it
+ }
+}
+
+if (thirdLetter != 'X'){
+If (checkAgainstISTJ.includes(thirdLetter)){
+ //reveal it
+ else {
+ //hide it
+}
+}
+
+if (fourthLetter != 'X'){
+If (checkAgainstISTJ.includes(fourthLetter)){
+ //reveal it
+ else {
+ //hide it
+}
+}
 
 
 
+
+    If (checkAgainstISTJ.includes(secondLetter)){
+     //reveal it
+     else {
+     //hide it
+   }
+
+   If (checkAgainstISTJ.includes(firstLetter)){
+    //reveal it
+    else {
+    //hide it
+  }
+
+  If (checkAgainstISTJ.includes(firstLetter)){
+   //reveal it
+   else {
+   //hide it
+ }
+
+
+     }
+
+
+     //if index 1, 2 and 3
+
+     // if index is at 2 and 3 then run this
+
+      // if index is at 2 and 4
+
+      //if index 1 and 2
+
+
+     // if index is at 1
+
+     // if index is at 2
+
+     // if index is at 3
+
+     // if index is at 4
+
+
+
+
+if(firstLetter = 'X' && secondLetter ='X' && thirdLetter = 'X'){
+
+  }
+
+
+
+
+    else if (checkAgainstISTJ.includes(firstLetter) && checkAgainstISTJ.includes(secondLetter) && checkAgainstISTJ.includes(thirdLetter) && checkAgainstISTJ.includes(fourthLetter))
+     {
+      document.getElementById("ISTJ").style = "";
+    }
+
+
+
+
+
+
+
+
+
+
+     */
+
+
+     /*
+     var typeArray  = ['ISTJ', 'ISTP', 'ISFJ', 'ISFP', 'INFJ', 'INFP','INTJ', 'INTP, 'ESTP', 'ESTJ', 'ESFP', 'ESFJ', 'ENFJ', 'ENTP', 'ENTJ'];
+     resultArray [];
+
+     if (firstLetter != 'X' && checkAgainstISTJ.includes(firstLetter))
+     {
+     typeArray.push
+     }
+
+
+var n = typeArray.includes(firstLetter);
+
+
+
+
+     */
+
+     /*
+     if first not X test for first letters
+     if second not X test for second letters
+     if third not X test for third letters
+     if fourth not X test for fourth letter
+
+     push to results array
+
+
+     */
+
+     /*
+     so if it was XSXJ
+
+     it wouldn't test first
+     it would find S
+     it wouldnt test third
+     it would find J
+
+     it would push letters that include S and J to the array
+
+
+     */
+
+
+     //filter it by each section
+     //for each space of the letters// break that into an array
+     //letter a b c and // DEBUG:
+     // for that first space filter out half og the results that dont have that letters
+     // filter out all the ones that dont have e
+     //does this contain this letter
+     //array of results (16 different results) and each point your checking those resultsmessage
+     // and then shorting that array
+     // then push up and pop
+
+     //comparision of a string
+     //comparison of a letter at each point
+     //you know where the letters go
+
+
+
+
+     //sort against the properties
 
 
 

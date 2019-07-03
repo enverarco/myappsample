@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -46,11 +47,10 @@
   <!-- Card -->
 
   <section id = "top" class = "question1" >
-    <br><br><br><br>
+      <br><br><br><br>
+      <div class="card text-center container-small shadow-lg">
 
-    <div class="card text-center container shadow">
-
-      <!-- Card content -->
+        <!-- Card content -->
       <div class="card-body">
 
         <!-- Title -->
@@ -60,81 +60,150 @@
         <h5 class="card-text">If you don't know the answer, skip it and move on to the next. </h5><br>
       </div>
 
-    </div>
-
-    <br><br>
-
-    <div class="card text-center container shadow">
-
-      <!-- Card content -->
-      <div class="card-body">
-        <h4 class="card-title"><a>Do you think this person is</a></h4><br><br>
-        <h5 class = "card-text">Introvered or Extroverted?</h5>
-        <h5 class = "card-text">Intuitive or Sensory?</h5>
-        <h5 class = "card-text">Feeling or Thinking?</h5>
-        <h5 class = "card-text">Prospecting or Judging?</h5>
       </div>
 
-    </div>
+      <br><br>
 
-    <div class="container center">
-  <div class="row">
-    <div class="col-md-2">
+      <div class="card text-center container-small shadow-lg">
 
-
-
-    </div>
-    <div class="col-md-2">
-      <div>
-        <input type="radio" name="intro-extro" id="introverted" class="radio"/>
-        <label for="introverted">Intoverted</label>
+        <!-- Card content -->
+        <div class="card-body p-5">
+          <h4 class="card-title"><a>Do you think this person is</a></h4><br><br>
+          <h5 class = "card-text">Introvered or Extroverted?</h5>
+          <h5 class = "card-text">Intuitive or Sensory?</h5>
+          <h5 class = "card-text">Feeling or Thinking?</h5>
+          <h5 class = "card-text">Prospecting or Judging?</h5>
+        </div>
       </div>
 
-      <div>
-        <input type="radio" name="intro-extro" id="extraverted" class="radio"/>
-        <label for="extraverted">Extroverted</label>
+      <!-- first row -->
+      <div class="container">
+        <div class="row">
+
+          <div id = "radiobuttons1" class="mx-auto">
+            <div>
+              <input type="radio" name="intro-extro" id="introverted" class="radio"/>
+              <label for="introverted">Intoverted</label>
+            </div>
+
+          </div>
+          <div class="mx-auto">
+            <br><br>
+            <div class="card text-center shadow-lg">
+              <!-- Card content -->
+              <div class="card-body">
+                <p class="card-text"><a>OR</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto">
+            <div>
+              <input type="radio" name="intro-extro" id="extraverted" class="radio"/>
+              <label for="extraverted">Extroverted</label>
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+        <!-- second row -->
+        <div class="row">
+          <div class="mx-auto">
+            <div>
+              <input type="radio" name="N-S" id="intuitive" class="radio"/>
+              <label for="intuitive">Intuitive</label>
+            </div>
+          </div>
+
+          <div class="mx-auto">
+
+            <br><br>
+            <div class="card text-center shadow-lg">
+
+              <!-- Card content -->
+              <div class="card-body">
+                <p class="card-text"><a>OR</a></p>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="mx-auto">
+            <div>
+              <input type="radio" name="N-S" id="sensory" class="radio"/>
+              <label for="sensory">Sensory</label>
+            </div>
+          </div>
+
+        </div>
+
+        <br><br>
+        <!-- third row -->
+        <div class="row">
+          <div class="mx-auto">
+            <div>
+              <input type="radio" name="T-F" id="feeling" class="radio"/>
+              <label for="feeling">Feeling</label>
+            </div>
+          </div>
+
+          <div class="mx-auto">
+
+            <br><br>
+            <div class="card text-center shadow-lg">
+
+              <!-- Card content -->
+              <div class="card-body">
+                <p class="card-text"><a>OR</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto">
+            <div>
+              <input type="radio" name="T-F" id="thinking" class="radio"/>
+              <label for="thinking">Thinking</label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <br><br>
+        <!-- fourth row -->
+        <div class="row">
+          <div class="mx-auto">
+            <div>
+              <input type="radio" name="P-J" id="prospecting" class="radio"/>
+              <label for="prospecting">Prospecting</label>
+            </div>
+          </div>
+
+          <div class="mx-auto">
+            <br><br>
+            <div class="card text-center shadow-lg">
+              <!-- Card content -->
+              <div class="card-body">
+                <p class="card-text"><a>OR</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-auto">
+            <div>
+              <input type="radio" name="P-J" id="judging" class="radio"/>
+              <label for="judging">Judging</label>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <div>
-        <input type="radio" name="N-S" id="intuitive" class="radio"/>
-        <label for="intuitive">Intuitive</label>
+      <div class = "text-center container-small">
+        <button class = "btn btn-primary shadow" id = "button1" >Next</button>
       </div>
-
-      <div>
-        <input type="radio" name="N-S" id="sensory" class="radio"/>
-        <label for="sensory">Sensory</label>
-      </div>
-
-      <div>
-        <input type="radio" name="T-F" id="thinking" class="radio"/>
-        <label for="thinking">Thinking</label>
-      </div>
-
-      <div>
-        <input type="radio" name="T-F" id="feeling" class="radio"/>
-        <label for="feeling">Feeling</label>
-      </div>
-
-      <div>
-        <input type="radio" name="P-J" id="prospecting" class="radio"/>
-        <label for="prospecting">Prospecting</label>
-      </div>
-
-      <div>
-        <input type="radio" name="P-J" id="judging" class="radio"/>
-        <label for="judging">Judging</label>
-      </div>
-
-      <button class = "btn btn-primary shadow" id = "button1" >Next</button>
-
-
-    </div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
-  </div>
-  </div>
+    </section>
 
 
 
@@ -143,164 +212,144 @@
 
 
 
+    <section id="traits" class = "question2" >
+      <br><br><br><br>
 
+      <div class="card text-center container-small shadow-lg">
 
-  </section>
-
-
-
-
-
-  <div class = "padding"></div>
-
-
-
-  <section id="traits" class = "question2" >
-    <br><br><br><br>
-
-    <div class="card text-center container shadow">
-
-      <!-- Card content -->
+        <!-- Card content -->
       <div class="card-body">
         <h4 class="card-title"><a>What traits does this person have (select one or more)</a></h4>
 
       </div>
 
-    </div>
-    <div class="container center">
-  <div class="row">
-    <div class="col-md-2">
+      </div>
+      <div class="container-small">
+        <div class="row">
+          <div class="mx-auto">
 
 
 
-    </div>
-    <div class="col-md-2">
+          </div>
+          <div class="mx-auto">
 
 
 
 
-      <div>
-        <input type="radio" name="outgoing-shy" id="outgoing" class="radio"/>
-        <label for="outgoing">Outgoing</label>
+            <div>
+              <input type="radio" name="outgoing-shy" id="outgoing" class="radio"/>
+              <label for="outgoing">Outgoing</label>
+            </div>
+
+            <div>
+              <input type="radio" name="outgoing-shy" id="shy" class="radio"/>
+              <label for="shy">Shy</label>
+            </div>
+
+            <div>
+              <input type="radio" name="active" id="active" class="radio"/>
+              <label for="active">Active</label>
+            </div>
+
+            <div>
+              <input type="radio" name="forgetful" id="forgetful" class="radio"/>
+              <label for="forgetful">Forgetful</label>
+            </div>
+
+            <div>
+              <input type="radio" name="rational" id="rational" class="radio"/>
+              <label for="rational">Rational</label>
+            </div>
+
+            <div>
+              <input type="radio" name="emotional" id="emotional" class="radio"/>
+              <label for="emotional">Emotional</label>
+            </div>
+
+            <div>
+              <input type="radio" name="messy-organised" id="messy" class="radio"/>
+              <label for="messy">Messy</label>
+            </div>
+
+            <div>
+              <input type="radio" name="messy-organised" id="organised" class="radio"/>
+              <label for="organised">Organised</label>
+            </div>
+          </div>
+          <div class="mx-auto"></div>
+
+        </div>
       </div>
 
-      <div>
-        <input type="radio" name="outgoing-shy" id="shy" class="radio"/>
-        <label for="shy">Shy</label>
+      <div class = "text-center container-small">
+        <button class = "btn btn-primary" id = "button2" >Next</button>
       </div>
+    </section>
 
-      <div>
-        <input type="radio" name="active" id="active" class="radio"/>
-        <label for="active">Active</label>
-      </div>
+    <section id="career" class = "question3" >
+      <br><br><br><br>
+      <div class="card text-center container-small">
 
-      <div>
-        <input type="radio" name="forgetful" id="forgetful" class="radio"/>
-        <label for="forgetful">Forgetful</label>
-      </div>
-
-      <div>
-        <input type="radio" name="rational" id="rational" class="radio"/>
-        <label for="rational">Rational</label>
-      </div>
-
-      <div>
-        <input type="radio" name="emotional" id="emotional" class="radio"/>
-        <label for="emotional">Emotional</label>
-      </div>
-
-      <div>
-        <input type="radio" name="messy-organised" id="messy" class="radio"/>
-        <label for="messy">Messy</label>
-      </div>
-
-      <div>
-        <input type="radio" name="messy-organised" id="organised" class="radio"/>
-        <label for="organised">Organised</label>
-      </div>
-      <button class = "btn btn-primary" id = "button2" >Next</button>
-    </div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
-  </div>
-  </section>
-
-
-
-
-
-
-
-  <section id="career" class = "question3" >
-    <br><br><br><br>
-    <div class="card text-center container shadow">
-
-      <!-- Card content -->
+        <!-- Card content -->
       <div class="card-body">
         <h4 class="card-title"><a>What career do they have or would they like to pursue?</a></h4>
 
       </div>
 
-    </div>
-    <div class="container center">
-  <div class="row">
-    <div class="col-md-2">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="mx-auto">
+            <div>
+              <input type="radio" name="career" id="developer" class="radio"/>
+              <label for="developer">Developer</label>
+            </div>
 
+            <div>
+              <input type="radio" name="career" id="teacher" class="radio"/>
+              <label for="teacher">Teacher</label>
+            </div>
 
+            <div>
+              <input type="radio" name="career" id="entertainer" class="radio"/>
+              <label for="entertainer">Entertainer</label>
+            </div>
 
-    </div>
-    <div class="col-md-2">
+            <div>
+              <input type="radio" name="career" id="artist" class="radio"/>
+              <label for="artist">Artist</label>
+            </div>
 
+            <div>
+              <input type="radio" name="career" id="police/military" class="radio"/>
+              <label for="police/military">Police/Military</label>
+            </div>
 
-      <div>
-        <input type="radio" name="career" id="developer" class="radio"/>
-        <label for="developer">Developer</label>
+            <div>
+              <input type="radio" name="career" id="musician" class="radio"/>
+              <label for="musician">Musician</label>
+            </div>
+
+            <div>
+              <input type="radio" name="career" id="engineer" class="radio"/>
+              <label for="engineer">Engineer</label>
+            </div>
+
+            <div>
+              <input type="radio" name="career" id="realestateagent" class="radio"/>
+              <label for="realestateagent">Real Estate Agent</label>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <div>
-        <input type="radio" name="career" id="teacher" class="radio"/>
-        <label for="teacher">Teacher</label>
+      <div class = "text-center container-small">
+        <button class = "btn btn-primary" id = "button4" >Next</button>
       </div>
 
-      <div>
-        <input type="radio" name="career" id="entertainer" class="radio"/>
-        <label for="entertainer">Entertainer</label>
-      </div>
+    </section>
 
-      <div>
-        <input type="radio" name="career" id="artist" class="radio"/>
-        <label for="artist">Artist</label>
-      </div>
-
-      <div>
-        <input type="radio" name="career" id="police/military" class="radio"/>
-        <label for="police/military">Police/Military</label>
-      </div>
-
-      <div>
-        <input type="radio" name="career" id="musician" class="radio"/>
-        <label for="musician">Musician</label>
-      </div>
-
-      <div>
-        <input type="radio" name="career" id="engineer" class="radio"/>
-        <label for="engineer">Engineer</label>
-      </div>
-
-      <div>
-        <input type="radio" name="career" id="realestateagent" class="radio"/>
-        <label for="realestateagent">Real Estate Agent</label>
-      </div>
-      <button class = "btn btn-primary" id = "button4" >Next</button>
-    </div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
-  </div>
-  </section>
 
 
 
@@ -510,7 +559,7 @@
         </div>
       </div>
 
-      <div class = "container">
+      <div class = "text-center container-small">
         <button class = "btn btn-primary" id = "button5" ><a href="#top" style="color: black">Back to the Top</a></button>
       </div>
 
