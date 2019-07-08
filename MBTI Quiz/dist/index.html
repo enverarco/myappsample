@@ -91,7 +91,7 @@
 
           <div id = "radiobuttons1" class="mx-auto">
             <div>
-              <input type="radio" name="intro-extro" id="introverted" class="radio"/>
+              <input type="radio" name="preference" id="introverted" class="radio"/>
               <label for="introverted">Intoverted</label>
             </div>
 
@@ -107,7 +107,7 @@
           </div>
           <div class="mx-auto">
             <div>
-              <input type="radio" name="intro-extro" id="extraverted" class="radio"/>
+              <input type="radio" name="preference" id="extraverted" class="radio"/>
               <label for="extraverted">Extroverted</label>
             </div>
 
@@ -123,7 +123,7 @@
 
           <div class="mx-auto">
             <div>
-              <input type="radio" name="N-S" id="intuitive" class="radio"/>
+              <input type="radio" name="preference" id="intuitive" class="radio"/>
               <label for="intuitive">Intuitive</label>
             </div>
           </div>
@@ -146,7 +146,7 @@
 
           <div class="mx-auto">
             <div>
-              <input type="radio" name="N-S" id="sensory" class="radio"/>
+              <input type="radio" name="preference" id="sensory" class="radio"/>
               <label for="sensory">Sensory</label>
             </div>
           </div>
@@ -159,7 +159,7 @@
           <div class="mx-auto"></div>
           <div class="mx-auto">
             <div>
-              <input type="radio" name="T-F" id="feeling" class="radio"/>
+              <input type="radio" name="preference" id="feeling" class="radio"/>
               <label for="feeling">Feeling</label>
             </div>
           </div>
@@ -177,7 +177,7 @@
           </div>
           <div class="mx-auto">
             <div>
-              <input type="radio" name="T-F" id="thinking" class="radio"/>
+              <input type="radio" name="preference" id="thinking" class="radio"/>
               <label for="thinking">Thinking</label>
             </div>
 
@@ -195,7 +195,7 @@
           <div class="mx-auto"></div>
           <div class="mx-auto">
             <div>
-              <input type="radio" name="P-J" id="prospecting" class="radio"/>
+              <input type="radio" name="preference" id="prospecting" class="radio"/>
               <label for="prospecting">Prospecting</label>
             </div>
           </div>
@@ -212,7 +212,7 @@
 
           <div class="mx-auto">
             <div>
-              <input type="radio" name="P-J" id="judging" class="radio"/>
+              <input type="radio" name="preference" id="judging" class="radio"/>
               <label for="judging">Judging</label>
             </div>
           </div>
@@ -221,14 +221,14 @@
       </div>
 
 
-      <div class = "text-center container-small">
-      <div class="alert alert-danger fade show" role="alert" id = 'alert1' style = "display: none">
+  <!--    <div class = "text-center container-small">
+      <div class="alert alert-danger fade show" role="alert" id = 'alert1' style = "visibility: hidden">
         <strong>Please select at least one of the options.</strong>
       </div>
-    </div>
+    </div> -->
 
 
-      <div class = "text-center container-small">
+      <div class = "text-center container-small" style = "visibility: hidden">
         <button class = "btn btn-primary shadow" id = "button1" >Next</button>
 
       </div>
@@ -269,42 +269,42 @@
 
 
             <div>
-              <input type="radio" name="outgoing-shy" id="outgoing" class="radio"/>
+              <input type="radio" name="trait" id="outgoing" class="radio"/>
               <label for="outgoing">Outgoing</label>
             </div>
 
             <div>
-              <input type="radio" name="outgoing-shy" id="shy" class="radio"/>
+              <input type="radio" name="trait" id="shy" class="radio"/>
               <label for="shy">Shy</label>
             </div>
 
             <div>
-              <input type="radio" name="active" id="active" class="radio"/>
+              <input type="radio" name="trait" id="active" class="radio"/>
               <label for="active">Active</label>
             </div>
 
             <div>
-              <input type="radio" name="forgetful" id="forgetful" class="radio"/>
+              <input type="radio" name="trait" id="forgetful" class="radio"/>
               <label for="forgetful">Forgetful</label>
             </div>
 
             <div>
-              <input type="radio" name="rational" id="rational" class="radio"/>
+              <input type="radio" name="trait" id="rational" class="radio"/>
               <label for="rational">Rational</label>
             </div>
 
             <div>
-              <input type="radio" name="emotional" id="emotional" class="radio"/>
+              <input type="radio" name="trait" id="emotional" class="radio"/>
               <label for="emotional">Emotional</label>
             </div>
 
             <div>
-              <input type="radio" name="messy-organised" id="messy" class="radio"/>
+              <input type="radio" name="trait" id="messy" class="radio"/>
               <label for="messy">Messy</label>
             </div>
 
             <div>
-              <input type="radio" name="messy-organised" id="organised" class="radio"/>
+              <input type="radio" name="trait" id="organised" class="radio"/>
               <label for="organised">Organised</label>
             </div>
           </div>
@@ -313,13 +313,13 @@
         </div>
       </div>
 
-      <div class = "text-center container-small">
-      <div class="alert alert-danger fade show" role="alert" id = 'alert2' style = "display: none">
+    <!--  <div class = "text-center container-small">
+      <div class="alert alert-danger fade show" role="alert" id = 'alert2' style = "visibility: hidden">
         <strong>Please select at least one of the options.</strong>
       </div>
-    </div>
+    </div> -->
 
-      <div class = "text-center container-small">
+      <div class = "text-center container-small" style = "visibility: hidden">
         <button class = "btn btn-primary" id = "button2" >Next</button>
       </div>
     </section>
@@ -383,13 +383,13 @@
         </div>
       </div>
 
-      <div class = "text-center container-small">
+    <!--  <div class = "text-center container-small">
       <div class="alert alert-danger fade show" role="alert" id = 'alert3' style = "display: none">
         <strong>Please select at least one of the options.</strong>
       </div>
-    </div>
+    </div> -->
 
-      <div class = "text-center container-small">
+      <div class = "text-center container-small" style = "visibility: hidden">
         <button class = "btn btn-primary" id = "button4" >Next</button>
       </div>
 

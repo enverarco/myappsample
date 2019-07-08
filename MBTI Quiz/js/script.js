@@ -4,6 +4,27 @@ document.getElementById("button2").addEventListener("click", ScrolltoQuestion3);
 document.getElementById("button4").addEventListener("click", ScrolltoResults);
 document.getElementById("button5").addEventListener("click", ScrolltoTop);
 
+
+//loop for adding event listeners to question 1 radio buttons
+var inputs=document.querySelectorAll("input[name = preference]"),
+    x=inputs.length;
+while(x--)
+    inputs[x].addEventListener("click", Button1Appear);
+
+//loop for adding event listeners to question 2 radio buttons
+var inputs=document.querySelectorAll("input[name = trait]"),
+    x=inputs.length;
+while(x--)
+    inputs[x].addEventListener("click", Button2Appear);
+
+//loop for adding event listeners to final question radio buttons
+var inputs=document.querySelectorAll("input[name = career]"),
+    x=inputs.length;
+while(x--)
+    inputs[x].addEventListener("click", ResultsButtonAppear);
+
+
+
 function myFunction() {
   alert ("Hello World!");
 }
@@ -21,6 +42,24 @@ if(document.getElementById('gender_Male').checked) {
 }else if(document.getElementById('gender_Female').checked) {
 
 }*/
+
+function Button1Appear(){
+
+document.getElementById("button1").style.visibility = "visible";
+
+}
+
+function Button2Appear(){
+
+document.getElementById("button2").style.visibility = "visible";
+
+}
+
+function ResultsButtonAppear(){
+
+document.getElementById("button4").style.visibility = "visible";
+}
+
 
 function ScrolltoQuestion2(){
 
@@ -47,7 +86,8 @@ function ScrolltoQuestion2(){
     window.location.hash = '#traits';
   });
 } else {
-    document.getElementById('alert1').style = "";
+  //  document.getElementById('alert1').style = "";
+  document.getElementById("alert1").style.visibility = "visible";
   };
 
 }
@@ -73,7 +113,8 @@ function ScrolltoQuestion3(){
     window.location.hash = '#career';
   });
 }else {
-    document.getElementById('alert2').style = "";
+    //document.getElementById('alert2').style = "";
+    document.getElementById("alert2").style.visibility = "visible";
   };
 
 }
