@@ -1,6 +1,6 @@
 body {
 	font-family: 'Open Sans',serif;
-	font-weight: normal;
+	font-weight: bold;
 	/*color: #999;*/
 	/*background:
 	linear-gradient(
@@ -127,6 +127,14 @@ li a:hover {
 	background-repeat: repeat;
 	display: none;
 }
+
+.close
+{
+margin: 0 auto;
+width: 20%;
+}
+
+
 
 form {
 	margin: 40px 0;

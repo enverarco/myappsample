@@ -24,9 +24,13 @@ if(document.getElementById('gender_Male').checked) {
 
 function ScrolltoQuestion2(){
 
-
+  var validate1 = 'false';
   //check if question 1 option is selected
 
+  if(document.getElementById('introverted').checked || document.getElementById('extraverted').checked || document.getElementById('intuitive').checked || document.getElementById('sensory').checked || document.getElementById('feeling').checked || document.getElementById('thinking').checked || document.getElementById('prospecting').checked || document.getElementById('judging').checked)
+  {
+
+    validate1 = 'true';
 
 
 
@@ -59,9 +63,18 @@ function ScrolltoQuestion2(){
 
     window.location.hash = '#traits';
   });
-};
+} else {
+    document.getElementById('alert1').style = "";
+  };
+
+}
+
+
 
 function ScrolltoQuestion3(){
+
+  if(document.getElementById('outgoing').checked || document.getElementById('shy').checked || document.getElementById('active').checked || document.getElementById('forgetful').checked || document.getElementById('rational').checked || document.getElementById('emotional').checked || document.getElementById('messy').checked || document.getElementById('organised').checked)
+  {
 
   var q3class = document.getElementsByClassName('question3');
 
@@ -76,11 +89,16 @@ function ScrolltoQuestion3(){
 
     window.location.hash = '#career';
   });
-};
+}else {
+    document.getElementById('alert2').style = "";
+  };
+
+}
 
 function ScrolltoQuestion4(){
 
-
+  if(document.getElementById('developer').checked || document.getElementById('teacher').checked || document.getElementById('entertainer').checked || document.getElementById('artist').checked || document.getElementById('police/military').checked || document.getElementById('musician').checked || document.getElementById('enginerr').checked || document.getElementById('realestateagent').checked)
+  {
 
   $('html, body').animate({
     scrollTop: $("#functions").offset().top
@@ -89,7 +107,10 @@ function ScrolltoQuestion4(){
 
     window.location.hash = '#functions';
   });
-};
+}else {
+    document.getElementById('alert3').style = "";
+  };
+}
 
 function ScrolltoTop(){
 
@@ -103,6 +124,8 @@ function ScrolltoTop(){
 };
 
 function ScrolltoResults(){
+
+
 
   var q5class = document.getElementsByClassName('result');
 
@@ -381,6 +404,9 @@ document.getElementById('resultsmessage').innerHTML = type;
     if (firstLetter !== 'I' && secondLetter !== 'N' && thirdLetter !== 'F' && fourthLetter !== 'P'){
      document.getElementById("ESTJ").style = "";
    }
+ 
+
+
 
      //do this for each 16 types and reveal the ones that match
 

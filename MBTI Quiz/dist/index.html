@@ -38,13 +38,17 @@
           </a>
         </li>
       </ul>
+
     </div>
+
 
   </nav>
 
   <!-- Card -->
 
   <!-- Card -->
+
+
 
   <section id = "top" class = "question1" >
       <br><br><br><br>
@@ -54,7 +58,7 @@
       <div class="card-body">
 
         <!-- Title -->
-        <h2 class="card-title"><a>Myers Briggs Personality Identifier</a></h2><br><br>
+        <h2 class="card-title"><a><strong>Myers Briggs Personality Identifier</strong></a></h2><br><br>
         <!-- Text -->
         <h5 class="card-text">Try answer as many questions you can to help identify the persons myers briggs type. </h5>
         <h5 class="card-text">If you don't know the answer, skip it and move on to the next. </h5><br>
@@ -68,17 +72,22 @@
 
         <!-- Card content -->
         <div class="card-body p-5">
-          <h4 class="card-title"><a>Do you think this person is</a></h4><br><br>
-          <h5 class = "card-text">Introvered or Extroverted?</h5>
-          <h5 class = "card-text">Intuitive or Sensory?</h5>
-          <h5 class = "card-text">Feeling or Thinking?</h5>
-          <h5 class = "card-text">Prospecting or Judging?</h5>
+          <h4 class="card-title"><a><strong>Do you think this person is</strong></a></h4><br><br>
+          <h5 class = "card-text">Introvered or Extroverted?</h5><br>
+          <h5 class = "card-text">Intuitive or Sensory?</h5><br>
+          <h5 class = "card-text">Feeling or Thinking?</h5><br>
+          <h5 class = "card-text">Prospecting or Judging?</h5><br>
+
         </div>
       </div>
+
+
 
       <!-- first row -->
       <div class="container">
         <div class="row">
+
+          <div class="mx-auto"></div>
 
           <div id = "radiobuttons1" class="mx-auto">
             <div>
@@ -101,12 +110,17 @@
               <input type="radio" name="intro-extro" id="extraverted" class="radio"/>
               <label for="extraverted">Extroverted</label>
             </div>
+
+
           </div>
+          <div class="mx-auto"></div>
         </div>
 
         <br><br>
         <!-- second row -->
         <div class="row">
+          <div class="mx-auto"></div>
+
           <div class="mx-auto">
             <div>
               <input type="radio" name="N-S" id="intuitive" class="radio"/>
@@ -136,12 +150,13 @@
               <label for="sensory">Sensory</label>
             </div>
           </div>
-
+          <div class="mx-auto"></div>
         </div>
 
         <br><br>
         <!-- third row -->
         <div class="row">
+          <div class="mx-auto"></div>
           <div class="mx-auto">
             <div>
               <input type="radio" name="T-F" id="feeling" class="radio"/>
@@ -167,12 +182,17 @@
             </div>
 
           </div>
+          <div class="mx-auto"></div>
 
         </div>
 
         <br><br>
         <!-- fourth row -->
         <div class="row">
+
+
+
+          <div class="mx-auto"></div>
           <div class="mx-auto">
             <div>
               <input type="radio" name="P-J" id="prospecting" class="radio"/>
@@ -196,13 +216,22 @@
               <label for="judging">Judging</label>
             </div>
           </div>
-
+          <div class="mx-auto"></div>
         </div>
       </div>
 
       <div class = "text-center container-small">
-        <button class = "btn btn-primary shadow" id = "button1" >Next</button>
+      <div class="alert alert-danger fade show" role="alert" id = 'alert1' style = "display: none">
+        <strong>Please select at least one of the options.</strong>
       </div>
+    </div>
+
+      <div class = "text-center container-small">
+        <button class = "btn btn-primary shadow" id = "button1" >Next</button>
+
+      </div>
+
+
     </section>
 
 
@@ -219,7 +248,8 @@
 
         <!-- Card content -->
       <div class="card-body">
-        <h4 class="card-title"><a>What traits does this person have (select one or more)</a></h4>
+        <h4 class="card-title"><a><strong>What traits does this person have (select one or more)</strong></a></h4>
+
 
       </div>
 
@@ -282,6 +312,12 @@
       </div>
 
       <div class = "text-center container-small">
+      <div class="alert alert-danger fade show" role="alert" id = 'alert2' style = "display: none">
+        <strong>Please select at least one of the options.</strong>
+      </div>
+    </div>
+
+      <div class = "text-center container-small">
         <button class = "btn btn-primary" id = "button2" >Next</button>
       </div>
     </section>
@@ -292,7 +328,8 @@
 
         <!-- Card content -->
       <div class="card-body">
-        <h4 class="card-title"><a>What career do they have or would they like to pursue?</a></h4>
+        <h4 class="card-title"><a><strong>What career do they have or would they like to pursue?</strong></a></h4>
+
 
       </div>
 
@@ -345,6 +382,12 @@
       </div>
 
       <div class = "text-center container-small">
+      <div class="alert alert-danger fade show" role="alert" id = 'alert3' style = "display: none">
+        <strong>Please select at least one of the options.</strong>
+      </div>
+    </div>
+
+      <div class = "text-center container-small">
         <button class = "btn btn-primary" id = "button4" >Next</button>
       </div>
 
@@ -363,6 +406,9 @@
       <div class = 'text-center card shadow'>
         <div class="card-body">
           <h4 class = "text-center"> Your Result</h4>
+          <div class="alert alert-danger" role="alert" id = 'alert3' style = "display: none">
+          Please select at least one option
+          </div>
           <h4 id ="resultsmessage" class = "text-center"></h4>
         </div>
       </div>
