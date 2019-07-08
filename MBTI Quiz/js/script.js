@@ -6,13 +6,13 @@ document.getElementById("button5").addEventListener("click", ScrolltoTop);
 
 
 //loop for adding event listeners to question 1 radio buttons
-var inputs=document.querySelectorAll("input[name = preference]"),
+var inputs = document.getElementsByClassName("preference"),
     x=inputs.length;
 while(x--)
     inputs[x].addEventListener("click", Button1Appear);
 
 //loop for adding event listeners to question 2 radio buttons
-var inputs=document.querySelectorAll("input[name = trait]"),
+var inputs = document.getElementsByClassName("traits"),
     x=inputs.length;
 while(x--)
     inputs[x].addEventListener("click", Button2Appear);
