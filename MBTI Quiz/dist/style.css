@@ -46,8 +46,6 @@ li a:hover {
     background-color: #0D0B0B;
 	/*	background-color: #E33F3F; */
 }
-
-
 /* Main */
 
 .panel {
@@ -79,6 +77,10 @@ li a:hover {
 	margin: auto;
 	width:20em;
 	text-align:center;
+}
+
+.noDisplay{
+	display: none;
 }
 
 .question1{

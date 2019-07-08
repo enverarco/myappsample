@@ -24,30 +24,13 @@ if(document.getElementById('gender_Male').checked) {
 
 function ScrolltoQuestion2(){
 
-  var validate1 = 'false';
+
   //check if question 1 option is selected
 
   if(document.getElementById('introverted').checked || document.getElementById('extraverted').checked || document.getElementById('intuitive').checked || document.getElementById('sensory').checked || document.getElementById('feeling').checked || document.getElementById('thinking').checked || document.getElementById('prospecting').checked || document.getElementById('judging').checked)
   {
 
-    validate1 = 'true';
 
-
-
-  /*for (var i = 0; i < 8; i++) {
-    if(document.getElementById('radiobutton1').childNodes[i+1].checked)
-    {
-      console.log("checked");
-    }
-  }*/
-
-
-
-
-
-  //loop through all the radio buttons and if any are
-  //checked then set bool to true
-  //next button only works if that bool is true
 
   //Reveal question 2
   var q2class = document.getElementsByClassName('question2');
@@ -404,192 +387,6 @@ document.getElementById('resultsmessage').innerHTML = type;
     if (firstLetter !== 'I' && secondLetter !== 'N' && thirdLetter !== 'F' && fourthLetter !== 'P'){
      document.getElementById("ESTJ").style = "";
    }
- 
-
-
-
-     //do this for each 16 types and reveal the ones that match
-
-
-     /*
-
-    if (firstLetter != 'X'){
-    If (checkAgainstISTJ.includes(firstLetter)){
-     //reveal it
-     else {
-     //hide it
-   }
-  }
-
-  if (secondLetter != 'X'){
-  If (checkAgainstISTJ.includes(secondLetter)){
-   //reveal it
-   else {
-   //hide it
- }
-}
-
-if (thirdLetter != 'X'){
-If (checkAgainstISTJ.includes(thirdLetter)){
- //reveal it
- else {
- //hide it
-}
-}
-
-if (fourthLetter != 'X'){
-If (checkAgainstISTJ.includes(fourthLetter)){
- //reveal it
- else {
- //hide it
-}
-}
-
-
-
-
-    If (checkAgainstISTJ.includes(secondLetter)){
-     //reveal it
-     else {
-     //hide it
-   }
-
-   If (checkAgainstISTJ.includes(firstLetter)){
-    //reveal it
-    else {
-    //hide it
-  }
-
-  If (checkAgainstISTJ.includes(firstLetter)){
-   //reveal it
-   else {
-   //hide it
- }
-
-
-     }
-
-
-     //if index 1, 2 and 3
-
-     // if index is at 2 and 3 then run this
-
-      // if index is at 2 and 4
-
-      //if index 1 and 2
-
-
-     // if index is at 1
-
-     // if index is at 2
-
-     // if index is at 3
-
-     // if index is at 4
-
-
-
-
-if(firstLetter = 'X' && secondLetter ='X' && thirdLetter = 'X'){
-
-  }
-
-
-
-
-    else if (checkAgainstISTJ.includes(firstLetter) && checkAgainstISTJ.includes(secondLetter) && checkAgainstISTJ.includes(thirdLetter) && checkAgainstISTJ.includes(fourthLetter))
-     {
-      document.getElementById("ISTJ").style = "";
-    }
-
-
-
-
-
-
-
-
-
-
-     */
-
-
-     /*
-     var typeArray  = ['ISTJ', 'ISTP', 'ISFJ', 'ISFP', 'INFJ', 'INFP','INTJ', 'INTP, 'ESTP', 'ESTJ', 'ESFP', 'ESFJ', 'ENFJ', 'ENTP', 'ENTJ'];
-     resultArray [];
-
-     if (firstLetter != 'X' && checkAgainstISTJ.includes(firstLetter))
-     {
-     typeArray.push
-     }
-
-
-var n = typeArray.includes(firstLetter);
-
-
-
-
-     */
-
-     /*
-     if first not X test for first letters
-     if second not X test for second letters
-     if third not X test for third letters
-     if fourth not X test for fourth letter
-
-     push to results array
-
-
-     */
-
-     /*
-     so if it was XSXJ
-
-     it wouldn't test first
-     it would find S
-     it wouldnt test third
-     it would find J
-
-     it would push letters that include S and J to the array
-
-
-     */
-
-
-     //filter it by each section
-     //for each space of the letters// break that into an array
-     //letter a b c and // DEBUG:
-     // for that first space filter out half og the results that dont have that letters
-     // filter out all the ones that dont have e
-     //does this contain this letter
-     //array of results (16 different results) and each point your checking those resultsmessage
-     // and then shorting that array
-     // then push up and pop
-
-     //comparision of a string
-     //comparison of a letter at each point
-     //you know where the letters go
-
-
-
-
-     //sort against the properties
-
-
-
-
-      //if X is located at 0 and not anywhere else
-      // then type = I+secondLetter+thirdLetter+fourthLetter
-      // document.getElementById(type).style = "";
-      // then type = E+secondLetter+thirdLetter+fourthLetter
-      // document.getElementById(type).style = "";
-
-
-
-      // test type agaisnt the 16 types and
-      // if match it to letters it .contains
-
-      // reveal the ones it contains
 
 
 
@@ -608,3 +405,42 @@ var n = typeArray.includes(firstLetter);
 
   });
 };
+
+
+
+/*
+var typeArray  = ['ISTJ', 'ISTP', 'ISFJ', 'ISFP', 'INFJ', 'INFP','INTJ', 'INTP, 'ESTP', 'ESTJ', 'ESFP', 'ESFJ', 'ENFJ', 'ENTP', 'ENTJ'];
+resultArray [];
+
+if (firstLetter != 'X' && checkAgainstISTJ.includes(firstLetter))
+{
+typeArray.push
+}
+
+
+var n = typeArray.includes(firstLetter);
+
+
+
+
+*/
+
+
+//filter it by each section
+//for each space of the letters// break that into an array
+//letter a b c and // DEBUG:
+// for that first space filter out half og the results that dont have that letters
+// filter out all the ones that dont have e
+//does this contain this letter
+//array of results (16 different results) and each point your checking those resultsmessage
+// and then shorting that array
+// then push up and pop
+
+//comparision of a string
+//comparison of a letter at each point
+//you know where the letters go
+
+
+
+
+//sort against the properties
