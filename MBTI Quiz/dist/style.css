@@ -1,30 +1,16 @@
+/*--------------------------------------------------------------
+# Body
+--------------------------------------------------------------*/
+
 body {
 	font-family: 'Raleway',sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	/*color: #999;*/
-	/*background:
-	linear-gradient(
-	      rgba(0, 0, 0, 0.2),
-	      rgba(0, 0, 0, 0.2)
-	    ),
-
-	url("../images/pattern.png");
-	background-repeat: repeat; */
-  /*background-size: 140em 80em; */
-	/*background-color: #eee;*/
 }
 
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: #eee;
-  }
-}
-
-/* NAV Var */
-
-
+/*--------------------------------------------------------------
+# Nav Bar
+--------------------------------------------------------------*/
 
 li {
 	float: left;
@@ -42,130 +28,55 @@ li a:hover {
 	background-color: #111;
 }
 
-
 .navbar-custom {
     background-color: #0D0B0B;
-	/*	background-color: #E33F3F; */
-}
-/* Main */
-
-.panel {
-	width: 60em;
-	margin-left: -20em
 }
 
-.card-title{
-	margin: 0;
-}
-
-.card-text{
-	margin: 0;
-}
-
-.card-body{
-	padding: 0;
-}
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
 
 .container-small {
-        width: 50%;
+  width: 50%;
 	padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-    }
-
-.center {
-	margin: auto;
-	width:20em;
-	text-align:center;
 }
 
-.preference{
-
-}
-
-.traits {
-
-}
-
-.noDisplay{
-	display: none;
-}
+.preference{}
+.traits {}
 
 .question1{
 	background-color: #9f7e69;
-/*	background:
-	linear-gradient(
-				rgba(0, 0, 0, 0.15),
-				rgba(0, 0, 0, 0.15)
-			),
-
-	url("../images/pattern.png");
-	background-repeat: repeat;*/
 }
 
 .question2{
 	background-color: #d2bba0;
-/*	background:
-	linear-gradient(
-				rgba(0, 0, 0, 0.15),
-				rgba(0, 0, 0, 0.15)
-			),
-
-	url("../images/whitewood.jpg");
-	background-repeat: repeat;
-	display: none;*/
+	display: none;
 }
 
 .question3{
 	background-color: #f2efc7;
-	/* background:
-	linear-gradient(
-				rgba(0, 0, 0, 0.15),
-				rgba(0, 0, 0, 0.15)
-			),
-
-	url("../images/hodgepodge.png");
-	background-repeat: repeat;
-	display: none; */
+	display: none;
 }
 
 .result{
 	background-color: #f7ffe0;
-/*	background:
-	linear-gradient(
-				rgba(0, 0, 0, 0.15),
-				rgba(0, 0, 0, 0.15)
-			),
-
-	url("../images/greengoblin.png");
-	background-repeat: repeat;
-	display: none; */
+	display: none;
 }
-
-.close
-{
-margin: 0 auto;
-width: 20%;
-}
-
-
-
-form {
-	margin: 40px 0;
-}
-
-
-
 
 button {
-
   margin-top: 4em;
   margin-bottom: 80em;
 	height: 4em;
 	width: 12em;
 
 }
+
+/*--------------------------------------------------------------
+# Radio Buttons
+--------------------------------------------------------------*/
 
 div {
 	clear: both;
@@ -174,25 +85,19 @@ div {
 label {
   width: 200px;
   border-radius: 3px;
-  border: 1px solid #D1D3D4
 }
 
-/* hide input */
 input.radio:empty {
 	margin-left: -999px;
 	visibility: hidden;
 }
 
-/* style label */
 input.radio:empty ~ label {
 	position: relative;
 	float: left;
-	/*left: 18%;*/
-
-	line-height: 4em; /*original value 2.5em */
-	width: 16em; /* original value attribute gone */
-/*	text-align: right; */
-	text-indent: 5em; /*original value 3.25em */
+	line-height: 4em;
+	width: 16em;
+	text-indent: 5em;
 	margin-top: 2em;
 	cursor: pointer;
 	-webkit-user-select: none;
@@ -201,8 +106,6 @@ input.radio:empty ~ label {
 	user-select: none;
 	background-color: white;
 	box-shadow: 0px 3px 3px 2px rgba(0, 0, 0, 0.2);
-
-
 }
 
 input.radio:empty ~ label:before {
@@ -214,6 +117,10 @@ input.radio:empty ~ label:before {
 	content: '';
 	width: 4em;
 	background: #D1D3D4;
+	content:'\2714';
+	text-indent: 1.5em;
+	color: #C2C2C2;
+
 	/*border-radius: 3px 0 0 3px;*/
 }
 
@@ -221,11 +128,11 @@ input.radio:empty ~ label:before {
 input.radio:hover:not(:checked) ~ label:before {
 	content:'\2714';
 	text-indent: 1.5em;
-	color: #C2C2C2;
+	color: #4DCB6D;
 }
 
 input.radio:hover:not(:checked) ~ label {
-	color: #888;
+	 color: #888;
 }
 
 /* toggle on */
@@ -287,4 +194,14 @@ input.radio:focus ~ label:before {
   font-size: 14px;
   padding-top: 4px;
   color: #8582a8;
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #eee;
+  }
 }
