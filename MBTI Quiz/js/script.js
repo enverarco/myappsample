@@ -148,8 +148,7 @@ function ScrolltoResults(){
     }
   }
   //introverted > extraverted
-  if(preferences[0].score > preferences[1].score)
-  {
+  if(preferences[0].score > preferences[1].score){
     firstLetter = "I";
   }
   //extraverted > inroverted
@@ -159,8 +158,7 @@ function ScrolltoResults(){
     firstLetter = "X";
   }
   //sensory > intuitive
-  if(preferences[3].score > preferences[2].score)
-  {
+  if(preferences[3].score > preferences[2].score){
     secondLetter = "S";
   }
   //intuitive > sensory
@@ -170,8 +168,7 @@ function ScrolltoResults(){
     secondLetter = "X";
   }
   //feeling > thinking
-  if(preferences[4].score > preferences[5].score)
-  {
+  if(preferences[4].score > preferences[5].score){
     thirdLetter = "F";
   }
   //thinking > feeling
