@@ -1,17 +1,15 @@
 /*--------------------------------------------------------------
 # Body
 --------------------------------------------------------------*/
-
 body {
 	font-family: 'Raleway',sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
+	background-color: #9f7e69;
 }
-
 /*--------------------------------------------------------------
 # Nav Bar
 --------------------------------------------------------------*/
-
 li {
 	float: left;
 }
@@ -32,10 +30,12 @@ li a:hover {
 	background-color: #0D0B0B;
 }
 
+.nav-image{
+	width:40px;
+}
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
-
 .container-small {
 	width: 50%;
 	padding-right: 15px;
@@ -44,25 +44,30 @@ li a:hover {
 	margin-left: auto;
 }
 
-.preference{}
-	.traits {}
 
-.question1{
-	background-color: #9f7e69;
+.preference{}
+.traits {}
+
+.card{
+  margin-top: 5em;
+	margin-bottom: 3em;
 }
 
+.card-text{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.question1{}
 .question2{
-	background-color: #d2bba0;
 	display: none;
 }
 
 .question3{
-	background-color: #f2efc7;
 	display: none;
 }
 
 .result{
-	background-color: #f7ffe0;
 	display: none;
 }
 
@@ -76,16 +81,10 @@ button {
 	margin-bottom: 80em;
 	height: 4em;
 	width: 12em;
-
 }
-
 /*--------------------------------------------------------------
 # Radio Buttons
 --------------------------------------------------------------*/
-
-
-
-
 div {
 	clear: both;
 }
@@ -128,10 +127,7 @@ input.radio:empty ~ label:before {
 	content:'\2714';
 	text-indent: 1.5em;
 	color: #C2C2C2;
-
-
 }
-
 
 input.radio:hover:not(:checked) ~ label:before {
 	content:'\2714';
@@ -160,8 +156,6 @@ input.radio:focus ~ label:before {
 	box-shadow: 0 0 0 3px #999;
 }
 
-
-
 .right{
 	left: 13%;
 }
@@ -169,12 +163,9 @@ input.radio:focus ~ label:before {
 .left{
 	right: 10%;
 }
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-
-
 #footer .footer-top {
 	padding: 30px 0 30px 0;
 	background: #000000;

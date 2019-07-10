@@ -16,13 +16,13 @@
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
-
-
+  <!--==========================
+  Nav Bar
+  ============================-->
   <nav class="navbar navbar-expand-sm navbar-custom sticky-top">
     <a class="navbar-brand" href="#">
-      <img src="../images/mbtigrey.png" alt="Logo" style="width:40px;">
+      <img src="../images/mbtigrey.png" alt="Logo" class ="nav-image">
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
       <ul class="navbar-nav mr-auto">
@@ -32,50 +32,29 @@
           </a>
         </li>
       </ul>
-
     </div>
-
-
   </nav>
-
+  <!--==========================
+  Question 1
+  ============================-->
   <section id = "top" class = "question1" >
-    <br><br><br><br>
     <div class="card text-center container-small shadow-lg">
-
-
       <div class="card-body">
-
-
-        <h2 class="card-title"><a><strong>Myers Briggs Personality Identifier</strong></a></h2><br><br>
-
+        <h2 class="card-title"><strong>Myers Briggs Personality Identifier</strong></h2>
         <h5 class="card-text">Try answer as many questions you can to help identify the persons myers briggs type. </h5>
-        <h5 class="card-text">If you don't know the answer, skip it and move on to the next. </h5><br>
+        <h5 class="card-text">If you don't know the answer, skip it and move on to the next. </h5>
       </div>
-
     </div>
-
-    <br><br>
-
-
-    <br>
-
-    <!--==========================
-    Question 1
-    ============================-->
-
     <!--==========================
     Q1. First Row
     ============================-->
     <div class="container-small">
       <div class="row">
-
-
         <div id = "radiobuttons1" class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="EorI" id="introverted" class="radio preference"/>
             <label for="introverted">Intoverted</label>
           </div>
-
         </div>
         <div class="col-md-4 col-sm-12">
           <h3 class="division-text">OR</h3>
@@ -85,249 +64,178 @@
             <input type="radio" name="EorI" id="extraverted" class="radio preference"/>
             <label for="extraverted">Extroverted</label>
           </div>
-
-
         </div>
-
       </div>
-      <br><br>
       <!--==========================
       Q1. Second Row
       ============================-->
       <div class="row">
-
-
         <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="SorN" id="intuitive" class="radio preference"/>
             <label for="intuitive">Intuitive</label>
           </div>
         </div>
-
         <div class="col-md-4 col-sm-12">
           <h3 class="division-text">OR</h3>
         </div>
-
         <div class="col-md-4 col-sm-12 left">
           <div>
             <input type="radio" name="SorN" id="sensory" class="radio preference"/>
             <label for="sensory">Sensory</label>
           </div>
         </div>
-
       </div>
-      <br><br>
       <!--==========================
       Q1. Third Row
       ============================-->
       <div class="row">
-
         <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="ForT" id="feeling" class="radio preference"/>
             <label for="feeling">Feeling</label>
           </div>
         </div>
-
         <div class="col-md-4 col-sm-12">
           <h3 class="division-text">OR</h3>
         </div>
-
         <div class="col-md-4 col-sm-12 left">
           <div>
             <input type="radio" name="ForT" id="thinking" class="radio preference"/>
             <label for="thinking">Thinking</label>
           </div>
-
         </div>
-
-
       </div>
-      <br><br>
       <!--==========================
       Q1. Fourth Row
       ============================-->
       <div class="row">
-
-
-
-
         <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="PorJ" id="prospecting" class="radio preference"/>
             <label for="prospecting">Prospecting</label>
           </div>
         </div>
-
         <div class="col-md-4 col-sm-12">
           <h3 class="division-text">OR</h3>
         </div>
-
         <div class="col-md-4 col-sm-12 left">
           <div>
             <input type="radio" name="PorJ" id="judging" class="radio preference"/>
             <label for="judging">Judging</label>
           </div>
         </div>
-
       </div>
     </div>
-    <br><br>
     <div class = "text-center container-small" style = "visibility: hidden">
       <button class = "btn btn-primary shadow" id = "button1" ><strong>NEXT</strong></button>
-
     </div>
-
-
   </section>
-
-
   <!--==========================
   Question 2
   ============================-->
-
-  <!--==========================
-  Q2. First Row
-  ============================-->
   <section id="traits" class = "question2" >
-    <br><br><br><br>
-
-    <div class="card text-center container-small shadow-lg">
-
-      <div class="card-body">
-        <h4 class="card-title"><a><strong>What traits does this person have (select one or more)</strong></a></h4>
+    <div class="container-small">
+      <br><br> <!-- these 2 <br> tags are nessessary, adding margin top wasn't working with the scrolling effect-->
+      <div class="card text-center container-small shadow-lg">
+        <div class="card-body">
+          <h4 class="card-title"><strong>What traits does this person have (select one or more)</strong></h4>
+        </div>
+      </div>
+      <!--==========================
+      Q2. First Row
+      ============================-->
+      <div class="row">
+        <div id = "radiobuttons1" class="col-md-4 col-sm-12 right">
+          <div>
+            <input type="radio" name="outgoing" id="outgoing" class="radio traits"/>
+            <label for="outgoing">Outgoing</label>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3 class="division-text">OR</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 left">
+          <div>
+            <input type="radio" name="shy" id="shy" class="radio traits"/>
+            <label for="shy">Shy</label>
+          </div>
+        </div>
+      </div>
+      <!--==========================
+      Q2. Second Row
+      ============================-->
+      <div class="row">
+        <div class="col-md-4 col-sm-12 right">
+          <div>
+            <input type="radio" name="active" id="active" class="radio traits"/>
+            <label for="active">Active</label>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3 class="division-text">OR</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 left">
+          <div>
+            <input type="radio" name="forgetful" id="forgetful" class="radio traits"/>
+            <label for="forgetful">Forgetful</label>
+          </div>
+        </div>
+      </div>
+      <!--==========================
+      Q2. Third Row
+      ============================-->
+      <div class="row">
+        <div class="col-md-4 col-sm-12 right">
+          <div>
+            <input type="radio" name="rational" id="rational" class="radio traits"/>
+            <label for="rational">Rational</label>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3 class="division-text">OR</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 left">
+          <div>
+            <input type="radio" name="emotional" id="emotional" class="radio traits"/>
+            <label for="emotional">Emotional</label>
+          </div>
+        </div>
+      </div>
+      <!--==========================
+      Q2. Fourth Row
+      ============================-->
+      <div class="row">
+        <div class="col-md-4 col-sm-12 right">
+          <div>
+            <input type="radio" name="messy" id="messy" class="radio traits"/>
+            <label for="messy">Messy</label>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3 class="division-text">OR</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 left">
+          <div>
+            <input type="radio" name="organised" id="organised" class="radio traits"/>
+            <label for="organised">Organised</label>
+          </div>
+        </div>
       </div>
     </div>
-
-
-  <div class="container-small">
-    <div class="row">
-
-
-      <div id = "radiobuttons1" class="col-md-4 col-sm-12 right">
-        <div>
-          <input type="radio" name="outgoing" id="outgoing" class="radio traits"/>
-          <label for="outgoing">Outgoing</label>
-        </div>
-
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <h3 class="division-text">OR</h3>
-      </div>
-      <div class="col-md-4 col-sm-12 left">
-        <div>
-          <input type="radio" name="shy" id="shy" class="radio traits"/>
-          <label for="shy">Shy</label>
-        </div>
-
-
-      </div>
-
+    <div class = "text-center container-small" style = "visibility: hidden">
+      <button class = "btn btn-primary" id = "button2" ><strong>NEXT</strong></button>
     </div>
-    <br><br>
-    <!--==========================
-    Q2. Second Row
-    ============================-->
-    <div class="row">
-
-
-      <div class="col-md-4 col-sm-12 right">
-        <div>
-          <input type="radio" name="active" id="active" class="radio traits"/>
-          <label for="active">Active</label>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12">
-        <h3 class="division-text">OR</h3>
-      </div>
-
-      <div class="col-md-4 col-sm-12 left">
-        <div>
-          <input type="radio" name="forgetful" id="forgetful" class="radio traits"/>
-          <label for="forgetful">Forgetful</label>
-        </div>
-      </div>
-
-    </div>
-    <br><br>
-    <!--==========================
-    Q2. Third Row
-    ============================-->
-    <div class="row">
-
-      <div class="col-md-4 col-sm-12 right">
-        <div>
-          <input type="radio" name="rational" id="rational" class="radio traits"/>
-          <label for="rational">Rational</label>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12">
-        <h3 class="division-text">OR</h3>
-      </div>
-
-      <div class="col-md-4 col-sm-12 left">
-        <div>
-          <input type="radio" name="emotional" id="emotional" class="radio traits"/>
-          <label for="emotional">Emotional</label>
-        </div>
-
-      </div>
-
-
-    </div>
-    <br><br>
-    <!--==========================
-    Q2. Fourth Row
-    ============================-->
-    <div class="row">
-
-
-
-
-      <div class="col-md-4 col-sm-12 right">
-        <div>
-          <input type="radio" name="messy" id="messy" class="radio traits"/>
-          <label for="messy">Messy</label>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12">
-        <h3 class="division-text">OR</h3>
-      </div>
-
-      <div class="col-md-4 col-sm-12 left">
-        <div>
-          <input type="radio" name="organised" id="organised" class="radio traits"/>
-          <label for="organised">Organised</label>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <br><br>
-  <div class = "text-center container-small" style = "visibility: hidden">
-    <button class = "btn btn-primary" id = "button2" ><strong>NEXT</strong></button>
-  </div>
-
-</section>
-
-
+  </section>
   <!--==========================
   Question 3
   ============================-->
-
   <section id="career" class = "question3" >
-    <br><br><br><br>
+    <br><br> <!-- these 2 <br> tags are nessessary, adding margin top wasn't working with the scrolling effect-->
     <div class="card text-center container-small">
-
       <div class="card-body">
         <h4 class="card-title"><a><strong>What career do they have or would they like to pursue?</strong></a></h4>
-
-
       </div>
-
     </div>
     <div class="container">
       <div class="row">
@@ -336,61 +244,48 @@
             <input type="radio" name="career" id="developer" class="radio"/>
             <label for="developer">Developer</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="teacher" class="radio"/>
             <label for="teacher">Teacher</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="entertainer" class="radio"/>
             <label for="entertainer">Entertainer</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="artist" class="radio"/>
             <label for="artist">Artist</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="police/military" class="radio"/>
             <label for="police/military">Police/Military</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="musician" class="radio"/>
             <label for="musician">Musician</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="engineer" class="radio"/>
             <label for="engineer">Engineer</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="realestateagent" class="radio"/>
             <label for="realestateagent">Estate Agent</label>
           </div>
         </div>
-
       </div>
     </div>
-
     <div class = "text-center container-small" style = "visibility: hidden">
       <button class = "btn btn-primary" id = "button4" ><strong>NEXT</strong></button>
     </div>
-
   </section>
-
   <!--==========================
   Results
   ============================-->
-
-  <section id="results" class = 'result'>
-    <br><br><br><br>
-
+  <section id="results" class = "result">
     <div class = "container">
-      <div class = 'text-center card shadow'>
+      <br><br> <!-- these 2 <br> tags are nessessary, adding margin top wasn't working with the scrolling effect-->
+      <div class = "text-center card shadow">
         <div class="card-body">
           <h4 class = "text-center"> Your Result</h4>
           <div class="alert alert-danger" role="alert" id = "alert3" style = "display: none">
@@ -399,8 +294,7 @@
           <h4 id ="resultsmessage" class = "text-center"></h4>
         </div>
       </div>
-
-      <div class = 'text-center card shadow'>
+      <div class = "text-center card shadow">
         <div class="card-body">
           <div id = "ISTJ" style = "display: none">
             <h2>ISTJ - The Duty Fulfiller</h2>
@@ -591,13 +485,10 @@
           </div>
         </div>
       </div>
-
       <div class = "text-center container-small">
         <button class = "btn btn-primary" id = "button5" ><a href="#top" style="color: black">Back to the Top</a></button>
       </div>
-
     </section>
-
     <!--==========================
     Footer
     ============================-->
@@ -618,16 +509,8 @@
           <!--  Made with <span class ="pulse" style="color: #e25555; ">&hearts;</span> by <a href="https://www.mastered.ie">Mastered</a>-->
         </div>
       </div>
-
-
     </div>
-
-
   </footer>
-
   <script src="../js/script.js"></script>
-
-
 </body>
-
 </html>

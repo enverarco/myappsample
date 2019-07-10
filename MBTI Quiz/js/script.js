@@ -2,8 +2,6 @@
 document.getElementById("button1").addEventListener("click", ScrolltoQuestion2);
 document.getElementById("button2").addEventListener("click", ScrolltoQuestion3);
 document.getElementById("button4").addEventListener("click", ScrolltoResults);
-document.getElementById("button5").addEventListener("click", ScrolltoTop);
-
 
 let button1 = "button1";
 let button2 = "button2";
@@ -74,17 +72,7 @@ function ScrolltoQuestion4(){
   });
 };
 
-function ScrolltoTop(){
-
-  $('html, body').animate({
-    scrollTop: $("#functions").offset().top
-  }, 800, function(){
-    window.location.hash = '#top';
-  });
-};
-
 function ScrolltoResults(){
-
   var q5class = document.getElementsByClassName('result');
 
   for(var i = 0; i < q5class.length; i = i + 1) {
@@ -195,7 +183,7 @@ function ScrolltoResults(){
     document.getElementById(type).style = "";
   }
   if(type.includes('X')){
-    var typeResults = ['ISTJ', 'ISTP', 'ISFJ', 'ISFP', 'INFJ', 'INFP','INTJ', 'INTP', 'ESTP', 'ESTJ', 'ESFP', 'ESFJ', 'ENFJ', 'ENTP', 'ENTJ'];
+    var typeResults = ['ISTJ', 'ISTP', 'ISFJ', 'ISFP', 'INFJ', 'INFP','INTJ', 'INTP', 'ESTP', 'ESTJ', 'ESFP', 'ESFJ', 'ENFJ', 'ENTP', 'ENTJ', 'ENFP'];
     for (var i = 0; i < typeResults.length; i++) {
       if((typeResults[i].charAt(0) == firstLetter || firstLetter == 'X') && (typeResults[i].charAt(1) == secondLetter || secondLetter == 'X')&& (typeResults[i].charAt(2) == thirdLetter || thirdLetter == 'X')&& (typeResults[i].charAt(3) == fourthLetter || fourthLetter == 'X'))
       {
