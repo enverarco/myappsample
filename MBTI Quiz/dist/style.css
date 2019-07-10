@@ -44,6 +44,13 @@ li a:hover {
 	margin-left: auto;
 }
 
+.no-display{
+	display: none;
+}
+
+.no-visibility{
+	visibility: hidden;
+}
 
 .preference{}
 .traits {}
@@ -150,7 +157,6 @@ input.radio:checked ~ label:before {
 input.radio:checked ~ label {
 	color: #777;
 }
-
 
 input.radio:focus ~ label:before {
 	box-shadow: 0 0 0 3px #999;

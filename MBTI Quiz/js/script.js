@@ -180,14 +180,14 @@ function ScrolltoResults(){
   document.getElementById('resultsmessage').innerHTML = type;
 
   if (!type.includes('X')){
-    document.getElementById(type).style = "";
+    document.getElementById(type).style.display='block'
   }
   if(type.includes('X')){
     var typeResults = ['ISTJ', 'ISTP', 'ISFJ', 'ISFP', 'INFJ', 'INFP','INTJ', 'INTP', 'ESTP', 'ESTJ', 'ESFP', 'ESFJ', 'ENFJ', 'ENTP', 'ENTJ', 'ENFP'];
     for (var i = 0; i < typeResults.length; i++) {
       if((typeResults[i].charAt(0) == firstLetter || firstLetter == 'X') && (typeResults[i].charAt(1) == secondLetter || secondLetter == 'X')&& (typeResults[i].charAt(2) == thirdLetter || thirdLetter == 'X')&& (typeResults[i].charAt(3) == fourthLetter || fourthLetter == 'X'))
       {
-        document.getElementById(typeResults[i]).style = "";
+        document.getElementById(typeResults[i]).style.display='block';
       }
     }
   }
