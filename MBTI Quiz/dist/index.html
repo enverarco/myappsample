@@ -12,9 +12,26 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!-- Libraries CSS Files -->
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+
+  <title>Persoanlity Identifier!</title>
+    <!-- Open Graph tags -->
+  <meta property="og:url"           content="http://localhost:8080/index.html" />
+  <meta property="og:type"          content="Identify Personality Types" />
+  <meta property="og:title"         content="Personality Identifer!" />
+  <meta property="og:description"   content="I identified the personality type I was looking! and so can you! click here" />
+  <meta property="og:image"         content="http://localhost:8080/mbtigrey.png" />
+  <!-- Twitter Open Graph -->
+  <meta name="twitter:card" content="Identify Personality Types" />
+  <meta name="twitter:site" content="http://localhost:8080/index.html" />
+  <meta name="twitter:title" content="Personality Identifer!" />
+  <meta name="twitter:description" content="I identified the personality type I was looking! and so can you! click here" />
+  <meta name="twitter:image" content="http://localhost:8080/mbtigrey.png" />
+
 </head>
 <body>
   <!--==========================
@@ -22,7 +39,7 @@
   ============================-->
   <nav class="navbar navbar-expand-sm navbar-custom sticky-top">
     <a class="navbar-brand" href="#">
-      <img src="../images/mbtigrey.png" alt="Logo" class ="nav-image">
+      <img src="./mbtigrey.png" alt="Logo" class ="nav-image">
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
       <ul class="navbar-nav mr-auto">
@@ -66,6 +83,7 @@
           </div>
         </div>
       </div>
+
       <!--==========================
       Q1. Second Row
       ============================-->
@@ -487,16 +505,46 @@
       </div>
     </section>
     <!--==========================
+    Social Sharing Buttons
+    ============================-->
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    <div class = "text-center container-small">
+
+      <div class="card text-center container-small">
+        <div class="card-body">
+          <h4 class="card-title"><strong>Share your result!</strong></h4>
+          <a class="btn btn-sm btn-social-outline btn-fb-outline" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:8080/index.html" target="_blank" title="">
+              <i class="fab fa-facebook-square"></i> Share
+          </a>
+            <a class="btn btn-sm btn-social-outline btn-tw-outline" href="https://twitter.com/share" target="_blank" title="">
+              <i class="fab fa-twitter"></i> Tweet
+          </a>
+          <a class="btn btn-sm btn-social-outline btn-in-outline" href="https://www.linkedin.com/shareArticle?mini=true&url=http://developer.linkedin.com&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn" target="_blank" title="">
+            <i class="fab fa-linkedin-in" data-fa-transform="grow-2"></i>
+          </a>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--==========================
     Footer
     ============================-->
     <footer id="footer">
       <div class="footer-top">
         <div class="copyright">
           <div class="social-links">
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <br>
           &copy; Copyright 2019 <strong>Mastered</strong> All Rights Reserved
@@ -508,6 +556,6 @@
       </div>
     </div>
   </footer>
-  <script src="../js/script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
