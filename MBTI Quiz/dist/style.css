@@ -1,17 +1,15 @@
 /*--------------------------------------------------------------
 # Body
 --------------------------------------------------------------*/
-
 body {
 	font-family: 'Raleway',sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
+	background-color: #9f7e69;
 }
-
 /*--------------------------------------------------------------
 # Nav Bar
 --------------------------------------------------------------*/
-
 li {
 	float: left;
 }
@@ -32,10 +30,12 @@ li a:hover {
 	background-color: #0D0B0B;
 }
 
+.nav-image{
+	width:40px;
+}
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
-
 .container-small {
 	width: 50%;
 	padding-right: 15px;
@@ -44,25 +44,37 @@ li a:hover {
 	margin-left: auto;
 }
 
-.preference{}
-	.traits {}
-
-.question1{
-	background-color: #9f7e69;
+.no-display{
+	display: none;
 }
 
+.no-visibility{
+	visibility: hidden;
+}
+
+.preference{}
+.traits {}
+
+.card{
+  margin-top: 5em;
+	margin-bottom: 3em;
+}
+
+.card-text{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.question1{}
 .question2{
-	background-color: #d2bba0;
 	display: none;
 }
 
 .question3{
-	background-color: #f2efc7;
 	display: none;
 }
 
 .result{
-	background-color: #f7ffe0;
 	display: none;
 }
 
@@ -76,16 +88,10 @@ button {
 	margin-bottom: 80em;
 	height: 4em;
 	width: 12em;
-
 }
-
 /*--------------------------------------------------------------
 # Radio Buttons
 --------------------------------------------------------------*/
-
-
-
-
 div {
 	clear: both;
 }
@@ -128,10 +134,7 @@ input.radio:empty ~ label:before {
 	content:'\2714';
 	text-indent: 1.5em;
 	color: #C2C2C2;
-
-
 }
-
 
 input.radio:hover:not(:checked) ~ label:before {
 	content:'\2714';
@@ -155,12 +158,9 @@ input.radio:checked ~ label {
 	color: #777;
 }
 
-
 input.radio:focus ~ label:before {
 	box-shadow: 0 0 0 3px #999;
 }
-
-
 
 .right{
 	left: 13%;
@@ -169,12 +169,9 @@ input.radio:focus ~ label:before {
 .left{
 	right: 10%;
 }
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-
-
 #footer .footer-top {
 	padding: 30px 0 30px 0;
 	background: #000000;
@@ -212,6 +209,80 @@ input.radio:focus ~ label:before {
 	font-size: 14px;
 	padding-top: 4px;
 	color: #8582a8;
+}
+/* Outline Social Share Buttons */
+
+.btn-social-outline {
+  background-color: transparent;
+  background-image: none;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.btn-fb-outline {
+  color: #3b5998;
+  border-color: #3b5998;
+}
+
+.btn-fb-outline:hover,
+.btn-fb-outline:active {
+  color: #ffffff;
+  background-color: #3b5998;
+}
+
+.btn-tw-outline {
+  color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.btn-tw-outline:hover,
+.btn-tw-outline:active {
+  color: #ffffff;
+  background-color: #1da1f2;
+}
+
+.btn-in-outline {
+  color: #0077b5;
+  border-color: #0077b5;
+}
+
+.btn-in-outline:hover,
+.btn-in-outline:active {
+  color: #ffffff;
+  background-color: #0077b5;
+}
+
+.btn-gp-outline {
+  color: #db4437;
+  border-color: #db4437;
+}
+
+.btn-gp-outline:hover,
+.btn-gp-outline:active {
+  color: #ffffff;
+  background-color: #db4437;
+}
+
+.btn-rd-outline {
+  color: #ff4500;
+  border-color: #ff4500;
+}
+
+.btn-rd-outline:hover,
+.btn-rd-outline:active {
+  color: #ffffff;
+  background-color: #ff4500;
+}
+
+.btn-hn-outline {
+  color: #ff4000;
+  border-color: #ff4000;
+}
+
+.btn-hn-outline:hover,
+.btn-hn-outline:active {
+  color: #ffffff;
+  background-color: #ff4000;
 }
 
 /*--------------------------------------------------------------

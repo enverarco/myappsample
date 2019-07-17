@@ -12,17 +12,34 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!-- Libraries CSS Files -->
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+
+  <title>Persoanlity Identifier!</title>
+    <!-- Open Graph tags -->
+  <meta property="og:url"           content="http://localhost:8080/index.html" />
+  <meta property="og:type"          content="Identify Personality Types" />
+  <meta property="og:title"         content="Personality Identifer!" />
+  <meta property="og:description"   content="I identified the personality type I was looking! and so can you! click here" />
+  <meta property="og:image"         content="http://localhost:8080/mbtigrey.png" />
+  <!-- Twitter Open Graph -->
+  <meta name="twitter:card" content="Identify Personality Types" />
+  <meta name="twitter:site" content="http://localhost:8080/index.html" />
+  <meta name="twitter:title" content="Personality Identifer!" />
+  <meta name="twitter:description" content="I identified the personality type I was looking! and so can you! click here" />
+  <meta name="twitter:image" content="http://localhost:8080/mbtigrey.png" />
+
 </head>
-
 <body>
-
-
+  <!--==========================
+  Nav Bar
+  ============================-->
   <nav class="navbar navbar-expand-sm navbar-custom sticky-top">
     <a class="navbar-brand" href="#">
-      <img src="../images/mbtigrey.png" alt="Logo" style="width:40px;">
+      <img src="./mbtigrey.png" alt="Logo" class ="nav-image">
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
       <ul class="navbar-nav mr-auto">
@@ -32,50 +49,29 @@
           </a>
         </li>
       </ul>
-
     </div>
-
-
   </nav>
-
+  <!--==========================
+  Question 1
+  ============================-->
   <section id = "top" class = "question1" >
-    <br><br><br><br>
     <div class="card text-center container-small shadow-lg">
-
-
       <div class="card-body">
-
-
-        <h2 class="card-title"><a><strong>Myers Briggs Personality Identifier</strong></a></h2><br><br>
-
+        <h2 class="card-title"><strong>Myers Briggs Personality Identifier</strong></h2>
         <h5 class="card-text">Try answer as many questions you can to help identify the persons myers briggs type. </h5>
-        <h5 class="card-text">If you don't know the answer, skip it and move on to the next. </h5><br>
+        <h5 class="card-text">If you don't know the answer, skip it and move on to the next. </h5>
       </div>
-
     </div>
-
-    <br><br>
-
-
-    <br>
-
-    <!--==========================
-    Question 1
-    ============================-->
-
     <!--==========================
     Q1. First Row
     ============================-->
     <div class="container-small">
       <div class="row">
-
-
         <div id = "radiobuttons1" class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="EorI" id="introverted" class="radio preference"/>
             <label for="introverted">Intoverted</label>
           </div>
-
         </div>
         <div class="col-md-4 col-sm-12">
           <h3 class="division-text">OR</h3>
@@ -85,249 +81,177 @@
             <input type="radio" name="EorI" id="extraverted" class="radio preference"/>
             <label for="extraverted">Extroverted</label>
           </div>
-
-
         </div>
-
       </div>
-      <br><br>
+
       <!--==========================
       Q1. Second Row
       ============================-->
       <div class="row">
-
-
         <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="SorN" id="intuitive" class="radio preference"/>
             <label for="intuitive">Intuitive</label>
           </div>
         </div>
-
         <div class="col-md-4 col-sm-12">
           <h3 class="division-text">OR</h3>
         </div>
-
         <div class="col-md-4 col-sm-12 left">
           <div>
             <input type="radio" name="SorN" id="sensory" class="radio preference"/>
             <label for="sensory">Sensory</label>
           </div>
         </div>
-
       </div>
-      <br><br>
       <!--==========================
       Q1. Third Row
       ============================-->
       <div class="row">
-
         <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="ForT" id="feeling" class="radio preference"/>
             <label for="feeling">Feeling</label>
           </div>
         </div>
-
         <div class="col-md-4 col-sm-12">
           <h3 class="division-text">OR</h3>
         </div>
-
         <div class="col-md-4 col-sm-12 left">
           <div>
             <input type="radio" name="ForT" id="thinking" class="radio preference"/>
             <label for="thinking">Thinking</label>
           </div>
-
         </div>
-
-
       </div>
-      <br><br>
       <!--==========================
       Q1. Fourth Row
       ============================-->
       <div class="row">
-
-
-
-
         <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="PorJ" id="prospecting" class="radio preference"/>
             <label for="prospecting">Prospecting</label>
           </div>
         </div>
-
         <div class="col-md-4 col-sm-12">
           <h3 class="division-text">OR</h3>
         </div>
-
         <div class="col-md-4 col-sm-12 left">
           <div>
             <input type="radio" name="PorJ" id="judging" class="radio preference"/>
             <label for="judging">Judging</label>
           </div>
         </div>
-
       </div>
     </div>
-    <br><br>
-    <div class = "text-center container-small" style = "visibility: hidden">
+    <div class = "text-center container-small no-visibility">
       <button class = "btn btn-primary shadow" id = "button1" ><strong>NEXT</strong></button>
-
     </div>
-
-
   </section>
-
-
   <!--==========================
   Question 2
   ============================-->
-
-  <!--==========================
-  Q2. First Row
-  ============================-->
   <section id="traits" class = "question2" >
-    <br><br><br><br>
-
-    <div class="card text-center container-small shadow-lg">
-
-      <div class="card-body">
-        <h4 class="card-title"><a><strong>What traits does this person have (select one or more)</strong></a></h4>
+    <div class="container-small">
+      <div class="card text-center container-small shadow-lg">
+        <div class="card-body">
+          <h4 class="card-title"><strong>What traits does this person have (select one or more)</strong></h4>
+        </div>
+      </div>
+      <!--==========================
+      Q2. First Row
+      ============================-->
+      <div class="row">
+        <div id = "radiobuttons1" class="col-md-4 col-sm-12 right">
+          <div>
+            <input type="radio" name="outgoing" id="outgoing" class="radio traits"/>
+            <label for="outgoing">Outgoing</label>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3 class="division-text">OR</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 left">
+          <div>
+            <input type="radio" name="shy" id="shy" class="radio traits"/>
+            <label for="shy">Shy</label>
+          </div>
+        </div>
+      </div>
+      <!--==========================
+      Q2. Second Row
+      ============================-->
+      <div class="row">
+        <div class="col-md-4 col-sm-12 right">
+          <div>
+            <input type="radio" name="active" id="active" class="radio traits"/>
+            <label for="active">Active</label>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3 class="division-text">OR</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 left">
+          <div>
+            <input type="radio" name="forgetful" id="forgetful" class="radio traits"/>
+            <label for="forgetful">Forgetful</label>
+          </div>
+        </div>
+      </div>
+      <!--==========================
+      Q2. Third Row
+      ============================-->
+      <div class="row">
+        <div class="col-md-4 col-sm-12 right">
+          <div>
+            <input type="radio" name="rational" id="rational" class="radio traits"/>
+            <label for="rational">Rational</label>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3 class="division-text">OR</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 left">
+          <div>
+            <input type="radio" name="emotional" id="emotional" class="radio traits"/>
+            <label for="emotional">Emotional</label>
+          </div>
+        </div>
+      </div>
+      <!--==========================
+      Q2. Fourth Row
+      ============================-->
+      <div class="row">
+        <div class="col-md-4 col-sm-12 right">
+          <div>
+            <input type="radio" name="messy" id="messy" class="radio traits"/>
+            <label for="messy">Messy</label>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3 class="division-text">OR</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 left">
+          <div>
+            <input type="radio" name="organised" id="organised" class="radio traits"/>
+            <label for="organised">Organised</label>
+          </div>
+        </div>
       </div>
     </div>
-
-
-  <div class="container-small">
-    <div class="row">
-
-
-      <div id = "radiobuttons1" class="col-md-4 col-sm-12 right">
-        <div>
-          <input type="radio" name="outgoing" id="outgoing" class="radio traits"/>
-          <label for="outgoing">Outgoing</label>
-        </div>
-
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <h3 class="division-text">OR</h3>
-      </div>
-      <div class="col-md-4 col-sm-12 left">
-        <div>
-          <input type="radio" name="shy" id="shy" class="radio traits"/>
-          <label for="shy">Shy</label>
-        </div>
-
-
-      </div>
-
+    <div class = "text-center container-small no-visibility">
+      <button class = "btn btn-primary" id = "button2" ><strong>NEXT</strong></button>
     </div>
-    <br><br>
-    <!--==========================
-    Q2. Second Row
-    ============================-->
-    <div class="row">
-
-
-      <div class="col-md-4 col-sm-12 right">
-        <div>
-          <input type="radio" name="active" id="active" class="radio traits"/>
-          <label for="active">Active</label>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12">
-        <h3 class="division-text">OR</h3>
-      </div>
-
-      <div class="col-md-4 col-sm-12 left">
-        <div>
-          <input type="radio" name="forgetful" id="forgetful" class="radio traits"/>
-          <label for="forgetful">Forgetful</label>
-        </div>
-      </div>
-
-    </div>
-    <br><br>
-    <!--==========================
-    Q2. Third Row
-    ============================-->
-    <div class="row">
-
-      <div class="col-md-4 col-sm-12 right">
-        <div>
-          <input type="radio" name="rational" id="rational" class="radio traits"/>
-          <label for="rational">Rational</label>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12">
-        <h3 class="division-text">OR</h3>
-      </div>
-
-      <div class="col-md-4 col-sm-12 left">
-        <div>
-          <input type="radio" name="emotional" id="emotional" class="radio traits"/>
-          <label for="emotional">Emotional</label>
-        </div>
-
-      </div>
-
-
-    </div>
-    <br><br>
-    <!--==========================
-    Q2. Fourth Row
-    ============================-->
-    <div class="row">
-
-
-
-
-      <div class="col-md-4 col-sm-12 right">
-        <div>
-          <input type="radio" name="messy" id="messy" class="radio traits"/>
-          <label for="messy">Messy</label>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-12">
-        <h3 class="division-text">OR</h3>
-      </div>
-
-      <div class="col-md-4 col-sm-12 left">
-        <div>
-          <input type="radio" name="organised" id="organised" class="radio traits"/>
-          <label for="organised">Organised</label>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <br><br>
-  <div class = "text-center container-small" style = "visibility: hidden">
-    <button class = "btn btn-primary" id = "button2" ><strong>NEXT</strong></button>
-  </div>
-
-</section>
-
-
+  </section>
   <!--==========================
   Question 3
   ============================-->
-
   <section id="career" class = "question3" >
-    <br><br><br><br>
     <div class="card text-center container-small">
-
       <div class="card-body">
-        <h4 class="card-title"><a><strong>What career do they have or would they like to pursue?</strong></a></h4>
-
-
+        <h4 class="card-title"><strong>What career do they have or would they like to pursue?</strong></h4>
       </div>
-
     </div>
     <div class="container">
       <div class="row">
@@ -336,73 +260,58 @@
             <input type="radio" name="career" id="developer" class="radio"/>
             <label for="developer">Developer</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="teacher" class="radio"/>
             <label for="teacher">Teacher</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="entertainer" class="radio"/>
             <label for="entertainer">Entertainer</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="artist" class="radio"/>
             <label for="artist">Artist</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="police/military" class="radio"/>
             <label for="police/military">Police/Military</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="musician" class="radio"/>
             <label for="musician">Musician</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="engineer" class="radio"/>
             <label for="engineer">Engineer</label>
           </div>
-
           <div>
             <input type="radio" name="career" id="realestateagent" class="radio"/>
             <label for="realestateagent">Estate Agent</label>
           </div>
         </div>
-
       </div>
     </div>
-
-    <div class = "text-center container-small" style = "visibility: hidden">
+    <div class = "text-center container-small no-visibility">
       <button class = "btn btn-primary" id = "button4" ><strong>NEXT</strong></button>
     </div>
-
   </section>
-
   <!--==========================
   Results
   ============================-->
-
-  <section id="results" class = 'result'>
-    <br><br><br><br>
-
+  <section id="results" class = "result">
     <div class = "container">
-      <div class = 'text-center card shadow'>
+      <div class = "text-center card shadow">
         <div class="card-body">
           <h4 class = "text-center"> Your Result</h4>
-          <div class="alert alert-danger" role="alert" id = "alert3" style = "display: none">
+          <div class="alert alert-danger no-display" role="alert" id = "alert3" >
             Please select at least one option
           </div>
           <h4 id ="resultsmessage" class = "text-center"></h4>
         </div>
       </div>
-
-      <div class = 'text-center card shadow'>
+      <div class = "text-center card shadow">
         <div class="card-body">
-          <div id = "ISTJ" style = "display: none">
+          <div id = "ISTJ" class="no-display">
             <h2>ISTJ - The Duty Fulfiller</h2>
             <p>
               Serious and quiet, interested in security and peaceful living.
@@ -413,7 +322,7 @@
               can usually accomplish any task once they have set their mind to it.
             </p></div>
 
-            <div id = "ISTP" style = "display: none">
+            <div id = "ISTP" class="no-display">
               <h2>ISTP - The Mechanic</h2>
               <p>
                 Quiet and reserved, interested in how and why things work.
@@ -428,7 +337,7 @@
               </p>
             </div>
 
-            <div id = "ISFJ" style = "display: none">
+            <div id = "ISFJ" class="no-display">
               <h2>ISFJ - The Nurturer</h2>
               <p>
                 Quiet, kind, and conscientious.  Can be depended on to follow through.
@@ -439,7 +348,7 @@
               </p>
             </div>
 
-            <div id = "ISFP" style = "display: none">
+            <div id = "ISFP" class="no-display">
               <h2>ISFP - The Artist</h2>
               <p>
                 Quiet, serious, sensitive and kind.  Do not like conflict, and not likely
@@ -451,7 +360,7 @@
               </p>
             </div>
 
-            <div id = "INFJ" style = "display: none">
+            <div id = "INFJ" class="no-display">
               <h2>INFJ - The Protector</h2>
               <p>
                 Quietly forceful, original, and sensitive.  Tend to stick to things
@@ -462,7 +371,7 @@
               </p>
             </div>
 
-            <div id = "INFP" style = "display: none">
+            <div id = "INFP" class="no-display">
               <h2>INFP - The Idealist</h2>
               <p>
                 Quiet, reflective, and idealistic.  Interested in serving humanity.
@@ -474,7 +383,7 @@
               </p>
             </div>
 
-            <div id = "INTJ" style = "display: none">
+            <div id = "INTJ" class="no-display">
               <h2>INTJ - The Scientist</h2>
               <p>
                 Independent, original, analytical, and determined.  Have an exceptional ability
@@ -486,7 +395,7 @@
               </p>
             </div>
 
-            <div id = "INTP" style = "display: none">
+            <div id = "INTP" class="no-display">
               <h2>INTP - The Thinker</h2>
               <p>
                 Logical, original, creative thinkers.  Can become very excited about theories
@@ -497,7 +406,7 @@
               </p>
             </div>
 
-            <div id = "ESTP" style = "display: none">
+            <div id = "ESTP" class="no-display">
               <h2>ESTP - The Doer</h2>
               <p>
                 Friendly, adaptable, action-oriented.  "Doers" who are focused on immediate
@@ -508,7 +417,7 @@
               </p>
             </div>
 
-            <div id = "ESTJ" style = "display: none">
+            <div id = "ESTJ" class="no-display">
               <h2>ESTJ - The Guardian</h2>
               <p>
                 Practical, traditional, and organized.  Likely to be athletic.  Not interested
@@ -521,7 +430,7 @@
               </p>
             </div>
 
-            <div id = "ESFP" style = "display: none">
+            <div id = "ESFP" class="no-display">
               <h2>ESFP - The Performer</h2>
               <p>
                 People-oriented and fun-loving, they make things more fun for others by
@@ -533,7 +442,7 @@
             </div>
 
 
-            <div id = "ESFJ" style = "display: none">
+            <div id = "ESFJ" class="no-display">
               <h2>ESFJ - The Caregiver</h2>
               <P>
                 Warm-hearted, popular, and conscientious.  Tend to put the needs of others over
@@ -544,7 +453,7 @@
               </p>
             </div>
 
-            <div id = "ENFP" style = "display: none">
+            <div id = "ENFP" class="no-display">
               <h2>ENFP - The Inspirer</h2>
               <p>
                 Enthusiastic, idealistic, and creative.  Able to do almost anything that
@@ -554,7 +463,7 @@
               </p>
             </div>
 
-            <div id = "ENFJ" style = "display: none">
+            <div id = "ENFJ" class="no-display">
               <h2>ENFJ - The Giver</h2>
               <p>
                 Popular and sensitive, with outstanding people skills.  Externally
@@ -566,7 +475,7 @@
               </p>
             </div>
 
-            <div id = "ENTP"  style = "display: none">
+            <div id = "ENTP"  class="no-display">
               <h2>ENTP - The Visionary</h2>
               <p>
                 Creative, resourceful, and intellectually quick.  Good at a broad range of things.
@@ -578,7 +487,7 @@
               </p>
             </div>
 
-            <div id = "ENTJ" style = "display: none">
+            <div id = "ENTJ" class="no-display">
               <h2>ENTJ - The Executive</h2>
               <p>
                 Assertive and outspoken - they are driven to lead.  Excellent ability to
@@ -591,13 +500,40 @@
           </div>
         </div>
       </div>
-
       <div class = "text-center container-small">
         <button class = "btn btn-primary" id = "button5" ><a href="#top" style="color: black">Back to the Top</a></button>
       </div>
-
     </section>
+    <!--==========================
+    Social Sharing Buttons
+    ============================-->
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    <div class = "text-center container-small">
 
+      <div class="card text-center container-small">
+        <div class="card-body">
+          <h4 class="card-title"><strong>Share your result!</strong></h4>
+          <a class="btn btn-sm btn-social-outline btn-fb-outline" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:8080/index.html" target="_blank" title="">
+              <i class="fab fa-facebook-square"></i> Share
+          </a>
+            <a class="btn btn-sm btn-social-outline btn-tw-outline" href="https://twitter.com/share" target="_blank" title="">
+              <i class="fab fa-twitter"></i> Tweet
+          </a>
+          <a class="btn btn-sm btn-social-outline btn-in-outline" href="https://www.linkedin.com/shareArticle?mini=true&url=http://developer.linkedin.com&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn" target="_blank" title="">
+            <i class="fab fa-linkedin-in" data-fa-transform="grow-2"></i>
+          </a>
+          </a>
+        </div>
+      </div>
+    </div>
     <!--==========================
     Footer
     ============================-->
@@ -605,10 +541,10 @@
       <div class="footer-top">
         <div class="copyright">
           <div class="social-links">
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <br>
           &copy; Copyright 2019 <strong>Mastered</strong> All Rights Reserved
@@ -618,16 +554,8 @@
           <!--  Made with <span class ="pulse" style="color: #e25555; ">&hearts;</span> by <a href="https://www.mastered.ie">Mastered</a>-->
         </div>
       </div>
-
-
     </div>
-
-
   </footer>
-
-  <script src="../js/script.js"></script>
-
-
+  <script src="./script.js"></script>
 </body>
-
 </html>
