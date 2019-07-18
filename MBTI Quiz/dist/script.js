@@ -1,8 +1,13 @@
 
-document.getElementById("button1").addEventListener("click", ScrolltoQuestion2);
+/*document.getElementById("button1").addEventListener("click", ScrolltoQuestion2);
 document.getElementById("button2").addEventListener("click", ScrolltoQuestion3);
-document.getElementById("button4").addEventListener("click", ScrolltoResults);
+document.getElementById("button4").addEventListener("click", ScrolltoResults);*/
 
+
+let sectionId1 = "section1"
+let sectionId2 = "traits"
+let sectionId3 = "career"
+let sectionId4 = "results"
 let button1 = "button1";
 let button2 = "button2";
 let button4 = "button4";
@@ -31,6 +36,16 @@ inputs[x].addEventListener("click", function(){ ButtonAppear(button4); });
 function ButtonAppear(buttonId){
   document.getElementById(buttonId).style.visibility = "visible";
 }
+
+document.getElementById("button1").addEventListener("click", function(){ HideShow(sectionId1, sectionId2); });
+document.getElementById("button2").addEventListener("click", function(){ HideShow(sectionId2, sectionId3); });
+document.getElementById("button4").addEventListener("click", function(){ HideShow(sectionId3, sectionId4); ScrolltoResults()});
+
+function HideShow(sectiontoHide,sectiontoReveal){
+  document.getElementById(sectiontoHide).style.display = "none";
+  document.getElementById(sectiontoReveal).style.display = "block";
+}
+
 
 function ScrolltoQuestion2(){
   //Reveal question 2

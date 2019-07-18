@@ -17,7 +17,6 @@
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 
-
   <title>Persoanlity Identifier!</title>
     <!-- Open Graph tags -->
   <meta property="og:url"           content="http://localhost:8080/index.html" />
@@ -31,7 +30,6 @@
   <meta name="twitter:title" content="Personality Identifer!" />
   <meta name="twitter:description" content="I identified the personality type I was looking! and so can you! click here" />
   <meta name="twitter:image" content="http://localhost:8080/mbtigrey.png" />
-
 </head>
 <body>
   <!--==========================
@@ -39,12 +37,12 @@
   ============================-->
   <nav class="navbar navbar-expand-sm navbar-custom sticky-top">
     <a class="navbar-brand" href="#">
-      <img src="./mbtigrey.png" alt="Logo" class ="nav-image">
+      <img src="./personality.png" alt="Logo" class ="nav-image">
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Myers Briggs Personality Identifer
+          <a class="nav-link" href="#">Personality Hero
             <span class="sr-only">(current)</span>
           </a>
         </li>
@@ -54,19 +52,19 @@
   <!--==========================
   Question 1
   ============================-->
-  <section id = "top" class = "question1" >
-    <div class="card text-center container-small shadow-lg">
-      <div class="card-body">
-        <h2 class="card-title"><strong>Myers Briggs Personality Identifier</strong></h2>
-        <h5 class="card-text">Try answer as many questions you can to help identify the persons myers briggs type. </h5>
-        <h5 class="card-text">If you don't know the answer, skip it and move on to the next. </h5>
+  <section id = "section1" class = "question1" >
+    <div class="text-center container-small">
+      <div>
+        <h2><strong>Welcome to Personality Hero</strong></h2>
+        <h5>Try answer as many questions you can to help identify your personality type.</h5>
+        <h5>Skip a question if you're unsure</h5>
       </div>
     </div>
     <!--==========================
     Q1. First Row
     ============================-->
-    <div class="container-small">
-      <div class="row">
+    <div class="text-center container-small">
+      <div class="row big-top-buffer">
         <div id = "radiobuttons1" class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="EorI" id="introverted" class="radio preference"/>
@@ -74,7 +72,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-          <h3 class="division-text">OR</h3>
+        <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
           <div>
@@ -83,11 +81,10 @@
           </div>
         </div>
       </div>
-
       <!--==========================
       Q1. Second Row
       ============================-->
-      <div class="row">
+      <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="SorN" id="intuitive" class="radio preference"/>
@@ -95,7 +92,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-          <h3 class="division-text">OR</h3>
+          <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
           <div>
@@ -107,7 +104,7 @@
       <!--==========================
       Q1. Third Row
       ============================-->
-      <div class="row">
+      <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="ForT" id="feeling" class="radio preference"/>
@@ -115,7 +112,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-          <h3 class="division-text">OR</h3>
+          <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
           <div>
@@ -127,7 +124,7 @@
       <!--==========================
       Q1. Fourth Row
       ============================-->
-      <div class="row">
+      <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="PorJ" id="prospecting" class="radio preference"/>
@@ -135,7 +132,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-          <h3 class="division-text">OR</h3>
+          <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
           <div>
@@ -146,31 +143,31 @@
       </div>
     </div>
     <div class = "text-center container-small no-visibility">
-      <button class = "btn btn-primary shadow" id = "button1" ><strong>NEXT</strong></button>
+      <button class = "btn btn-nicegreen shadow" id = "button1" ><strong>NEXT</strong></button>
     </div>
   </section>
   <!--==========================
   Question 2
   ============================-->
-  <section id="traits" class = "question2" >
-    <div class="container-small">
-      <div class="card text-center container-small shadow-lg">
-        <div class="card-body">
-          <h4 class="card-title"><strong>What traits does this person have (select one or more)</strong></h4>
+  <section id="traits" class = "question2 big-top-buffer" >
+    <div class="text-center container-small">
+      <div class="text-center container-small">
+        <div>
+          <h4><strong>What traits does this person have (select one or more)</strong></h4>
         </div>
       </div>
       <!--==========================
       Q2. First Row
       ============================-->
-      <div class="row">
-        <div id = "radiobuttons1" class="col-md-4 col-sm-12 right">
+      <div class="row big-top-buffer">
+        <div id = "radio-toolbar" class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="outgoing" id="outgoing" class="radio traits"/>
             <label for="outgoing">Outgoing</label>
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-          <h3 class="division-text">OR</h3>
+          <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
           <div>
@@ -182,7 +179,7 @@
       <!--==========================
       Q2. Second Row
       ============================-->
-      <div class="row">
+      <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="active" id="active" class="radio traits"/>
@@ -190,7 +187,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-          <h3 class="division-text">OR</h3>
+          <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
           <div>
@@ -202,7 +199,7 @@
       <!--==========================
       Q2. Third Row
       ============================-->
-      <div class="row">
+      <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="rational" id="rational" class="radio traits"/>
@@ -210,7 +207,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-          <h3 class="division-text">OR</h3>
+          <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
           <div>
@@ -222,7 +219,7 @@
       <!--==========================
       Q2. Fourth Row
       ============================-->
-      <div class="row">
+      <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="messy" id="messy" class="radio traits"/>
@@ -230,7 +227,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-          <h3 class="division-text">OR</h3>
+          <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
           <div>
@@ -241,49 +238,93 @@
       </div>
     </div>
     <div class = "text-center container-small no-visibility">
-      <button class = "btn btn-primary" id = "button2" ><strong>NEXT</strong></button>
+      <button class = "btn btn-nicegreen" id = "button2" ><strong>NEXT</strong></button>
     </div>
   </section>
   <!--==========================
   Question 3
   ============================-->
   <section id="career" class = "question3" >
-    <div class="card text-center container-small">
-      <div class="card-body">
-        <h4 class="card-title"><strong>What career do they have or would they like to pursue?</strong></h4>
+    <div class="text-center container-small">
+      <div class="text-center container-small big-top-buffer">
+        <div>
+          <h4><strong>What career do they have or would they like to pursue?</strong></h4>
+        </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="mx-auto">
+      <!--==========================
+      Q3. First Row
+      ============================-->
+      <div class="row big-top-buffer">
+        <div id = "radio-toolbar" class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="career" id="developer" class="radio"/>
             <label for="developer">Developer</label>
           </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3 class="division-text font-weight-bold">OR</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 left">
           <div>
             <input type="radio" name="career" id="teacher" class="radio"/>
             <label for="teacher">Teacher</label>
           </div>
+        </div>
+      </div>
+      <!--==========================
+      Q3. Second Row
+      ============================-->
+      <div class="row top-buffer">
+        <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="career" id="entertainer" class="radio"/>
             <label for="entertainer">Entertainer</label>
           </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3 class="division-text font-weight-bold">OR</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 left">
           <div>
             <input type="radio" name="career" id="artist" class="radio"/>
             <label for="artist">Artist</label>
           </div>
+        </div>
+      </div>
+      <!--==========================
+      Q3. Third Row
+      ============================-->
+      <div class="row top-buffer">
+        <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="career" id="police/military" class="radio"/>
             <label for="police/military">Police/Military</label>
           </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3 class="division-text font-weight-bold">OR</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 left">
           <div>
             <input type="radio" name="career" id="musician" class="radio"/>
             <label for="musician">Musician</label>
           </div>
+        </div>
+      </div>
+      <!--==========================
+      Q3. Fourth Row
+      ============================-->
+      <div class="row top-buffer">
+        <div class="col-md-4 col-sm-12 right">
           <div>
             <input type="radio" name="career" id="engineer" class="radio"/>
             <label for="engineer">Engineer</label>
           </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h3 class="division-text font-weight-bold">OR</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 left">
           <div>
             <input type="radio" name="career" id="realestateagent" class="radio"/>
             <label for="realestateagent">Estate Agent</label>
@@ -292,7 +333,7 @@
       </div>
     </div>
     <div class = "text-center container-small no-visibility">
-      <button class = "btn btn-primary" id = "button4" ><strong>NEXT</strong></button>
+      <button class = "btn btn-nicegreen" id = "button4" ><strong>NEXT</strong></button>
     </div>
   </section>
   <!--==========================
@@ -301,7 +342,7 @@
   <section id="results" class = "result">
     <div class = "container">
       <div class = "text-center card shadow">
-        <div class="card-body">
+        <div class="card-body text-dark">
           <h4 class = "text-center"> Your Result</h4>
           <div class="alert alert-danger no-display" role="alert" id = "alert3" >
             Please select at least one option
@@ -309,199 +350,294 @@
           <h4 id ="resultsmessage" class = "text-center"></h4>
         </div>
       </div>
-      <div class = "text-center card shadow">
-        <div class="card-body">
-          <div id = "ISTJ" class="no-display">
-            <h2>ISTJ - The Duty Fulfiller</h2>
-            <p>
-              Serious and quiet, interested in security and peaceful living.
-              Extremely thorough, responsible, and dependable.  Well-developed
-              powers of concentration.  Usually interested in supporting and
-              promoting traditions and establishments.  Well-organized and
-              hard working, they work steadily towards identified goals.  They
-              can usually accomplish any task once they have set their mind to it.
-            </p></div>
-
-            <div id = "ISTP" class="no-display">
-              <h2>ISTP - The Mechanic</h2>
-              <p>
-                Quiet and reserved, interested in how and why things work.
-                Excellent skills with mechanical things.
-                Risk-takers who they live for the moment.  Usually interested in
-                and talented at extreme sports.  Uncomplicated in their desires.
-                Loyal to their peers and to their
-                internal value systems, but not overly concerned with respecting laws
-                and rules if they get in the way of getting something done.
-                Detached and analytical, they excel at finding solutions to practical
-                problems.
-              </p>
-            </div>
-
-            <div id = "ISFJ" class="no-display">
-              <h2>ISFJ - The Nurturer</h2>
-              <p>
-                Quiet, kind, and conscientious.  Can be depended on to follow through.
-                Usually puts the needs of others above their own needs.  Stable and
-                practical, they value security and traditions.  Well-developed sense
-                of space and function.  Rich inner world of observations about people.
-                Extremely perceptive of other's feelings.  Interested in serving others.
-              </p>
-            </div>
-
-            <div id = "ISFP" class="no-display">
-              <h2>ISFP - The Artist</h2>
-              <p>
-                Quiet, serious, sensitive and kind.  Do not like conflict, and not likely
-                to do things which may generate conflict.  Loyal and faithful.  Extremely
-                well-developed senses, and aesthetic appreciation for beauty.  Not interested
-                in leading or controlling others.  Flexible and open-minded.
-                Likely to be original and creative.
-                Enjoy the present moment.
-              </p>
-            </div>
-
-            <div id = "INFJ" class="no-display">
-              <h2>INFJ - The Protector</h2>
-              <p>
-                Quietly forceful, original, and sensitive.  Tend to stick to things
-                until they are done.  Extremely intuitive about people, and concerned
-                for their feelings.  Well-developed value systems which they strictly adhere
-                to.  Well-respected for their perserverence in doing the right thing.
-                Likely to be individualistic, rather than leading or following.
-              </p>
-            </div>
-
-            <div id = "INFP" class="no-display">
-              <h2>INFP - The Idealist</h2>
-              <p>
-                Quiet, reflective, and idealistic.  Interested in serving humanity.
-                Well-developed value system, which they strive to live in accordance with.
-                Extremely loyal.
-                Adaptable and laid-back unless a strongly-held value is threatened.
-                Usually talented writers.  Mentally quick, and able to see possibilities.
-                Interested in understanding and helping people.
-              </p>
-            </div>
-
-            <div id = "INTJ" class="no-display">
-              <h2>INTJ - The Scientist</h2>
-              <p>
-                Independent, original, analytical, and determined.  Have an exceptional ability
-                to turn theories into solid plans of action.  Highly value knowledge,
-                competence, and structure.  Driven to derive meaning from their visions.
-                Long-range thinkers.  Have very high standards for their performance, and the
-                performance of others.  Natural leaders, but will follow if they trust
-                existing leaders.
-              </p>
-            </div>
-
-            <div id = "INTP" class="no-display">
-              <h2>INTP - The Thinker</h2>
-              <p>
-                Logical, original, creative thinkers.  Can become very excited about theories
-                and ideas.  Exceptionally capable and driven to turn theories into clear
-                understandings.  Highly value
-                knowledge, competence and logic.  Quiet and reserved, hard to get to know
-                well.  Individualistic, having no interest in leading or following others.
-              </p>
-            </div>
-
-            <div id = "ESTP" class="no-display">
-              <h2>ESTP - The Doer</h2>
-              <p>
-                Friendly, adaptable, action-oriented.  "Doers" who are focused on immediate
-                results. Living in the here-and-now, they're risk-takers who live fast-paced
-                lifestyles.  Impatient with long explanations.  Extremely loyal to their
-                peers, but not usually respectful of laws and rules if they get in the way
-                of getting things done.  Great people skills.
-              </p>
-            </div>
-
-            <div id = "ESTJ" class="no-display">
-              <h2>ESTJ - The Guardian</h2>
-              <p>
-                Practical, traditional, and organized.  Likely to be athletic.  Not interested
-                in theory or abstraction unless they see the practical application.
-                Have clear visions of the way things should
-                be. Loyal and hard-working.  Like to be in charge.
-                Exceptionally capable in organizing and running
-                activities.
-                "Good citizens" who value security and peaceful living.
-              </p>
-            </div>
-
-            <div id = "ESFP" class="no-display">
-              <h2>ESFP - The Performer</h2>
-              <p>
-                People-oriented and fun-loving, they make things more fun for others by
-                their enjoyment.  Living for the moment, they love new experiences.
-                They dislike theory and impersonal analysis.  Interested in serving others.
-                Likely to be the center of attention in social situations.  Well-developed
-                common sense and practical ability.
-              </p>
-            </div>
-
-
-            <div id = "ESFJ" class="no-display">
-              <h2>ESFJ - The Caregiver</h2>
-              <P>
-                Warm-hearted, popular, and conscientious.  Tend to put the needs of others over
-                their own needs.  Feel strong sense of responsibility and duty.
-                Value traditions and security.  Interested in serving others.  Need
-                positive reinforcement to feel good about themselves.  Well-developed sense
-                of space and function.
-              </p>
-            </div>
-
-            <div id = "ENFP" class="no-display">
-              <h2>ENFP - The Inspirer</h2>
-              <p>
-                Enthusiastic, idealistic, and creative.  Able to do almost anything that
-                interests them.  Great people skills.  Need to live life in accordance
-                with their inner values.  Excited by new ideas, but bored with details.
-                Open-minded and flexible, with a broad range of interests and abilities.
-              </p>
-            </div>
-
-            <div id = "ENFJ" class="no-display">
-              <h2>ENFJ - The Giver</h2>
-              <p>
-                Popular and sensitive, with outstanding people skills.  Externally
-                focused, with real concern for how others think and feel.  Usually dislike
-                being alone.  They see everything from the human angle, and dislike
-                impersonal analysis.  Very effective at managing people issues, and
-                leading group discussions.  Interested in serving others, and probably
-                place the needs of others over their own needs.
-              </p>
-            </div>
-
-            <div id = "ENTP"  class="no-display">
-              <h2>ENTP - The Visionary</h2>
-              <p>
-                Creative, resourceful, and intellectually quick.  Good at a broad range of things.
-                Enjoy debating issues, and may be into "one-up-manship".  They get
-                very excited about new ideas and projects, but may neglect the more
-                routine aspects of life.  Generally outspoken and assertive.  They enjoy
-                people and are stimulating company.  Excellent ability to understand
-                concepts and apply logic to find solutions.
-              </p>
-            </div>
-
-            <div id = "ENTJ" class="no-display">
-              <h2>ENTJ - The Executive</h2>
-              <p>
-                Assertive and outspoken - they are driven to lead.  Excellent ability to
-                understand difficult organizational problems and create solid solutions.
-                Intelligent and well-informed, they usually excel at public speaking.
-                They value knowledge and competence, and usually have little patience
-                with inefficiency or disorganization.
-              </p>
+      <div class="row text-center text-dark top-buffer">
+        <div id = "ISTJ" class="col-md-3 no-display">
+          <div class = "card">
+              <div class="card-body">
+                  <h2>ISTJ - The Duty Fulfiller</h2>
+                  <p>
+                    Serious and quiet, interested in security and peaceful living.
+                    Extremely thorough, responsible, and dependable.  Well-developed
+                    powers of concentration.  Usually interested in supporting and
+                    promoting traditions and establishments.  Well-organized and
+                    hard working, they work steadily towards identified goals.  They
+                    can usually accomplish any task once they have set their mind to it.
+                  </p>
+              </div>
             </div>
           </div>
+          <div id = "ISTP" class="col-md-3 no-display">
+            <div class = "card">
+                <div class="card-body">
+
+                    <h2>ISTP - The Mechanic</h2>
+                    <p>
+                      Quiet and reserved, interested in how and why things work.
+                      Excellent skills with mechanical things.
+                      Risk-takers who they live for the moment.  Usually interested in
+                      and talented at extreme sports.  Uncomplicated in their desires.
+                      Loyal to their peers and to their
+                      internal value systems, but not overly concerned with respecting laws
+                      and rules if they get in the way of getting something done.
+                      Detached and analytical, they excel at finding solutions to practical
+                      problems.
+                    </p>
+
+                </div>
+              </div>
+            </div>
+            <div id = "ISFJ" class="col-md-3 no-display">
+              <div class = "card">
+                  <div class="card-body">
+                      <h2>ISFJ - The Nurturer</h2>
+                      <p>
+                        Quiet, kind, and conscientious.  Can be depended on to follow through.
+                        Usually puts the needs of others above their own needs.  Stable and
+                        practical, they value security and traditions.  Well-developed sense
+                        of space and function.  Rich inner world of observations about people.
+                        Extremely perceptive of other's feelings.  Interested in serving others.
+                      </p>
+
+                  </div>
+                </div>
+              </div>
+              <div id = "ISFP" class="col-md-3 no-display">
+                <div class = "card">
+                    <div class="card-body">
+                        <h2>ISFP - The Artist</h2>
+                        <p>
+                          Quiet, serious, sensitive and kind.  Do not like conflict, and not likely
+                          to do things which may generate conflict.  Loyal and faithful.  Extremely
+                          well-developed senses, and aesthetic appreciation for beauty.  Not interested
+                          in leading or controlling others.  Flexible and open-minded.
+                          Likely to be original and creative.
+                          Enjoy the present moment.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+           <div class="row text-center text-dark">
+            <div id = "INFJ" class="col-md-3 no-display">
+               <div class = "card">
+                   <div class="card-body">
+                       <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+                       <h2>INFJ - The Protector</h2>
+                       <p>
+                         Quietly forceful, original, and sensitive.  Tend to stick to things
+                         until they are done.  Extremely intuitive about people, and concerned
+                         for their feelings.  Well-developed value systems which they strictly adhere
+                         to.  Well-respected for their perserverence in doing the right thing.
+                         Likely to be individualistic, rather than leading or following.
+                       </p>
+                   </div>
+                 </div>
+               </div>
+               <div id = "INFP" class="col-md-3 no-display">
+                 <div class = "card">
+                     <div class="card-body">
+
+                         <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+                         <h2>INFP - The Idealist</h2>
+                         <p>
+                           Quiet, reflective, and idealistic.  Interested in serving humanity.
+                           Well-developed value system, which they strive to live in accordance with.
+                           Extremely loyal.
+                           Adaptable and laid-back unless a strongly-held value is threatened.
+                           Usually talented writers.  Mentally quick, and able to see possibilities.
+                           Interested in understanding and helping people.
+                         </p>
+                     </div>
+                   </div>
+                 </div>
+                 <div id = "INTJ" class="col-md-3 no-display">
+                   <div class = "card">
+                       <div class="card-body">
+
+                           <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+                           <h2>INTJ - The Scientist</h2>
+                           <p>
+                             Independent, original, analytical, and determined.  Have an exceptional ability
+                             to turn theories into solid plans of action.  Highly value knowledge,
+                             competence, and structure.  Driven to derive meaning from their visions.
+                             Long-range thinkers.  Have very high standards for their performance, and the
+                             performance of others.  Natural leaders, but will follow if they trust
+                             existing leaders.
+                           </p>
+
+                       </div>
+                     </div>
+                   </div>
+                  <div id = "INTP" class="col-md-3 no-display">
+                     <div class = "card">
+                         <div class="card-body">
+
+                             <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+                             <h2>INTP - The Thinker</h2>
+                             <p>
+                               Logical, original, creative thinkers.  Can become very excited about theories
+                               and ideas.  Exceptionally capable and driven to turn theories into clear
+                               understandings.  Highly value
+                               knowledge, competence and logic.  Quiet and reserved, hard to get to know
+                               well.  Individualistic, having no interest in leading or following others.
+                             </p>
+
+                         </div>
+                       </div>
+                     </div>
+              </div>
+              <div class="row text-center text-dark">
+                <div id = "ESTP" class="col-md-3 no-display">
+                  <div class = "card">
+                      <div class="card-body">
+
+                          <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+                            <h2>ESTP - The Doer</h2>
+                            <p>
+                              Friendly, adaptable, action-oriented.  "Doers" who are focused on immediate
+                              results. Living in the here-and-now, they're risk-takers who live fast-paced
+                              lifestyles.  Impatient with long explanations.  Extremely loyal to their
+                              peers, but not usually respectful of laws and rules if they get in the way
+                              of getting things done.  Great people skills.
+                            </p>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div id = "ESTJ" class="col-md-3 no-display">
+                    <div class = "card">
+                        <div class="card-body">
+
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+                            <h2>ESTJ - The Guardian</h2>
+                            <p>
+                              Practical, traditional, and organized.  Likely to be athletic.  Not interested
+                              in theory or abstraction unless they see the practical application.
+                              Have clear visions of the way things should
+                              be. Loyal and hard-working.  Like to be in charge.
+                              Exceptionally capable in organizing and running
+                              activities.
+                              "Good citizens" who value security and peaceful living.
+                            </p>
+
+                        </div>
+                      </div>
+                    </div>
+                  <div id = "ESFP" class="col-md-3 no-display">
+                      <div class = "card">
+                          <div class="card-body">
+
+                              <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+                              <h2>ESFP - The Performer</h2>
+                              <p>
+                                People-oriented and fun-loving, they make things more fun for others by
+                                their enjoyment.  Living for the moment, they love new experiences.
+                                They dislike theory and impersonal analysis.  Interested in serving others.
+                                Likely to be the center of attention in social situations.  Well-developed
+                                common sense and practical ability.
+                              </p>
+
+                          </div>
+                        </div>
+                      </div>
+                    <div id = "ESFJ" class="col-md-3 no-display">
+                        <div class = "card">
+                            <div class="card-body">
+
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+                                <h2>ESFJ - The Caregiver</h2>
+                                <P>
+                                  Warm-hearted, popular, and conscientious.  Tend to put the needs of others over
+                                  their own needs.  Feel strong sense of responsibility and duty.
+                                  Value traditions and security.  Interested in serving others.  Need
+                                  positive reinforcement to feel good about themselves.  Well-developed sense
+                                  of space and function.
+                                </p>
+
+                            </div>
+                          </div>
+                        </div>
+                 </div>
+                 <div class="row text-center text-dark">
+                   <div id = "ENFP" class="col-md-3 no-display">
+                     <div class = "card">
+                         <div class="card-body">
+
+                             <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+                             <h2>ENFP - The Inspirer</h2>
+                             <p>
+                               Enthusiastic, idealistic, and creative.  Able to do almost anything that
+                               interests them.  Great people skills.  Need to live life in accordance
+                               with their inner values.  Excited by new ideas, but bored with details.
+                               Open-minded and flexible, with a broad range of interests and abilities.
+                             </p>
+
+                         </div>
+                       </div>
+                     </div>
+                     <div id = "ENFJ" class="col-md-3 no-display">
+                       <div class = "card">
+                           <div class="card-body">
+
+                               <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+                               <h2>ENFJ - The Giver</h2>
+                               <p>
+                                 Popular and sensitive, with outstanding people skills.  Externally
+                                 focused, with real concern for how others think and feel.  Usually dislike
+                                 being alone.  They see everything from the human angle, and dislike
+                                 impersonal analysis.  Very effective at managing people issues, and
+                                 leading group discussions.  Interested in serving others, and probably
+                                 place the needs of others over their own needs.
+                               </p>
+
+                           </div>
+                         </div>
+                       </div>
+                       <div id = "ENTP" class="col-md-3 no-display">
+                         <div class = "card">
+                             <div class="card-body">
+
+                                 <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+                                 <h2>ENTP - The Visionary</h2>
+                                 <p>
+                                   Creative, resourceful, and intellectually quick.  Good at a broad range of things.
+                                   Enjoy debating issues, and may be into "one-up-manship".  They get
+                                   very excited about new ideas and projects, but may neglect the more
+                                   routine aspects of life.  Generally outspoken and assertive.  They enjoy
+                                   people and are stimulating company.  Excellent ability to understand
+                                   concepts and apply logic to find solutions.
+                                 </p>
+
+                             </div>
+                           </div>
+                         </div>
+                         <div id = "ENTJ" class="col-md-3 no-display">
+                           <div class = "card">
+                               <div class="card-body">
+                                   <img src="./intp.png" class="circle-image" alt="avatar">
+                                   <h2>ENTJ - The Executive</h2>
+                                   <p>
+                                     Assertive and outspoken - they are driven to lead.  Excellent ability to
+                                     understand difficult organizational problems and create solid solutions.
+                                     Intelligent and well-informed, they usually excel at public speaking.
+                                     They value knowledge and competence, and usually have little patience
+                                     with inefficiency or disorganization.
+                                   </p>
+                                 </div>
+                               </div>
+                             </div>
+
+                    </div>
+
+
+
+
+
+
+          </div>
         </div>
-      </div>
+
       <div class = "text-center container-small">
-        <button class = "btn btn-primary" id = "button5" ><a href="#top" style="color: black">Back to the Top</a></button>
+        <button class = "btn btn-nicegreen" id = "button5" ><a href="#top" style="color: black">Back to the Top</a></button>
       </div>
     </section>
     <!--==========================
@@ -520,7 +656,7 @@
 
       <div class="card text-center container-small">
         <div class="card-body">
-          <h4 class="card-title"><strong>Share your result!</strong></h4>
+          <h4 class="card-title text-dark"><strong>Share your result!</strong></h4>
           <a class="btn btn-sm btn-social-outline btn-fb-outline" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:8080/index.html" target="_blank" title="">
               <i class="fab fa-facebook-square"></i> Share
           </a>

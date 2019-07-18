@@ -4,12 +4,23 @@
 body {
 	font-family: 'Raleway',sans-serif;
 	font-weight: 700;
-	text-transform: uppercase;
-	background-color: #9f7e69;
+	background-color: #1d5ac7;
+	color: #f7f7f8;
 }
+
+	/* Style for "Question 2"
+width: 184px;
+height: 28px;
+
+font-family: "Montserrat Medium"*/
+
 /*--------------------------------------------------------------
 # Nav Bar
 --------------------------------------------------------------*/
+.uppercase{
+	text-transform: uppercase;
+}
+
 li {
 	float: left;
 }
@@ -36,6 +47,12 @@ li a:hover {
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
+.circle-image {
+	width: 50px;
+	height: 50px;
+}
+
+
 .container-small {
 	width: 50%;
 	padding-right: 15px;
@@ -78,20 +95,111 @@ li a:hover {
 	display: none;
 }
 
+.top-buffer {
+	margin-top:20px;
+}
+
+.big-top-buffer {
+	margin-top:50px;
+}
+
+.bottom-buffer {
+	margin-bottom:20px;
+}
+
+
 .division-text{
-	margin-top: 1.8em;
-	text-align: center;
+
 }
 
 button {
 	margin-top: 4em;
-	margin-bottom: 80em;
 	height: 4em;
 	width: 12em;
+}
+
+section{
+	min-height: 100vh;
+	height: 100%;
+	padding: 50px 0px;
+}
+
+title{
+	text-transform: uppercase;
 }
 /*--------------------------------------------------------------
 # Radio Buttons
 --------------------------------------------------------------*/
+
+.radio{display:inline-block;}
+
+.right{
+	left: 13%;
+}
+
+.left{
+	right: 15%;
+}
+
+label{
+	/*
+	width: 86px;
+	height: 20px;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 500;
+	*/
+
+	/*
+width: 86px;
+height: 20px;
+*/
+
+	width: 120px;
+	height: 44px;
+	border-radius: 4px;
+	border: 2px solid #ffffff;
+	text-align: center;
+	padding-top: 8px;
+
+  /*display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;*/
+
+}
+
+label:hover {
+  background-color: #ffffff;
+	color: #1d5ac7;
+}
+
+input[type="radio"]:checked + label {
+	background-color: #ffffff;
+	color: #1d5ac7;
+}
+
+input.radio:empty {
+	visibility: hidden;
+}
+
+/*
+font-size: 16px;
+    line-height: 22px;
+
+    min-height: 40px;
+    padding: 8px 16px;
+
+    border-radius: 4px;
+*/
+
+/*
 div {
 	clear: both;
 }
@@ -99,6 +207,7 @@ div {
 label {
 	width: 200px;
 	border-radius: 3px;
+	text-transform: uppercase;
 }
 
 input.radio:empty {
@@ -168,7 +277,7 @@ input.radio:focus ~ label:before {
 
 .left{
 	right: 10%;
-}
+}*/
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -180,8 +289,8 @@ input.radio:focus ~ label:before {
 #footer .footer-top .social-links a {
 	font-size: 36px;
 	display: inline-block;
-	background: #1bb1dc;
-	color: #fff;
+	background: #fff;
+	color: #1d5ac7;
 	line-height: 1;
 	padding: 8px 0;
 	margin-right: 4px;
@@ -193,7 +302,7 @@ input.radio:focus ~ label:before {
 }
 
 #footer .footer-top .social-links a:hover {
-	background: #0a98c0;
+	background: #1d5ac7;
 	color: #fff;
 }
 
@@ -283,6 +392,12 @@ input.radio:focus ~ label:before {
 .btn-hn-outline:active {
   color: #ffffff;
   background-color: #ff4000;
+}
+
+.btn-nicegreen{
+	color: #fff;
+  background-color: #00bd9d;
+  border-color: #00bd9d;
 }
 
 /*--------------------------------------------------------------
