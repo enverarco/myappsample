@@ -19,17 +19,17 @@
 
   <title>Persoanlity Identifier!</title>
     <!-- Open Graph tags -->
-  <meta property="og:url"           content="http://localhost:8080/index.html" />
-  <meta property="og:type"          content="Identify Personality Types" />
-  <meta property="og:title"         content="Personality Identifer!" />
-  <meta property="og:description"   content="I identified the personality type I was looking! and so can you! click here" />
-  <meta property="og:image"         content="http://localhost:8080/mbtigrey.png" />
+  <meta property="og:url"           content="http://personalityhero/index.html" />
+  <meta property="og:type"          content="Personality Hero" />
+  <meta property="og:title"         content="Personality Hero!" />
+  <meta property="og:description"   content="I found out my personality type and so can you! click here to discover your personality type" />
+  <meta property="og:image"         content="http://personalityhero/personality.png" />
   <!-- Twitter Open Graph -->
-  <meta name="twitter:card" content="Identify Personality Types" />
-  <meta name="twitter:site" content="http://localhost:8080/index.html" />
-  <meta name="twitter:title" content="Personality Identifer!" />
-  <meta name="twitter:description" content="I identified the personality type I was looking! and so can you! click here" />
-  <meta name="twitter:image" content="http://localhost:8080/mbtigrey.png" />
+  <meta name="twitter:card" content="Personality Hero" />
+  <meta name="twitter:site" content="http://personalityhero/index.html" />
+  <meta name="twitter:title" content="Personality Hero!" />
+  <meta name="twitter:description" content="I found out my personality type and so can you! click here to discover your personality type" />
+  <meta name="twitter:image" content="http://personalityhero/personality.png" />
 </head>
 <body>
   <!--==========================
@@ -343,7 +343,7 @@
     <div class = "container">
       <div class = "text-center card shadow">
         <div class="card-body text-dark">
-          <h4 class = "text-center"> Your Result</h4>
+        <!--  <h4 class = "text-center"></h4> -->
           <div class="alert alert-danger no-display" role="alert" id = "alert3" >
             Please select at least one option
           </div>
@@ -351,10 +351,11 @@
         </div>
       </div>
       <div class="row text-center text-dark top-buffer">
-        <div id = "ISTJ" class="col-md-3 no-display">
-          <div class = "card">
+        <div id = "ISTJ" class="col-md-6 no-display">
+          <div class = "resultsCard">
               <div class="card-body">
-                  <h2>ISTJ - The Duty Fulfiller</h2>
+                <object type ="image/svg+xml" data="./istj.svg" class="card-img-top"></object>
+                  <h2>The Duty Fulfiller</h2>
                   <p>
                     Serious and quiet, interested in security and peaceful living.
                     Extremely thorough, responsible, and dependable.  Well-developed
@@ -366,11 +367,11 @@
               </div>
             </div>
           </div>
-          <div id = "ISTP" class="col-md-3 no-display">
-            <div class = "card">
+          <div id = "ISTP" class="col-md-6 no-display">
+            <div class = "resultsCard">
                 <div class="card-body">
-
-                    <h2>ISTP - The Mechanic</h2>
+                  <object type ="image/svg+xml" data="./istp.svg" class="card-img-top"></object>
+                    <h2>The Mechanic</h2>
                     <p>
                       Quiet and reserved, interested in how and why things work.
                       Excellent skills with mechanical things.
@@ -386,10 +387,11 @@
                 </div>
               </div>
             </div>
-            <div id = "ISFJ" class="col-md-3 no-display">
-              <div class = "card">
+            <div id = "ISFJ" class="col-md-6 no-display">
+              <div class = "resultsCard">
                   <div class="card-body">
-                      <h2>ISFJ - The Nurturer</h2>
+                  <object type ="image/svg+xml" data="./isfj.svg" class="card-img-top"></object>
+                      <h2>The Nurturer</h2>
                       <p>
                         Quiet, kind, and conscientious.  Can be depended on to follow through.
                         Usually puts the needs of others above their own needs.  Stable and
@@ -401,10 +403,11 @@
                   </div>
                 </div>
               </div>
-              <div id = "ISFP" class="col-md-3 no-display">
-                <div class = "card">
+              <div id = "ISFP" class="col-md-6 no-display">
+                <div class = "resultsCard">
                     <div class="card-body">
-                        <h2>ISFP - The Artist</h2>
+                      <object type ="image/svg+xml" data="./isfp.svg" class="card-img-top"></object>
+                        <h2>The Artist</h2>
                         <p>
                           Quiet, serious, sensitive and kind.  Do not like conflict, and not likely
                           to do things which may generate conflict.  Loyal and faithful.  Extremely
@@ -416,12 +419,11 @@
                     </div>
                   </div>
                 </div>
-           <div class="row text-center text-dark">
-            <div id = "INFJ" class="col-md-3 no-display">
-               <div class = "card">
+            <div id = "INFJ" class="col-md-6 no-display">
+               <div class = "resultsCard">
                    <div class="card-body">
-                       <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-                       <h2>INFJ - The Protector</h2>
+                       <object type ="image/svg+xml" data="./infj.svg" class="card-img-top"></object>
+                       <h2>The Protector</h2>
                        <p>
                          Quietly forceful, original, and sensitive.  Tend to stick to things
                          until they are done.  Extremely intuitive about people, and concerned
@@ -432,12 +434,12 @@
                    </div>
                  </div>
                </div>
-               <div id = "INFP" class="col-md-3 no-display">
-                 <div class = "card">
+               <div id = "INFP" class="col-md-6 no-display">
+                 <div class = "resultsCard">
                      <div class="card-body">
 
-                         <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-                         <h2>INFP - The Idealist</h2>
+                         <object type ="image/svg+xml" data="./infp.svg" class="card-img-top"></object>
+                         <h2>The Idealist</h2>
                          <p>
                            Quiet, reflective, and idealistic.  Interested in serving humanity.
                            Well-developed value system, which they strive to live in accordance with.
@@ -449,12 +451,12 @@
                      </div>
                    </div>
                  </div>
-                 <div id = "INTJ" class="col-md-3 no-display">
-                   <div class = "card">
+                 <div id = "INTJ" class="col-md-6 no-display">
+                   <div class = "resultsCard">
                        <div class="card-body">
 
-                           <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-                           <h2>INTJ - The Scientist</h2>
+                           <object type ="image/svg+xml" data="./intj.svg" class="card-img-top"></object>
+                           <h2>The Scientist</h2>
                            <p>
                              Independent, original, analytical, and determined.  Have an exceptional ability
                              to turn theories into solid plans of action.  Highly value knowledge,
@@ -467,12 +469,12 @@
                        </div>
                      </div>
                    </div>
-                  <div id = "INTP" class="col-md-3 no-display">
-                     <div class = "card">
+                  <div id = "INTP" class="col-md-6 no-display">
+                     <div class = "resultsCard">
                          <div class="card-body">
 
-                             <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-                             <h2>INTP - The Thinker</h2>
+                             <object type ="image/svg+xml" data="./intp.svg" class="card-img-top"></object>
+                             <h2>The Thinker</h2>
                              <p>
                                Logical, original, creative thinkers.  Can become very excited about theories
                                and ideas.  Exceptionally capable and driven to turn theories into clear
@@ -484,14 +486,13 @@
                          </div>
                        </div>
                      </div>
-              </div>
-              <div class="row text-center text-dark">
-                <div id = "ESTP" class="col-md-3 no-display">
-                  <div class = "card">
+
+                <div id = "ESTP" class="col-md-6 no-display">
+                  <div class = "resultsCard">
                       <div class="card-body">
 
-                          <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-                            <h2>ESTP - The Doer</h2>
+                          <object type ="image/svg+xml" data="./estp.svg" class="card-img-top"></object>
+                            <h2>The Doer</h2>
                             <p>
                               Friendly, adaptable, action-oriented.  "Doers" who are focused on immediate
                               results. Living in the here-and-now, they're risk-takers who live fast-paced
@@ -503,12 +504,12 @@
                       </div>
                     </div>
                   </div>
-                  <div id = "ESTJ" class="col-md-3 no-display">
-                    <div class = "card">
+                  <div id = "ESTJ" class="col-md-6 no-display">
+                    <div class = "resultsCard">
                         <div class="card-body">
 
-                            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-                            <h2>ESTJ - The Guardian</h2>
+                          <object type ="image/svg+xml" data="./estj.svg" class="card-img-top"></object>
+                            <h2>The Guardian</h2>
                             <p>
                               Practical, traditional, and organized.  Likely to be athletic.  Not interested
                               in theory or abstraction unless they see the practical application.
@@ -522,12 +523,12 @@
                         </div>
                       </div>
                     </div>
-                  <div id = "ESFP" class="col-md-3 no-display">
-                      <div class = "card">
+                  <div id = "ESFP" class="col-md-6 no-display">
+                      <div class = "resultsCard">
                           <div class="card-body">
 
-                              <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-                              <h2>ESFP - The Performer</h2>
+                            <object type ="image/svg+xml" data="./esfp.svg" class="card-img-top"></object>
+                              <h2>The Performer</h2>
                               <p>
                                 People-oriented and fun-loving, they make things more fun for others by
                                 their enjoyment.  Living for the moment, they love new experiences.
@@ -539,12 +540,11 @@
                           </div>
                         </div>
                       </div>
-                    <div id = "ESFJ" class="col-md-3 no-display">
-                        <div class = "card">
+                    <div id = "ESFJ" class="col-md-6 no-display">
+                        <div class = "resultsCard">
                             <div class="card-body">
-
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-                                <h2>ESFJ - The Caregiver</h2>
+                                <object type ="image/svg+xml" data="./esfj.svg" class="card-img-top"></object>
+                                <h2>The Caregiver</h2>
                                 <P>
                                   Warm-hearted, popular, and conscientious.  Tend to put the needs of others over
                                   their own needs.  Feel strong sense of responsibility and duty.
@@ -556,30 +556,27 @@
                             </div>
                           </div>
                         </div>
-                 </div>
-                 <div class="row text-center text-dark">
-                   <div id = "ENFP" class="col-md-3 no-display">
-                     <div class = "card">
-                         <div class="card-body">
 
-                             <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-                             <h2>ENFP - The Inspirer</h2>
+                   <div id = "ENFP" class="col-md-6 no-display">
+                     <div class = "resultsCard">
+                         <div class="card-body">
+                             <object type ="image/svg+xml" data="./enfp.svg" class="card-img-top"></object>
+                             <h2>The Inspirer</h2>
                              <p>
                                Enthusiastic, idealistic, and creative.  Able to do almost anything that
                                interests them.  Great people skills.  Need to live life in accordance
                                with their inner values.  Excited by new ideas, but bored with details.
                                Open-minded and flexible, with a broad range of interests and abilities.
                              </p>
-
                          </div>
                        </div>
                      </div>
-                     <div id = "ENFJ" class="col-md-3 no-display">
-                       <div class = "card">
+                     <div id = "ENFJ" class="col-md-6 no-display">
+                       <div class = "resultsCard">
                            <div class="card-body">
 
-                               <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-                               <h2>ENFJ - The Giver</h2>
+                               <object type ="image/svg+xml" data="./enfj.svg" class="card-img-top"></object>
+                               <h2>The Giver</h2>
                                <p>
                                  Popular and sensitive, with outstanding people skills.  Externally
                                  focused, with real concern for how others think and feel.  Usually dislike
@@ -592,12 +589,12 @@
                            </div>
                          </div>
                        </div>
-                       <div id = "ENTP" class="col-md-3 no-display">
-                         <div class = "card">
+                       <div id = "ENTP" class="col-md-6 no-display">
+                         <div class = "resultsCard">
                              <div class="card-body">
 
-                                 <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-                                 <h2>ENTP - The Visionary</h2>
+                                 <object type ="image/svg+xml" data="./entp.svg" class="card-img-top"></object>
+                                 <h2>The Visionary</h2>
                                  <p>
                                    Creative, resourceful, and intellectually quick.  Good at a broad range of things.
                                    Enjoy debating issues, and may be into "one-up-manship".  They get
@@ -610,11 +607,11 @@
                              </div>
                            </div>
                          </div>
-                         <div id = "ENTJ" class="col-md-3 no-display">
-                           <div class = "card">
+                         <div id = "ENTJ" class="col-md-6 no-display">
+                           <div class = "resultsCard">
                                <div class="card-body">
-                                   <img src="./intp.png" class="circle-image" alt="avatar">
-                                   <h2>ENTJ - The Executive</h2>
+                                   <object type ="image/svg+xml" data="./entj.svg" class="card-img-top"></object>
+                                   <h2>The Executive</h2>
                                    <p>
                                      Assertive and outspoken - they are driven to lead.  Excellent ability to
                                      understand difficult organizational problems and create solid solutions.
@@ -625,19 +622,28 @@
                                  </div>
                                </div>
                              </div>
-
-                    </div>
-
-
-
-
-
-
           </div>
         </div>
-
       <div class = "text-center container-small">
-        <button class = "btn btn-nicegreen" id = "button5" ><a href="#top" style="color: black">Back to the Top</a></button>
+        <button class = "btn btn-nicegreen" id = "button5" value="Refresh Page" onClick="window.location.reload();">Take the test Again</button>
+      </div>
+      <div class = "text-center container-small">
+
+        <div class="card text-center container-small">
+          <div class="card-body">
+            <h4 class="card-title text-dark"><strong>Share your result!</strong></h4>
+            <a class="btn btn-sm btn-social-outline btn-fb-outline" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:8080/index.html" target="_blank" title="">
+                <i class="fab fa-facebook-square"></i> Share
+            </a>
+              <a class="btn btn-sm btn-social-outline btn-tw-outline" href="http://twitter.com/share?text=Check this out&url=https://personalityhero.com&hashtags=personalityhero,whatsyourpersonality,quiz" target="_blank" title="">
+                <i class="fab fa-twitter"></i> Tweet
+            </a>
+            <a class="btn btn-sm btn-social-outline btn-in-outline" href="https://www.linkedin.com/shareArticle?mini=true&url=http://developer.linkedin.com&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn" target="_blank" title="">
+              <i class="fab fa-linkedin-in" data-fa-transform="grow-2"></i>
+            </a>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <!--==========================
@@ -652,24 +658,6 @@
         js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
-    <div class = "text-center container-small">
-
-      <div class="card text-center container-small">
-        <div class="card-body">
-          <h4 class="card-title text-dark"><strong>Share your result!</strong></h4>
-          <a class="btn btn-sm btn-social-outline btn-fb-outline" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:8080/index.html" target="_blank" title="">
-              <i class="fab fa-facebook-square"></i> Share
-          </a>
-            <a class="btn btn-sm btn-social-outline btn-tw-outline" href="https://twitter.com/share" target="_blank" title="">
-              <i class="fab fa-twitter"></i> Tweet
-          </a>
-          <a class="btn btn-sm btn-social-outline btn-in-outline" href="https://www.linkedin.com/shareArticle?mini=true&url=http://developer.linkedin.com&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn" target="_blank" title="">
-            <i class="fab fa-linkedin-in" data-fa-transform="grow-2"></i>
-          </a>
-          </a>
-        </div>
-      </div>
-    </div>
     <!--==========================
     Footer
     ============================-->
@@ -686,7 +674,9 @@
           &copy; Copyright 2019 <strong>Mastered</strong> All Rights Reserved
         </div>
         <div class="credits">
-          Made with <span style="color: #e25555;"> &hearts; </span> by <a href="https://www.mastered.ie">Mastered</a>
+          <div class = "icons">
+          Made with <i class="fas fa-heart" style="color: #ff6289;"></i> by <a href="https://www.mastered.ie">Mastered</a>
+        </div>
           <!--  Made with <span class ="pulse" style="color: #e25555; ">&hearts;</span> by <a href="https://www.mastered.ie">Mastered</a>-->
         </div>
       </div>
