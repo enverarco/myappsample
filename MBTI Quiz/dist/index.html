@@ -16,13 +16,16 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+
 
   <title>Persoanlity Identifier!</title>
     <!-- Open Graph tags -->
   <meta property="og:url"           content="http://personalityhero/index.html" />
   <meta property="og:type"          content="Personality Hero" />
   <meta property="og:title"         content="Personality Hero!" />
-  <meta property="og:description"   content="I found out my personality type and so can you! click here to discover your personality type" />
+  <meta id = "descriptionmetatag" property="og:description"   content="I found out my personality type and so can you! click here to discover your personality type" />
   <meta property="og:image"         content="http://personalityhero/personality.png" />
   <!-- Twitter Open Graph -->
   <meta name="twitter:card" content="Personality Hero" />
@@ -36,13 +39,13 @@
   Nav Bar
   ============================-->
   <nav class="navbar navbar-expand-sm navbar-custom sticky-top">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="./index.html">
       <img src="./personality.png" alt="Logo" class ="nav-image">
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Personality Hero
+          <a class="nav-link" href="./index.html">Personality Hero
             <span class="sr-only">(current)</span>
           </a>
         </li>
@@ -55,9 +58,9 @@
   <section id = "section1" class = "question1" >
     <div class="text-center container-small">
       <div>
-        <h2><strong>Welcome to Personality Hero</strong></h2>
-        <h5>Try answer as many questions you can to help identify your personality type.</h5>
-        <h5>Skip a question if you're unsure</h5>
+        <h2 class="wow fadeInDown anim" data-wow-delay="0.3s"><strong>Welcome to Personality Hero</strong></h2>
+        <h5 class="wow fadeInDown anim" data-wow-delay="0.3s">Try answer as many questions you can to help identify your personality type.</h5>
+        <h5 class="wow fadeInDown anim" data-wow-delay="0.3s">Skip a question if you're unsure</h5>
       </div>
     </div>
     <!--==========================
@@ -66,16 +69,16 @@
     <div class="text-center container-small">
       <div class="row big-top-buffer">
         <div id = "radiobuttons1" class="col-md-4 col-sm-12 right">
-          <div>
+          <div class ="wow fadeInLeft anim" data-wow-delay="0.3s">
             <input type="radio" name="EorI" id="introverted" class="radio preference"/>
             <label for="introverted">Intoverted</label>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12 wow fadeInUp anim" data-wow-delay="0.3s">
         <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
-          <div>
+          <div class ="wow fadeInRight anim" data-wow-delay="0.3s">
             <input type="radio" name="EorI" id="extraverted" class="radio preference"/>
             <label for="extraverted">Extroverted</label>
           </div>
@@ -86,16 +89,16 @@
       ============================-->
       <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
-          <div>
+          <div class ="wow fadeInLeft anim" data-wow-delay="0.3s">
             <input type="radio" name="SorN" id="intuitive" class="radio preference"/>
             <label for="intuitive">Intuitive</label>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12 wow fadeInUp anim" data-wow-delay="0.3s">
           <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
-          <div>
+          <div class ="wow fadeInRight anim" data-wow-delay="0.3s">
             <input type="radio" name="SorN" id="sensory" class="radio preference"/>
             <label for="sensory">Sensory</label>
           </div>
@@ -106,16 +109,16 @@
       ============================-->
       <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
-          <div>
+          <div class ="wow fadeInLeft anim" data-wow-delay="0.3s">
             <input type="radio" name="ForT" id="feeling" class="radio preference"/>
             <label for="feeling">Feeling</label>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12 wow fadeInUp anim" data-wow-delay="0.3s">
           <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
-          <div>
+          <div class ="wow fadeInRight anim" data-wow-delay="0.3s">
             <input type="radio" name="ForT" id="thinking" class="radio preference"/>
             <label for="thinking">Thinking</label>
           </div>
@@ -126,16 +129,16 @@
       ============================-->
       <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
-          <div>
+          <div class ="wow fadeInLeft anim" data-wow-delay="0.3s">
             <input type="radio" name="PorJ" id="prospecting" class="radio preference"/>
             <label for="prospecting">Prospecting</label>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12 wow fadeInUp anim" data-wow-delay="0.3s">
           <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
-          <div>
+          <div class ="wow fadeInRight anim" data-wow-delay="0.3s">
             <input type="radio" name="PorJ" id="judging" class="radio preference"/>
             <label for="judging">Judging</label>
           </div>
@@ -153,7 +156,7 @@
     <div class="text-center container-small">
       <div class="text-center container-small">
         <div>
-          <h4><strong>What traits does this person have (select one or more)</strong></h4>
+          <h4 class ="wow fadeInDown anim" data-wow-delay="0.3s"><strong>What traits does this person have (select one or more)</strong></h4>
         </div>
       </div>
       <!--==========================
@@ -161,17 +164,17 @@
       ============================-->
       <div class="row big-top-buffer">
         <div id = "radio-toolbar" class="col-md-4 col-sm-12 right">
-          <div>
-            <input type="radio" name="outgoing" id="outgoing" class="radio traits"/>
+          <div class ="wow fadeInLeft anim" data-wow-delay="0.3s">
+            <input type="radio" name="outgoingorshy" id="outgoing" class="radio traits"/>
             <label for="outgoing">Outgoing</label>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12 wow fadeInUp anim" data-wow-delay="0.3s">
           <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
-          <div>
-            <input type="radio" name="shy" id="shy" class="radio traits"/>
+          <div class ="wow fadeInRight anim" data-wow-delay="0.3s">
+            <input type="radio" name="outgoingorshy" id="shy" class="radio traits"/>
             <label for="shy">Shy</label>
           </div>
         </div>
@@ -181,17 +184,17 @@
       ============================-->
       <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
-          <div>
-            <input type="radio" name="active" id="active" class="radio traits"/>
+          <div class ="wow fadeInLeft anim" data-wow-delay="0.3s">
+            <input type="radio" name="activeorforgetful" id="active" class="radio traits"/>
             <label for="active">Active</label>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12 wow fadeInUp anim" data-wow-delay="0.3s">
           <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
-          <div>
-            <input type="radio" name="forgetful" id="forgetful" class="radio traits"/>
+          <div class ="wow fadeInRight anim" data-wow-delay="0.3s">
+            <input type="radio" name="activeorforgetful" id="forgetful" class="radio traits"/>
             <label for="forgetful">Forgetful</label>
           </div>
         </div>
@@ -201,17 +204,17 @@
       ============================-->
       <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
-          <div>
-            <input type="radio" name="rational" id="rational" class="radio traits"/>
+          <div class ="wow fadeInLeft anim" data-wow-delay="0.3s">
+            <input type="radio" name="rationaloremotional" id="rational" class="radio traits"/>
             <label for="rational">Rational</label>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12 wow fadeInUp anim" data-wow-delay="0.3s">
           <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
-          <div>
-            <input type="radio" name="emotional" id="emotional" class="radio traits"/>
+          <div class ="wow fadeInRight anim" data-wow-delay="0.3s">
+            <input type="radio" name="rationaloremotional" id="emotional" class="radio traits"/>
             <label for="emotional">Emotional</label>
           </div>
         </div>
@@ -221,17 +224,17 @@
       ============================-->
       <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
-          <div>
-            <input type="radio" name="messy" id="messy" class="radio traits"/>
+          <div class ="wow fadeInLeft anim" data-wow-delay="0.3s">
+            <input type="radio" name="messyororganised" id="messy" class="radio traits"/>
             <label for="messy">Messy</label>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12 wow fadeInUp anim" data-wow-delay="0.3s">
           <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
-          <div>
-            <input type="radio" name="organised" id="organised" class="radio traits"/>
+          <div class ="wow fadeInRight anim" data-wow-delay="0.3s">
+            <input type="radio" name="messyororganised" id="organised" class="radio traits"/>
             <label for="organised">Organised</label>
           </div>
         </div>
@@ -248,7 +251,7 @@
     <div class="text-center container-small">
       <div class="text-center container-small big-top-buffer">
         <div>
-          <h4><strong>What career do they have or would they like to pursue?</strong></h4>
+          <h4 class="wow fadeInDown anim" data-wow-delay="0.3s"><strong>What career do they have or would they like to pursue?</strong></h4>
         </div>
       </div>
       <!--==========================
@@ -256,16 +259,16 @@
       ============================-->
       <div class="row big-top-buffer">
         <div id = "radio-toolbar" class="col-md-4 col-sm-12 right">
-          <div>
+          <div class ="wow fadeInLeft anim" data-wow-delay="0.3s">
             <input type="radio" name="career" id="developer" class="radio"/>
             <label for="developer">Developer</label>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12 wow fadeInUp anim" data-wow-delay="0.3s">
           <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
-          <div>
+          <div class ="wow fadeInRight anim" data-wow-delay="0.3s">
             <input type="radio" name="career" id="teacher" class="radio"/>
             <label for="teacher">Teacher</label>
           </div>
@@ -276,16 +279,16 @@
       ============================-->
       <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
-          <div>
+          <div class ="wow fadeInLeft anim" data-wow-delay="0.3s">
             <input type="radio" name="career" id="entertainer" class="radio"/>
             <label for="entertainer">Entertainer</label>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12 wow fadeInUp anim" data-wow-delay="0.3s">
           <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
-          <div>
+            <div class ="wow fadeInRight anim" data-wow-delay="0.3s">
             <input type="radio" name="career" id="artist" class="radio"/>
             <label for="artist">Artist</label>
           </div>
@@ -296,16 +299,16 @@
       ============================-->
       <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
-          <div>
+            <div class ="wow fadeInLeft anim" data-wow-delay="0.3s">
             <input type="radio" name="career" id="police/military" class="radio"/>
             <label for="police/military">Police/Military</label>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12 wow fadeInUp anim" data-wow-delay="0.3s">
           <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
-          <div>
+        <div class ="wow fadeInRight anim" data-wow-delay="0.3s">
             <input type="radio" name="career" id="musician" class="radio"/>
             <label for="musician">Musician</label>
           </div>
@@ -316,16 +319,16 @@
       ============================-->
       <div class="row top-buffer">
         <div class="col-md-4 col-sm-12 right">
-          <div>
+          <div class ="wow fadeInLeft anim" data-wow-delay="0.3s">
             <input type="radio" name="career" id="engineer" class="radio"/>
             <label for="engineer">Engineer</label>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12 wow fadeInUp anim" data-wow-delay="0.3s">
           <h3 class="division-text font-weight-bold">OR</h3>
         </div>
         <div class="col-md-4 col-sm-12 left">
-          <div>
+          <div class ="wow fadeInRight anim" data-wow-delay="0.3s">
             <input type="radio" name="career" id="realestateagent" class="radio"/>
             <label for="realestateagent">Estate Agent</label>
           </div>
@@ -347,10 +350,10 @@
           <div class="alert alert-danger no-display" role="alert" id = "alert3" >
             Please select at least one option
           </div>
-          <h4 id ="resultsmessage" class = "text-center"></h4>
+          <h4 id ="resultsmessage" class = "text-center wow fadeInDown anim" data-wow-delay="0.3s"></h4>
         </div>
       </div>
-      <div class="row text-center text-dark top-buffer">
+      <div class="row text-center text-dark top-buffer wow fadeInUp anim" data-wow-delay="0.3s">
         <div id = "ISTJ" class="col-md-6 no-display">
           <div class = "resultsCard">
               <div class="card-body">
@@ -625,22 +628,25 @@
           </div>
         </div>
       <div class = "text-center container-small">
-        <button class = "btn btn-nicegreen" id = "button5" value="Refresh Page" onClick="window.location.reload();">Take the test Again</button>
+        <a href="./index.html" class="btn btn-nicegreen" role="button5">TAKE THE TEST AGAIN</a>
+      <!--  <button class = "btn btn-nicegreen" id = "button5" value="Refresh Page" onClick="window.location.reload();">TAKE THE TEST AGAIN</button> -->
       </div>
-      <div class = "text-center container-small">
+      <div class = "wow bounceInUp text-center container-small text-dark">
 
         <div class="card text-center container-small">
           <div class="card-body">
-            <h4 class="card-title text-dark"><strong>Share your result!</strong></h4>
-            <a class="btn btn-sm btn-social-outline btn-fb-outline" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:8080/index.html" target="_blank" title="">
+            <h4 class="card-title"><strong>Share your result!</strong></h4>
+            <a onclick ="redirecttoFacebookShare();" class="btn btn-sm btn-social-outline btn-fb-outline"  target="_blank" title="">
                 <i class="fab fa-facebook-square"></i> Share
             </a>
-              <a class="btn btn-sm btn-social-outline btn-tw-outline" href="http://twitter.com/share?text=Check this out&url=https://personalityhero.com&hashtags=personalityhero,whatsyourpersonality,quiz" target="_blank" title="">
+          <!--  href="http://twitter.com/share?text=Check this out&url=https://personalityhero.com&hashtags=personalityhero,whatsyourpersonality,quiz" target="_blank" title="">  href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:8080/index.html"  href="https://www.linkedin.com/shareArticle?mini=true&url=http://developer.linkedin.com&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn"-->
+              <a onclick="redirecttoTwitterShare();" class="btn btn-sm btn-social-outline btn-tw-outline" target="_blank" title="">
                 <i class="fab fa-twitter"></i> Tweet
             </a>
-            <a class="btn btn-sm btn-social-outline btn-in-outline" href="https://www.linkedin.com/shareArticle?mini=true&url=http://developer.linkedin.com&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn" target="_blank" title="">
+            <a onclick ="redirecttoLinkedinShare();" class="btn btn-sm btn-social-outline btn-in-outline"  target="_blank" title="">
               <i class="fab fa-linkedin-in" data-fa-transform="grow-2"></i>
             </a>
+            <!-- we need to append the url of the actual -->
             </a>
           </div>
         </div>
@@ -665,10 +671,10 @@
       <div class="footer-top">
         <div class="copyright">
           <div class="social-links">
-            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="twitter wow flip"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="facebook wow flip"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="instagram wow flip"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="linkedin wow flip"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <br>
           &copy; Copyright 2019 <strong>Mastered</strong> All Rights Reserved
@@ -683,5 +689,9 @@
     </div>
   </footer>
   <script src="./script.js"></script>
+  <script src="./wow.min.js"></script>
+                <script>
+                new WOW().init();
+                </script>
 </body>
 </html>

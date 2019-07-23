@@ -3,6 +3,18 @@
 document.getElementById("button2").addEventListener("click", ScrolltoQuestion3);
 document.getElementById("button4").addEventListener("click", ScrolltoResults);*/
 
+//let colorRed:
+
+/*var colors = ["red", "blue", "green"];
+    var colorIndex = 0;
+    function changeColor() {
+        var col = document.getElementById("body");
+        if( colorIndex >= colors.length ) {
+            colorIndex = 0;
+        }
+        col.style.backgroundColor = colors[colorIndex];
+        colorIndex++;
+    }*/
 
 let sectionId1 = "section1"
 let sectionId2 = "traits"
@@ -46,6 +58,18 @@ function HideShow(sectiontoHide,sectiontoReveal){
   document.getElementById(sectiontoReveal).style.display = "block";
 }
 
+function redirecttoTwitterShare(){
+    window.location.href="http://twitter.com/share?text=I found out my personality type was " + type + " Find out your type at personalityhero.com " + "&url=https://personalityhero.com&hashtags=personalityhero,whatsyourpersonality,quiz";
+}
+
+function redirecttoFacebookShare(){
+/*  document.getElementById("descriptionmetatag").setAttribute("og:description", "I found out my personality type is " + type + " click here to discover your personality type"); */
+  window.location.href= "https://www.facebook.com/sharer/sharer.php?u=http://personalityhero.com/index.html";
+}
+
+function redirecttoLinkedinShare(){
+  window.location.href= "https://www.linkedin.com/shareArticle?mini=true&url=http://personalityhero.com&title=Personality%20Hero%20Test&summary=My%20favorite%20developer%20program&source=LinkedIn";
+}
 
 function ScrolltoQuestion2(){
   //Reveal question 2
@@ -216,3 +240,20 @@ function ScrolltoResults(){
     window.location.hash = '#results';
   });
 };
+
+/*
+parameter ? routing // parameters
+
+when i load a page, check for a parameter like that,
+set the metatags for that parameters
+
+if
+
+
+
+
+
+
+
+
+   */
