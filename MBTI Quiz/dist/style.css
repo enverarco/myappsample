@@ -2,7 +2,7 @@
 # Body
 --------------------------------------------------------------*/
 body {
-	font-family: 'Raleway',sans-serif;
+	font-family: 'Nunito Sans',sans-serif;
 	font-weight: 700;
 	background-color: #1d5ac7;
 	color: #f7f7f8;
@@ -37,11 +37,12 @@ li a {
 }
 
 li a:hover {
-	background-color: #111;
+	color: #00bd9d;
 }
 
 .navbar-custom {
-	background-color: #0D0B0B;
+/*	background-color: #0D0B0B;  0, 0, 0, 0.5*/
+background-color: rgba(13, 11, 11, 0.3);
 }
 
 .nav-image{
@@ -51,10 +52,9 @@ li a:hover {
 # Main
 --------------------------------------------------------------*/
 
-#chartdiv {
-  width: 100%;
-  height: 500px;
-}
+
+​
+
 
 .circle-image {
 	width: 50px;
@@ -101,13 +101,25 @@ li a:hover {
   border-radius: .25rem;
 }
 
-.resultsCard:hover {
+.resultsCard{
+	transition: opacity: 0.2s;
+	opacity: 1;
+}
+
+.results-container:hover .resultsCard:not(:hover) {
+ opacity: 0.75 !important;
+}
+
+
+
+
+/*.resultsCard:hover {
   box-shadow: rgba(0, 0, 0, 0.22) 0px 29px 43px;
   transform: translate3d(5px, -10px, 0px);
-	-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(100%); /* FF 35+ */
+	-webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 
-}
+}*/
 
 img {
   transition: filter .5s ease-in-out;
@@ -161,11 +173,11 @@ img {
 }
 
 .big-top-buffer {
-	margin-top:50px;
+	margin-top:70px;
 }
 
 .bottom-buffer {
-	margin-bottom:20px;
+	margin-bottom: 4em;
 }
 
 
@@ -177,6 +189,13 @@ button {
 	margin-top: 4em;
 	height: 4em;
 	width: 12em;
+}
+
+.button{
+	margin-top: 4em;
+	height: 4em;
+	width: 12em;
+	line-height: 50px;
 }
 
 section{
@@ -459,6 +478,12 @@ input.radio:focus ~ label:before {
 	color: #fff;
   background-color: #00bd9d;
   border-color: #00bd9d;
+}
+
+.btn-brightgreen:hover{
+	color: #fff;
+	background-color: #02dbb7;
+  border-color: #02dbb7;
 }
 
 /*--------------------------------------------------------------
