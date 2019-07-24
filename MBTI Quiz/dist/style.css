@@ -51,6 +51,11 @@ li a:hover {
 # Main
 --------------------------------------------------------------*/
 
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
 .circle-image {
 	width: 50px;
 	height: 50px;

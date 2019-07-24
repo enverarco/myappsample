@@ -3,19 +3,6 @@
 document.getElementById("button2").addEventListener("click", ScrolltoQuestion3);
 document.getElementById("button4").addEventListener("click", ScrolltoResults);*/
 
-//let colorRed:
-
-/*var colors = ["red", "blue", "green"];
-    var colorIndex = 0;
-    function changeColor() {
-        var col = document.getElementById("body");
-        if( colorIndex >= colors.length ) {
-            colorIndex = 0;
-        }
-        col.style.backgroundColor = colors[colorIndex];
-        colorIndex++;
-    }*/
-
 let sectionId1 = "section1"
 let sectionId2 = "traits"
 let sectionId3 = "career"
