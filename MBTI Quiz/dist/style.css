@@ -4,12 +4,26 @@
 body {
 	font-family: 'Raleway',sans-serif;
 	font-weight: 700;
-	text-transform: uppercase;
-	background-color: #9f7e69;
+	background-color: #1d5ac7;
+	color: #f7f7f8;
 }
+
+
+
 /*--------------------------------------------------------------
 # Nav Bar
 --------------------------------------------------------------*/
+
+.icons {
+	-webkit-animation: pulsate 1.5s ease-out;
+-webkit-animation-iteration-count: infinite;
+margin: 0px 3px;
+        }
+
+.uppercase{
+	text-transform: uppercase;
+}
+
 li {
 	float: left;
 }
@@ -36,6 +50,73 @@ li a:hover {
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+.circle-image {
+	width: 50px;
+	height: 50px;
+}
+
+.card-img-top {
+  position: absolute;
+  top: -100px;
+  left: 38%;
+  margin-left: -30px;
+  width: 200px !important;
+  height: 200px;
+}
+
+.card {
+  padding-top: 30px;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.anim{
+	-webkit-animation-delay: 0.3s;
+	-moz-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+
+.resultsCard{
+	box-shadow: 0px 3px 3px 2px rgba(0, 0, 0, 0.2);
+	padding-top: 70px;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	min-height: 23em;
+	position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.resultsCard:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 29px 43px;
+  transform: translate3d(5px, -10px, 0px);
+	-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+
+}
+
+img {
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
+
+
 .container-small {
 	width: 50%;
 	padding-right: 15px;
@@ -55,10 +136,7 @@ li a:hover {
 .preference{}
 .traits {}
 
-.card{
-  margin-top: 5em;
-	margin-bottom: 3em;
-}
+
 
 .card-text{
 	padding-top: 0.5em;
@@ -78,20 +156,111 @@ li a:hover {
 	display: none;
 }
 
+.top-buffer {
+	margin-top:20px;
+}
+
+.big-top-buffer {
+	margin-top:50px;
+}
+
+.bottom-buffer {
+	margin-bottom:20px;
+}
+
+
 .division-text{
-	margin-top: 1.8em;
-	text-align: center;
+
 }
 
 button {
 	margin-top: 4em;
-	margin-bottom: 80em;
 	height: 4em;
 	width: 12em;
+}
+
+section{
+	min-height: 100vh;
+	height: 100%;
+	padding: 50px 0px;
+}
+
+title{
+	text-transform: uppercase;
 }
 /*--------------------------------------------------------------
 # Radio Buttons
 --------------------------------------------------------------*/
+
+.radio{display:inline-block;}
+
+.right{
+	left: 13%;
+}
+
+.left{
+	right: 15%;
+}
+
+label{
+	/*
+	width: 86px;
+	height: 20px;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 500;
+	*/
+
+	/*
+width: 86px;
+height: 20px;
+*/
+
+	width: 120px;
+	height: 44px;
+	border-radius: 4px;
+	border: 2px solid #ffffff;
+	text-align: center;
+	padding-top: 8px;
+
+  /*display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;*/
+
+}
+
+label:hover {
+  background-color: #ffffff;
+	color: #1d5ac7;
+}
+
+input[type="radio"]:checked + label {
+	background-color: #ffffff;
+	color: #1d5ac7;
+}
+
+input.radio:empty {
+	visibility: hidden;
+}
+
+/*
+font-size: 16px;
+    line-height: 22px;
+
+    min-height: 40px;
+    padding: 8px 16px;
+
+    border-radius: 4px;
+*/
+
+/*
 div {
 	clear: both;
 }
@@ -99,6 +268,7 @@ div {
 label {
 	width: 200px;
 	border-radius: 3px;
+	text-transform: uppercase;
 }
 
 input.radio:empty {
@@ -168,7 +338,7 @@ input.radio:focus ~ label:before {
 
 .left{
 	right: 10%;
-}
+}*/
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -180,8 +350,8 @@ input.radio:focus ~ label:before {
 #footer .footer-top .social-links a {
 	font-size: 36px;
 	display: inline-block;
-	background: #1bb1dc;
-	color: #fff;
+	background: #fff;
+	color: #1d5ac7;
 	line-height: 1;
 	padding: 8px 0;
 	margin-right: 4px;
@@ -193,7 +363,7 @@ input.radio:focus ~ label:before {
 }
 
 #footer .footer-top .social-links a:hover {
-	background: #0a98c0;
+	background: #1d5ac7;
 	color: #fff;
 }
 
@@ -283,6 +453,12 @@ input.radio:focus ~ label:before {
 .btn-hn-outline:active {
   color: #ffffff;
   background-color: #ff4000;
+}
+
+.btn-nicegreen{
+	color: #fff;
+  background-color: #00bd9d;
+  border-color: #00bd9d;
 }
 
 /*--------------------------------------------------------------

@@ -1,8 +1,12 @@
 
-document.getElementById("button1").addEventListener("click", ScrolltoQuestion2);
+/*document.getElementById("button1").addEventListener("click", ScrolltoQuestion2);
 document.getElementById("button2").addEventListener("click", ScrolltoQuestion3);
-document.getElementById("button4").addEventListener("click", ScrolltoResults);
+document.getElementById("button4").addEventListener("click", ScrolltoResults);*/
 
+let sectionId1 = "section1"
+let sectionId2 = "traits"
+let sectionId3 = "career"
+let sectionId4 = "results"
 let button1 = "button1";
 let button2 = "button2";
 let button4 = "button4";
@@ -30,6 +34,28 @@ inputs[x].addEventListener("click", function(){ ButtonAppear(button4); });
 
 function ButtonAppear(buttonId){
   document.getElementById(buttonId).style.visibility = "visible";
+}
+
+document.getElementById("button1").addEventListener("click", function(){ HideShow(sectionId1, sectionId2); });
+document.getElementById("button2").addEventListener("click", function(){ HideShow(sectionId2, sectionId3); });
+document.getElementById("button4").addEventListener("click", function(){ HideShow(sectionId3, sectionId4); ScrolltoResults()});
+
+function HideShow(sectiontoHide,sectiontoReveal){
+  document.getElementById(sectiontoHide).style.display = "none";
+  document.getElementById(sectiontoReveal).style.display = "block";
+}
+
+function redirecttoTwitterShare(){
+    window.location.href="http://twitter.com/share?text=I found out my personality type was " + type + " Find out your type at personalityhero.com " + "&url=https://personalityhero.com&hashtags=personalityhero,whatsyourpersonality,quiz";
+}
+
+function redirecttoFacebookShare(){
+/*  document.getElementById("descriptionmetatag").setAttribute("og:description", "I found out my personality type is " + type + " click here to discover your personality type"); */
+  window.location.href= "https://www.facebook.com/sharer/sharer.php?u=http://personalityhero.com/index.html";
+}
+
+function redirecttoLinkedinShare(){
+  window.location.href= "https://www.linkedin.com/shareArticle?mini=true&url=http://personalityhero.com&title=Personality%20Hero%20Test&summary=My%20favorite%20developer%20program&source=LinkedIn";
 }
 
 function ScrolltoQuestion2(){
@@ -177,12 +203,14 @@ function ScrolltoResults(){
     fourthLetter = "X";
   }
   type = firstLetter+secondLetter+thirdLetter+fourthLetter;
-  document.getElementById('resultsmessage').innerHTML = type;
+  //document.getElementById('resultsmessage').innerHTML = type;
 
   if (!type.includes('X')){
     document.getElementById(type).style.display='block'
+    document.getElementById('resultsmessage').innerHTML = "Your Result is";
   }
   if(type.includes('X')){
+    document.getElementById('resultsmessage').innerHTML = "Your Result could be one of the below";
     var typeResults = ['ISTJ', 'ISTP', 'ISFJ', 'ISFP', 'INFJ', 'INFP','INTJ', 'INTP', 'ESTP', 'ESTJ', 'ESFP', 'ESFJ', 'ENFJ', 'ENTP', 'ENTJ', 'ENFP'];
     for (var i = 0; i < typeResults.length; i++) {
       if((typeResults[i].charAt(0) == firstLetter || firstLetter == 'X') && (typeResults[i].charAt(1) == secondLetter || secondLetter == 'X')&& (typeResults[i].charAt(2) == thirdLetter || thirdLetter == 'X')&& (typeResults[i].charAt(3) == fourthLetter || fourthLetter == 'X'))
@@ -191,9 +219,28 @@ function ScrolltoResults(){
       }
     }
   }
+
+
   $('html, body').animate({
     scrollTop: $("#results").offset().top
   }, 800, function(){
     window.location.hash = '#results';
   });
 };
+
+/*
+parameter ? routing // parameters
+
+when i load a page, check for a parameter like that,
+set the metatags for that parameters
+
+if
+
+
+
+
+
+
+
+
+   */
