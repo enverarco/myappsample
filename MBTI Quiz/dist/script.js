@@ -10,10 +10,10 @@ $(window).scroll(function() {
 let button1 = "button1";
 let button2 = "button2";
 let button4 = "button4";
-var type = "";
-var stringType = "";
-var introverted =0, extraverted =0, intuitive =0, sensory =0, thinking =0, feeling =0, judging =0, prospecting =0;
-var firstLetter ="", secondLetter ="", thirdLetter ="", fourthLetter ="";
+let type = "";
+let stringType = "";
+let introverted,extraverted,intuitive,sensory,thinking,feeling,judging, prospecting =0;
+let firstLetter, secondLetter, thirdLetter,fourthLetter ="";
 
 //loop for adding event listeners to question 1 radio buttons
 var inputs = document.getElementsByClassName("preference"),
@@ -28,7 +28,6 @@ while(x--)
 inputs[x].addEventListener("click", function(){ ButtonAppear(button2); });
 
 //loop for adding event listeners to final question radio buttons
-//var inputs=document.querySelectorAll("input[name = career]"),
 var inputs = document.getElementsByClassName("careers"),
 x=inputs.length;
 while(x--)
@@ -176,7 +175,6 @@ function CalculateResults(){
     fourthLetter = "X";
   }
   type = firstLetter+secondLetter+thirdLetter+fourthLetter;
-  //document.getElementById('resultsmessage').innerHTML = type;
 
   switch(type) {
     case "ISTJ":
