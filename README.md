@@ -3,7 +3,6 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Features](#features)
@@ -13,9 +12,6 @@
 
 ## General info
 There are a total of 16 types and this application will provide you a small description of each type you are identified as in the results section.
-
-## Screenshots
-![Example screenshot](./personalityhero.png)
 
 ## Technologies
 * html,css,javascript - latest versions as of July 2019
