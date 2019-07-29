@@ -233,12 +233,12 @@ function CalculateResults(){
 
   if (!type.includes('X')){
     document.getElementById(type).style.display='block'
-    document.getElementById('resultsmessage').innerHTML = "Your Result is";
+    document.getElementById('resultsmessage').innerHTML = "Your Result";
     document.getElementById(type).classList.add("offset-3");
     document.getElementById(type).parentNode.classList.remove("sibling-fade");
   }
   if(type.includes('X')){
-    document.getElementById('resultsmessage').innerHTML = "Your Result could be one of the below";
+    document.getElementById('resultsmessage').innerHTML = "Your Results";
     var typeResults = ['ISTJ', 'ISTP', 'ISFJ', 'ISFP', 'INFJ', 'INFP','INTJ', 'INTP', 'ESTP', 'ESTJ', 'ESFP', 'ESFJ', 'ENFJ', 'ENTP', 'ENTJ', 'ENFP'];
     for (var i = 0; i < typeResults.length; i++) {
       if((typeResults[i].charAt(0) == firstLetter || firstLetter == 'X') && (typeResults[i].charAt(1) == secondLetter || secondLetter == 'X')&& (typeResults[i].charAt(2) == thirdLetter || thirdLetter == 'X')&& (typeResults[i].charAt(3) == fourthLetter || fourthLetter == 'X'))

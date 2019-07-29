@@ -82,7 +82,7 @@
 Question 1
 ============================-->
 <section id = "section1" class = "question1" >
-  <div class="text-center container-tiny top-buffer">
+  <div class="text-center container-tiny minus-top-buffer">
     <div>
       <h2 class="wow fadeInDown anim" data-wow-delay="0.3s"><strong>Welcome to Personality Hero</strong></h2>
       <h5 class="wow fadeInDown anim" data-wow-delay="0.3s">Try answer as many questions you can to help identify your personality type.</h5>
@@ -371,12 +371,12 @@ Results
         <h4 id ="resultsmessage" class = "text-center wow fadeInDown anim bottom-buffer big-top-buffer" data-wow-delay="0.3s"></h4>
       </div>
     </div>
-    <div class="row text-center text-dark top-buffer wow fadeInUp anim sibling-fade" data-wow-delay="0.3s">
+    <div class="row text-center text-dark top-buffer wow fadeInUp anim sibling-fade card-group" data-wow-delay="0.3s">
       <div id="ISTJ" class="col-md-6 col-12 no-display">
-        <div class="results-card">
+        <div class="results-card ">
           <div class="card-body">
             <object type ="image/svg+xml" data="./istj.svg" class="card-img-top"></object>
-            <h2>The Duty Fulfiller</h2>
+            <h2 class="font-weight-bold">The Duty Fulfiller</h2>
             <p>
               Serious and quiet, interested in security and peaceful living.
               Extremely thorough, responsible, and dependable.  Well-developed
@@ -385,58 +385,60 @@ Results
               hard working, they work steadily towards identified goals.  They
               can usually accomplish any task once they have set their mind to it.
             </p>
-            <p>
-              <u>Share your Result</u>
-            </p>
-            <a onclick="redirecttoShare('facebook','is \'The Duty Fulfiller\'');">
-              <i class="fab fa-facebook btn-fb-results-card"></i>
-            </a>
-            <a onclick="redirecttoShare('twitter','is \'The Duty Fulfiller\'');">
-              <i class="fab fa-twitter btn-tw-results-card"></i>
-            </a>
-            <a onclick="redirecttoShare('linkedin','is \'The Duty Fulfiller\'');">
-              <i class="fab fa-linkedin-in btn-in-results-card"></i>
-            </a>
+            <div class="share-content">
+
+              <p>
+                <u>Share your Result</u>
+              </p>
+              <a onclick="redirecttoShare('facebook','is \'The Duty Fulfiller\'');">
+                <i class="fab fa-facebook btn-fb-results-card"></i>
+              </a>
+              <a onclick="redirecttoShare('twitter','is \'The Duty Fulfiller\'');">
+                <i class="fab fa-twitter btn-tw-results-card"></i>
+              </a>
+              <a onclick="redirecttoShare('linkedin','is \'The Duty Fulfiller\'');">
+                <i class="fab fa-linkedin-in btn-in-results-card"></i>
+              </a>
+            </div>
+            </div>
           </div>
         </div>
-      </div>
+
       <div id = "ISTP" class="col-md-6 col-12 no-display">
         <div class = "results-card">
           <div class="card-body">
             <object type ="image/svg+xml" data="./istp.svg" class="card-img-top"></object>
-            <h2>The Mechanic</h2>
+            <h2 class="font-weight-bold">The Mechanic</h2>
             <p>
               Quiet and reserved, interested in how and why things work.
               Excellent skills with mechanical things.
               Risk-takers who they live for the moment.  Usually interested in
               and talented at extreme sports.  Uncomplicated in their desires.
-              Loyal to their peers and to their
-              internal value systems, but not overly concerned with respecting laws
-              and rules if they get in the way of getting something done.
-              Detached and analytical, they excel at finding solutions to practical
-              problems.
+              They excel at finding solutions to practical problems.
             </p>
-            <p>
-              <u>Share your Result</u>
-            </p>
-            <a onclick="redirecttoShare('facebook','is \'The Mechanic\'');">
-              <i class="fab fa-facebook btn-fb-results-card"></i>
-            </a>
-            <a onclick="redirecttoShare('twitter','is \'The Mechanic\'');">
-              <i class="fab fa-twitter btn-tw-results-card"></i>
-            </a>
-            <a onclick="redirecttoShare('linkedin','is \'The Mechanic\'');">
-              <i class="fab fa-linkedin-in btn-in-results-card"></i>
-            </a>
-
+            <div class="share-content">
+              <p>
+                <u class ="top-buffer">Share your Result</u>
+              </p>
+              <a onclick="redirecttoShare('facebook','is \'The Mechanic\'');">
+                <i class="fab fa-facebook btn-fb-results-card"></i>
+              </a>
+              <a onclick="redirecttoShare('twitter','is \'The Mechanic\'');">
+                <i class="fab fa-twitter btn-tw-results-card"></i>
+              </a>
+              <a onclick="redirecttoShare('linkedin','is \'The Mechanic\'');">
+                <i class="fab fa-linkedin-in btn-in-results-card"></i>
+              </a>
+            </div>
+          </div>
           </div>
         </div>
-      </div>
+
       <div id = "ISFJ" class="col-md-6 col-12 no-display">
         <div class = "results-card">
           <div class="card-body">
             <object type ="image/svg+xml" data="./isfj.svg" class="card-img-top"></object>
-            <h2>The Nurturer</h2>
+            <h2 class="font-weight-bold">The Nurturer</h2>
             <p>
               Quiet, kind, and conscientious.  Can be depended on to follow through.
               Usually puts the needs of others above their own needs.  Stable and
@@ -444,6 +446,7 @@ Results
               of space and function.  Rich inner world of observations about people.
               Extremely perceptive of other's feelings.  Interested in serving others.
             </p>
+            <div class="share-content">
             <p>
               <u>Share your Result</u>
             </p>
@@ -456,7 +459,7 @@ Results
             <a onclick="redirecttoShare('linkedin','is \'The Nurturer\'');">
               <i class="fab fa-linkedin-in btn-in-results-card"></i>
             </a>
-
+            </div>
           </div>
         </div>
       </div>
@@ -464,7 +467,7 @@ Results
         <div class = "results-card">
           <div class="card-body">
             <object type ="image/svg+xml" data="./isfp.svg" class="card-img-top"></object>
-            <h2>The Artist</h2>
+            <h2 class="font-weight-bold">The Artist</h2>
             <p>
               Quiet, serious, sensitive and kind.  Do not like conflict, and not likely
               to do things which may generate conflict.  Loyal and faithful.  Extremely
@@ -473,7 +476,7 @@ Results
               Likely to be original and creative.
               Enjoy the present moment.
             </p>
-            <br><br>
+            <div class="share-content">
             <p>
               <u>Share your Result</u>
             </p>
@@ -486,6 +489,7 @@ Results
             <a onclick="redirecttoShare('linkedin','is \'The Artist\'');">
               <i class="fab fa-linkedin-in btn-in-results-card"></i>
             </a>
+            </div>
           </div>
         </div>
       </div>
@@ -493,7 +497,7 @@ Results
         <div class = "results-card">
           <div class="card-body">
             <object type ="image/svg+xml" data="./infj.svg" class="card-img-top"></object>
-            <h2>The Protector</h2>
+            <h2 class="font-weight-bold">The Protector</h2>
             <p>
               Quietly forceful, original, and sensitive.  Tend to stick to things
               until they are done.  Extremely intuitive about people, and concerned
@@ -501,6 +505,8 @@ Results
               to.  Well-respected for their perserverence in doing the right thing.
               Likely to be individualistic, rather than leading or following.
             </p>
+            <div class="share-content">
+
             <p>
               <u>Share your Result</u>
             </p>
@@ -513,6 +519,7 @@ Results
             <a onclick="redirecttoShare('linkedin','is \'The Protector\'');">
               <i class="fab fa-linkedin-in btn-in-results-card"></i>
             </a>
+            </div>
           </div>
         </div>
       </div>
@@ -521,7 +528,7 @@ Results
           <div class="card-body">
 
             <object type ="image/svg+xml" data="./infp.svg" class="card-img-top"></object>
-            <h2>The Idealist</h2>
+            <h2 class="font-weight-bold">The Idealist</h2>
             <p>
               Quiet, reflective, and idealistic.  Interested in serving humanity.
               Well-developed value system, which they strive to live in accordance with.
@@ -530,6 +537,7 @@ Results
               Usually talented writers.  Mentally quick, and able to see possibilities.
               Interested in understanding and helping people.
             </p>
+            <div class="share-content">
             <p>
               <u>Share your Result</u>
             </p>
@@ -542,6 +550,7 @@ Results
             <a onclick="redirecttoShare('linkedin','is \'The Idealist\'');">
               <i class="fab fa-linkedin-in btn-in-results-card"></i>
             </a>
+            </div>
           </div>
         </div>
       </div>
@@ -550,7 +559,7 @@ Results
           <div class="card-body">
 
             <object type ="image/svg+xml" data="./intj.svg" class="card-img-top"></object>
-            <h2>The Scientist</h2>
+            <h2 class="font-weight-bold">The Scientist</h2>
             <p>
               Independent, original, analytical, and determined.  Have an exceptional ability
               to turn theories into solid plans of action.  Highly value knowledge,
@@ -559,6 +568,7 @@ Results
               performance of others.  Natural leaders, but will follow if they trust
               existing leaders.
             </p>
+            <div class="share-content">
             <p>
               <u>Share your Result</u>
             </p>
@@ -571,7 +581,7 @@ Results
             <a onclick="redirecttoShare('linkedin','is \'The Scientist\'');">
               <i class="fab fa-linkedin-in btn-in-results-card"></i>
             </a>
-
+            </div>
           </div>
         </div>
       </div>
@@ -580,7 +590,7 @@ Results
           <div class="card-body">
 
             <object type ="image/svg+xml" data="./intp.svg" class="card-img-top"></object>
-            <h2>The Thinker</h2>
+            <h2 class="font-weight-bold">The Thinker</h2>
             <p>
               Logical, original, creative thinkers.  Can become very excited about theories
               and ideas.  Exceptionally capable and driven to turn theories into clear
@@ -588,6 +598,7 @@ Results
               knowledge, competence and logic.  Quiet and reserved, hard to get to know
               well.  Individualistic, having no interest in leading or following others.
             </p>
+            <div class="share-content">
             <p>
               <u>Share your Result</u>
             </p>
@@ -600,6 +611,7 @@ Results
             <a onclick="redirecttoShare('linkedin','is \'The Thinker\'');">
               <i class="fab fa-linkedin-in btn-in-results-card"></i>
             </a>
+            </div>
           </div>
         </div>
       </div>
@@ -607,9 +619,8 @@ Results
       <div id = "ESTP" class="col-md-6 col-12 no-display">
         <div class = "results-card">
           <div class="card-body">
-
             <object type ="image/svg+xml" data="./estp.svg" class="card-img-top"></object>
-            <h2>The Doer</h2>
+            <h2 class="font-weight-bold">The Doer</h2>
             <p>
               Friendly, adaptable, action-oriented.  "Doers" who are focused on immediate
               results. Living in the here-and-now, they're risk-takers who live fast-paced
@@ -617,6 +628,7 @@ Results
               peers, but not usually respectful of laws and rules if they get in the way
               of getting things done.  Great people skills.
             </p>
+            <div class="share-content">
             <p>
               <u>Share your Result</u>
             </p>
@@ -629,25 +641,27 @@ Results
             <a onclick="redirecttoShare('linkedin','is \'The Doer\'');">
               <i class="fab fa-linkedin-in btn-in-results-card"></i>
             </a>
-
+            </div>
+            </div>
           </div>
         </div>
-      </div>
+
       <div id = "ESTJ" class="col-md-6 col-12 no-display">
         <div class = "results-card">
           <div class="card-body">
 
             <object type ="image/svg+xml" data="./estj.svg" class="card-img-top"></object>
-            <h2>The Guardian</h2>
+            <h2 class="font-weight-bold">The Guardian</h2>
             <p>
               Practical, traditional, and organized.  Likely to be athletic.  Not interested
               in theory or abstraction unless they see the practical application.
-              Have clear visions of the way things should
-              be. Loyal and hard-working.  Like to be in charge.
+              Loyal and hard-working.  Like to be in charge.
               Exceptionally capable in organizing and running
               activities.
               "Good citizens" who value security and peaceful living.
             </p>
+            <div class="share-content">
+
             <p>
               <u>Share your Result</u>
             </p>
@@ -660,6 +674,7 @@ Results
             <a onclick="redirecttoShare('linkedin','is \'The Guardian\'');">
               <i class="fab fa-linkedin-in btn-in-results-card"></i>
             </a>
+            </div>
 
           </div>
         </div>
@@ -669,7 +684,7 @@ Results
           <div class="card-body">
 
             <object type ="image/svg+xml" data="./esfp.svg" class="card-img-top"></object>
-            <h2>The Performer</h2>
+            <h2 class="font-weight-bold">The Performer</h2>
             <p>
               People-oriented and fun-loving, they make things more fun for others by
               their enjoyment.  Living for the moment, they love new experiences.
@@ -677,6 +692,8 @@ Results
               Likely to be the center of attention in social situations.  Well-developed
               common sense and practical ability.
             </p>
+            <div class="share-content">
+
             <p>
               <u>Share your Result</u>
             </p>
@@ -689,7 +706,7 @@ Results
             <a onclick="redirecttoShare('linkedin','is \'The Performer\'');">
               <i class="fab fa-linkedin-in btn-in-results-card"></i>
             </a>
-
+            </div>
           </div>
         </div>
       </div>
@@ -697,7 +714,7 @@ Results
         <div class = "results-card">
           <div class="card-body">
             <object type ="image/svg+xml" data="./esfj.svg" class="card-img-top"></object>
-            <h2>The Caregiver</h2>
+            <h2 class="font-weight-bold">The Caregiver</h2>
             <P>
               Warm-hearted, popular, and conscientious.  Tend to put the needs of others over
               their own needs.  Feel strong sense of responsibility and duty.
@@ -705,6 +722,8 @@ Results
               positive reinforcement to feel good about themselves.  Well-developed sense
               of space and function.
             </p>
+            <div class="share-content">
+
             <p>
               <u>Share your Result</u>
             </p>
@@ -717,7 +736,7 @@ Results
             <a onclick="redirecttoShare('linkedin','is \'The Caregiver\'');">
               <i class="fab fa-linkedin-in btn-in-results-card"></i>
             </a>
-
+            </div>
           </div>
         </div>
       </div>
@@ -726,13 +745,16 @@ Results
         <div class = "results-card">
           <div class="card-body">
             <object type ="image/svg+xml" data="./enfp.svg" class="card-img-top"></object>
-            <h2>The Inspirer</h2>
+            <h2 class="font-weight-bold">The Inspirer</h2>
             <p>
               Enthusiastic, idealistic, and creative.  Able to do almost anything that
               interests them.  Great people skills.  Need to live life in accordance
               with their inner values.  Excited by new ideas, but bored with details.
               Open-minded and flexible, with a broad range of interests and abilities.
+              Very expressive and passionate people
             </p>
+            <div class="share-content">
+
             <p>
               <u>Share your Result</u>
             </p>
@@ -745,6 +767,7 @@ Results
             <a onclick="redirecttoShare('linkedin','is \'The Inspirer\'');">
               <i class="fab fa-linkedin-in btn-in-results-card"></i>
             </a>
+            </div>
           </div>
         </div>
       </div>
@@ -753,15 +776,16 @@ Results
           <div class="card-body">
 
             <object type ="image/svg+xml" data="./enfj.svg" class="card-img-top"></object>
-            <h2>The Giver</h2>
+            <h2 class="font-weight-bold">The Giver</h2>
             <p>
               Popular and sensitive, with outstanding people skills.  Externally
               focused, with real concern for how others think and feel.  Usually dislike
               being alone.  They see everything from the human angle, and dislike
-              impersonal analysis.  Very effective at managing people issues, and
-              leading group discussions.  Interested in serving others, and probably
+              impersonal analysis.  Interested in serving others, and probably
               place the needs of others over their own needs.
             </p>
+            <div class="share-content">
+
             <p>
               <u>Share your Result</u>
             </p>
@@ -774,6 +798,7 @@ Results
             <a onclick="redirecttoShare('linkedin','is \'The Giver\'');">
               <i class="fab fa-linkedin-in btn-in-results-card"></i>
             </a>
+            </div>
 
           </div>
         </div>
@@ -783,7 +808,7 @@ Results
           <div class="card-body">
 
             <object type ="image/svg+xml" data="./entp.svg" class="card-img-top"></object>
-            <h2>The Visionary</h2>
+            <h2 class="font-weight-bold">The Visionary</h2>
             <p>
               Creative, resourceful, and intellectually quick.  Good at a broad range of things.
               Enjoy debating issues, and may be into "one-up-manship".  They get
@@ -792,6 +817,8 @@ Results
               people and are stimulating company.  Excellent ability to understand
               concepts and apply logic to find solutions.
             </p>
+            <div class="share-content">
+
             <p>
               <u>Share your Result</u>
             </p>
@@ -804,6 +831,7 @@ Results
             <a onclick="redirecttoShare('linkedin','is \'The Visionary\'');">
               <i class="fab fa-linkedin-in btn-in-results-card"></i>
             </a>
+            </div>
 
           </div>
         </div>
@@ -812,7 +840,7 @@ Results
         <div class = "results-card">
           <div class="card-body">
             <object type ="image/svg+xml" data="./entj.svg" class="card-img-top"></object>
-            <h2>The Executive</h2>
+            <h2 class="font-weight-bold">The Executive</h2>
             <p>
               Assertive and outspoken - they are driven to lead.  Excellent ability to
               understand difficult organizational problems and create solid solutions.
@@ -820,6 +848,8 @@ Results
               They value knowledge and competence, and usually have little patience
               with inefficiency or disorganization.
             </p>
+            <div class="share-content">
+
             <p>
               <u>Share your Result</u>
             </p>
@@ -837,6 +867,7 @@ Results
       </div>
     </div>
   </div>
+
   <div class = "text-center container-tiny big-bottom-buffer">
     <a href="./index.html" class="btn btn-nicegreen button btn-brightgreen" role="button5">GO AGAIN</a>
     <!--  <button class = "btn btn-nicegreen" id = "button5" value="Refresh Page" onClick="window.location.reload();">TAKE THE TEST AGAIN</button> -->
