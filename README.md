@@ -1,7 +1,7 @@
 # myappsample
 repo for javascript
 
-This application is a small myers briggs identifier web app which can be used to identify myers briggs personality types 
+This application is a personality test web app which can be used to identify personality types 
 
 There are a total of 16 types and this application will provide you a small description of each type after it has assessed which type you are trying to identify
 
