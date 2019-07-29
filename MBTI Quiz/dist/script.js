@@ -13,7 +13,7 @@ let button4 = "button4";
 var type = "";
 var stringType = "";
 var introverted =0, extraverted =0, intuitive =0, sensory =0, thinking =0, feeling =0, judging =0, prospecting =0;
-var firstLetter = "", secondLetter = "", thirdLetter = "", fourthLetter = "";
+var firstLetter ="", secondLetter ="", thirdLetter ="", fourthLetter ="";
 
 //loop for adding event listeners to question 1 radio buttons
 var inputs = document.getElementsByClassName("preference"),
@@ -56,14 +56,17 @@ function HideShow(sectiontoHide,sectiontoReveal){
   document.getElementById(sectiontoReveal).style.display = "block";
 }
 
-function redirecttoShare(platform){
+function redirecttoShare(platform, personalitytype){
   if(platform == 'facebook'){
+    stringType = personalitytype;
     window.location.href= "https://www.facebook.com/sharer/sharer.php?u=http://personalityhero.com/index.html";
   }
   else if(platform == 'twitter'){
+    stringType = personalitytype;
     window.location.href="http://twitter.com/share?text=I found out my personality type " + stringType + ". Find out your type at personalityhero.com " + "&url=https://personalityhero.com&hashtags=personalityhero,whatsyourpersonality,quiz";
   }
   else if(platform == 'linkedin'){
+    stringType = personalitytype;
     window.location.href= "https://www.linkedin.com/shareArticle?mini=true&url=http://personalityhero.com&title=Personality%20Hero%20Test&summary=My%20favorite%20developer%20program&source=LinkedIn";
   }
 }
