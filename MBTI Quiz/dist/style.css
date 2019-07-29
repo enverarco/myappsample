@@ -117,7 +117,7 @@ li a:hover {
 	padding-top: 70px;
 	margin-top: 5.5em;
 	margin-bottom: 3em;
-	min-height: 36em;
+	min-height: 32em;
 	position: relative;
 	display: -ms-flexbox;
 	display: flex;
@@ -529,6 +529,9 @@ img {
 		.offset-3{
 			margin-left: 0%;
 		}
+		.results-card{
+		min-height: 32em;
+		}
 	}
 
 	@media (min-width: 480px) {
@@ -537,6 +540,9 @@ img {
 		}
 		.offset-3{
 			margin-left: 0%;
+		}
+		.results-card{
+		min-height: 32em;
 		}
 	}
 
@@ -547,14 +553,20 @@ img {
 		.offset-3{
 			margin-left: 25%;
 		}
+		.results-card{
+		min-height: 38em;
+		}
 	}
 
-	@media (min-width: 1200px) {
+	@media (min-width: 1000px) {
 		.container-tiny {
 			width: 40%;
 		}
 		.offset-3{
 			margin-left: 25%;
+		}
+		.results-card{
+		min-height: 32em;
 		}
 	}
 
@@ -564,5 +576,8 @@ img {
 		}
 		.offset-3{
 			margin-left: 25%;
+		}
+		.results-card{
+		min-height: 32em;
 		}
 	}
