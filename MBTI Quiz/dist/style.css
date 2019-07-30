@@ -426,12 +426,13 @@ img {
 		border-radius: 50%;
 		background: #007bb5;
 		color: white;
+		border: 2px solid #007bb5;
+
 	}
 
 	.btn-in-results-card:hover{
-		color: #ffffff;
-		background-color: #0088cf;
-		transform: translateY(-0.25em);
+		color: #0088cf;
+		background-color: #ffffff;
 	}
 
 	.btn-fb-results-card{
@@ -443,12 +444,12 @@ img {
 		border-radius: 50%;
 		background: #3B5998;
 		color: white;
+		border: 2px solid #4265ad;
 	}
 
 	.btn-fb-results-card:hover{
-		color: #ffffff;
-		background-color: #4265ad;
-		transform: translateY(-0.25em);
+		color: #4265ad;
+		background-color: #ffffff;
 	}
 
 
@@ -461,12 +462,12 @@ img {
 		border-radius: 50%;
 		background: #55ACEE;
 		color: white;
+		border: 2px solid #55ACEE;
 	}
 
 	.btn-tw-results-card:hover{
-		color: #ffffff;
-		background-color: #1faaff;
-		transform: translateY(-0.25em);
+		color: #1faaff;
+		background-color: #ffffff;
 	}
 
 	.btn-tw-outline {
