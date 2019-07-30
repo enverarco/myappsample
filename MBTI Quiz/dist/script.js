@@ -1,18 +1,19 @@
 
-/*document.getElementById("button1").addEventListener("click", ScrolltoQuestion2);
-document.getElementById("button2").addEventListener("click", ScrolltoQuestion3);
-document.getElementById("button4").addEventListener("click", ScrolltoResults);*/
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').removeClass('transparent');
+  } else {
+    $('nav').addClass('transparent');
+  }
+});
 
-let sectionId1 = "section1"
-let sectionId2 = "traits"
-let sectionId3 = "career"
-let sectionId4 = "results"
 let button1 = "button1";
 let button2 = "button2";
 let button4 = "button4";
-var type = "";
-var introverted = 0, extraverted = 0, intuitive =0, sensory =0, thinking =0, feeling =0, judging =0, prospecting = 0;
-var firstLetter = "", secondLetter = "", thirdLetter = "", fourthLetter = "";
+let type = "";
+let stringType = "";
+let introverted,extraverted,intuitive,sensory,thinking,feeling,judging, prospecting =0;
+let firstLetter, secondLetter, thirdLetter,fourthLetter ="";
 
 //loop for adding event listeners to question 1 radio buttons
 var inputs = document.getElementsByClassName("preference"),
@@ -27,7 +28,7 @@ while(x--)
 inputs[x].addEventListener("click", function(){ ButtonAppear(button2); });
 
 //loop for adding event listeners to final question radio buttons
-var inputs=document.querySelectorAll("input[name = career]"),
+var inputs = document.getElementsByClassName("careers"),
 x=inputs.length;
 while(x--)
 inputs[x].addEventListener("click", function(){ ButtonAppear(button4); });
@@ -36,69 +37,40 @@ function ButtonAppear(buttonId){
   document.getElementById(buttonId).style.visibility = "visible";
 }
 
-document.getElementById("button1").addEventListener("click", function(){ HideShow(sectionId1, sectionId2); });
-document.getElementById("button2").addEventListener("click", function(){ HideShow(sectionId2, sectionId3); });
-document.getElementById("button4").addEventListener("click", function(){ HideShow(sectionId3, sectionId4); ScrolltoResults()});
+function ButtonAction(sectionid){
+  if(sectionid == '1'){
+    HideShow("section1", "traits");
+  }
+  else if(sectionid == '2'){
+    HideShow("traits", "career");
+  }
+  else {
+    HideShow("career", "results");
+    CalculateResults();
+  }
+}
 
 function HideShow(sectiontoHide,sectiontoReveal){
   document.getElementById(sectiontoHide).style.display = "none";
   document.getElementById(sectiontoReveal).style.display = "block";
 }
 
-function redirecttoTwitterShare(){
-    window.location.href="http://twitter.com/share?text=I found out my personality type was " + type + " Find out your type at personalityhero.com " + "&url=https://personalityhero.com&hashtags=personalityhero,whatsyourpersonality,quiz";
-}
-
-function redirecttoFacebookShare(){
-/*  document.getElementById("descriptionmetatag").setAttribute("og:description", "I found out my personality type is " + type + " click here to discover your personality type"); */
-  window.location.href= "https://www.facebook.com/sharer/sharer.php?u=http://personalityhero.com/index.html";
-}
-
-function redirecttoLinkedinShare(){
-  window.location.href= "https://www.linkedin.com/shareArticle?mini=true&url=http://personalityhero.com&title=Personality%20Hero%20Test&summary=My%20favorite%20developer%20program&source=LinkedIn";
-}
-
-function ScrolltoQuestion2(){
-  //Reveal question 2
-  var q2class = document.getElementsByClassName('question2');
-
-  for(var i = 0; i < q2class.length; i = i + 1) {
-    q2class[i].style.display='block';
+function redirecttoShare(platform, personalitytype){
+  if(platform == 'facebook'){
+    stringType = personalitytype;
+    window.location.href= "https://www.facebook.com/sharer/sharer.php?u=http://personalityhero.com/index.html";
   }
-
-  //scroll to question 2
-  $('html, body').animate({
-    scrollTop: $("#traits").offset().top
-  }, 800, function(){
-    window.location.hash = '#traits';
-  });
-};
-
-function ScrolltoQuestion3(){
-
-  var q3class = document.getElementsByClassName('question3');
-
-  for(var i = 0; i < q3class.length; i = i + 1) {
-    q3class[i].style.display='block';
+  else if(platform == 'twitter'){
+    stringType = personalitytype;
+    window.location.href="http://twitter.com/share?text=I found out my personality type " + stringType + ". Find out your type at personalityhero.com " + "&url=https://personalityhero.com&hashtags=personalityhero,whatsyourpersonality,quiz";
   }
+  else if(platform == 'linkedin'){
+    stringType = personalitytype;
+    window.location.href= "https://www.linkedin.com/shareArticle?mini=true&url=http://personalityhero.com&title=Personality%20Hero%20Test&summary=My%20favorite%20developer%20program&source=LinkedIn";
+  }
+}
 
-  $('html, body').animate({
-    scrollTop: $("#career").offset().top
-  }, 800, function(){
-    window.location.hash = '#career';
-  });
-};
-
-function ScrolltoQuestion4(){
-
-  $('html, body').animate({
-    scrollTop: $("#functions").offset().top
-  }, 800, function(){
-    window.location.hash = '#functions';
-  });
-};
-
-function ScrolltoResults(){
+function CalculateResults(){
   var q5class = document.getElementsByClassName('result');
 
   for(var i = 0; i < q5class.length; i = i + 1) {
@@ -203,14 +175,68 @@ function ScrolltoResults(){
     fourthLetter = "X";
   }
   type = firstLetter+secondLetter+thirdLetter+fourthLetter;
-  //document.getElementById('resultsmessage').innerHTML = type;
+
+  switch(type) {
+    case "ISTJ":
+      stringType = "is \"The Duty Fulfiller\"";
+      break;
+    case "ISTP":
+      stringType = "is \"The Mechanic\"";
+      break;
+    case "ISFJ":
+      stringType = "is \"The Nurturer\"";
+      break;
+    case "ISFP":
+      stringType = "is \"The Artist\"";
+      break;
+    case "INFJ":
+      stringType = "is \"The Protector\"";
+      break;
+    case "INFP":
+      stringType = "is \"The Idealist\"";
+      break;
+    case "INTJ":
+      stringType = "is \"The Scientist\"";
+      break;
+    case "INTP":
+      stringType = "is \"The Thinker\"";
+      break;
+    case "ESTP":
+      stringType = "is \"The Doer\"";
+      break;
+    case "ESTJ":
+      stringType = "is \"The Guardian\"";
+      break;
+    case "ESFP":
+      stringType = "is \"The Performer\"";
+      break;
+    case "ESFJ":
+      stringType = "is \"The Caregiver\"";
+      break;
+    case "ENFP":
+      stringType = "is \"The Inspirer\"";
+      break;
+    case "ENFJ":
+      stringType = "is \"The Giver\"";
+      break;
+    case "ENTP":
+      stringType = "is \"The Visionary\"";
+      break;
+    case "ENTJ":
+      stringType = "is \"The Artist\"";
+      break;
+    default:
+      stringType = "";
+  }
 
   if (!type.includes('X')){
     document.getElementById(type).style.display='block'
-    document.getElementById('resultsmessage').innerHTML = "Your Result is";
+    document.getElementById('resultsmessage').innerHTML = "Your Result";
+    document.getElementById(type).classList.add("offset-3");
+    document.getElementById(type).parentNode.classList.remove("sibling-fade");
   }
   if(type.includes('X')){
-    document.getElementById('resultsmessage').innerHTML = "Your Result could be one of the below";
+    document.getElementById('resultsmessage').innerHTML = "Your Results";
     var typeResults = ['ISTJ', 'ISTP', 'ISFJ', 'ISFP', 'INFJ', 'INFP','INTJ', 'INTP', 'ESTP', 'ESTJ', 'ESFP', 'ESFJ', 'ENFJ', 'ENTP', 'ENTJ', 'ENFP'];
     for (var i = 0; i < typeResults.length; i++) {
       if((typeResults[i].charAt(0) == firstLetter || firstLetter == 'X') && (typeResults[i].charAt(1) == secondLetter || secondLetter == 'X')&& (typeResults[i].charAt(2) == thirdLetter || thirdLetter == 'X')&& (typeResults[i].charAt(3) == fourthLetter || fourthLetter == 'X'))
@@ -219,28 +245,4 @@ function ScrolltoResults(){
       }
     }
   }
-
-
-  $('html, body').animate({
-    scrollTop: $("#results").offset().top
-  }, 800, function(){
-    window.location.hash = '#results';
-  });
 };
-
-/*
-parameter ? routing // parameters
-
-when i load a page, check for a parameter like that,
-set the metatags for that parameters
-
-if
-
-
-
-
-
-
-
-
-   */
