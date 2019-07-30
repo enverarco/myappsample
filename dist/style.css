@@ -52,6 +52,10 @@ li a:hover {
 .nav-image{
 	width:40px;
 }
+
+.navbar-brand {
+  margin-right: 0;
+}
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
@@ -345,12 +349,21 @@ img {
 		position: absolute;
 	}
 
+	input[type=checkbox]:checked + label{
+		background-color: #ffffff;
+		color: #1d5ac7;
+	}
+
+	input[type=checkbox] {
+		visibility: hidden;
+	}
+
 	/*--------------------------------------------------------------
 	# Footer
 	--------------------------------------------------------------*/
 	#footer .footer-top {
 		padding: 30px 0 30px 0;
-		background: #000000;
+		background: #333333;
 	}
 
 	#footer .footer-top .social-links a {
@@ -378,15 +391,30 @@ img {
 	#footer .copyright {
 		text-align: center;
 		padding-top: 30px;
-		color: #535074;
-		font-size: 15px;
+		font-size: 18px;
 	}
 
 	#footer .credits {
 		text-align: center;
-		font-size: 14px;
 		padding-top: 4px;
-		color: #8582a8;
+		font-size: 18px;
+	}
+
+	.btn-footer{
+		padding: 10px;
+		font-size: 30px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 2px;
+		border-radius: 50%;
+		background: #333333;
+		color: #ffffff;
+		border: 2px solid white;
+	}
+
+	.btn-footer:hover{
+		color: #333333;
+		background-color: #ffffff;
 	}
 	/*--------------------------------------------------------------
 	# Social Share Buttons
@@ -417,6 +445,8 @@ img {
 		background-color: #4265ad;
 	}
 
+
+
 	.btn-in-results-card{
 		padding: 10px;
 		font-size: 30px;
@@ -444,11 +474,11 @@ img {
 		border-radius: 50%;
 		background: #3B5998;
 		color: white;
-		border: 2px solid #4265ad;
+		border: 2px solid #3B5998;
 	}
 
 	.btn-fb-results-card:hover{
-		color: #4265ad;
+		color: #3B5998;
 		background-color: #ffffff;
 	}
 

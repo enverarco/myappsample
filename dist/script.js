@@ -15,11 +15,16 @@ let stringType = "";
 let introverted,extraverted,intuitive,sensory,thinking,feeling,judging, prospecting =0;
 let firstLetter, secondLetter, thirdLetter,fourthLetter ="";
 
+
+
+
 //loop for adding event listeners to question 1 radio buttons
 var inputs = document.getElementsByClassName("preference"),
 x=inputs.length;
 while(x--)
 inputs[x].addEventListener("click", function(){ ButtonAppear(button1); });
+
+
 
 //loop for adding event listeners to question 2 radio buttons
 var inputs = document.getElementsByClassName("traits"),
@@ -231,12 +236,12 @@ function CalculateResults(){
 
   if (!type.includes('X')){
     document.getElementById(type).style.display='block'
-    document.getElementById('resultsmessage').innerHTML = "Your Result";
+    document.getElementById('resultsmessage').innerHTML = "Congratulations on completing the quiz, here is your result.";
     document.getElementById(type).classList.add("offset-3");
     document.getElementById(type).parentNode.classList.remove("sibling-fade");
   }
   if(type.includes('X')){
-    document.getElementById('resultsmessage').innerHTML = "Your Results";
+    document.getElementById('resultsmessage').innerHTML = "Congratulations on completing the quiz, here are your results.";
     var typeResults = ['ISTJ', 'ISTP', 'ISFJ', 'ISFP', 'INFJ', 'INFP','INTJ', 'INTP', 'ESTP', 'ESTJ', 'ESFP', 'ESFJ', 'ENFJ', 'ENTP', 'ENTJ', 'ENFP'];
     for (var i = 0; i < typeResults.length; i++) {
       if((typeResults[i].charAt(0) == firstLetter || firstLetter == 'X') && (typeResults[i].charAt(1) == secondLetter || secondLetter == 'X')&& (typeResults[i].charAt(2) == thirdLetter || thirdLetter == 'X')&& (typeResults[i].charAt(3) == fourthLetter || fourthLetter == 'X'))
