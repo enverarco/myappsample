@@ -1,4 +1,3 @@
-
 $(window).scroll(function() {
   if ($(document).scrollTop() > 50) {
     $('nav').removeClass('transparent');
@@ -15,16 +14,11 @@ let stringType = "";
 let introverted,extraverted,intuitive,sensory,thinking,feeling,judging, prospecting =0;
 let firstLetter, secondLetter, thirdLetter,fourthLetter ="";
 
-
-
-
 //loop for adding event listeners to question 1 radio buttons
 var inputs = document.getElementsByClassName("preference"),
 x=inputs.length;
 while(x--)
 inputs[x].addEventListener("click", function(){ ButtonAppear(button1); });
-
-
 
 //loop for adding event listeners to question 2 radio buttons
 var inputs = document.getElementsByClassName("traits"),
@@ -63,15 +57,15 @@ function HideShow(sectiontoHide,sectiontoReveal){
 function redirecttoShare(platform, personalitytype){
   if(platform == 'facebook'){
     stringType = personalitytype;
-    window.location.href= "https://www.facebook.com/sharer/sharer.php?u=http://personalityhero.com/index.html";
+    window.open("https://www.facebook.com/sharer/sharer.php?u=http://personalityhero.com/index.html", "_blank");
   }
   else if(platform == 'twitter'){
     stringType = personalitytype;
-    window.location.href="http://twitter.com/share?text=I found out my personality type " + stringType + ". Find out your type at personalityhero.com " + "&url=https://personalityhero.com&hashtags=personalityhero,whatsyourpersonality,quiz";
+    window.open("http://twitter.com/share?text=I found out my personality type " + stringType + ". Find out your type at personalityhero.com " + "&url=https://personalityhero.com&hashtags=personalityhero,whatsyourpersonality,quiz", "_blank");
   }
   else if(platform == 'linkedin'){
     stringType = personalitytype;
-    window.location.href= "https://www.linkedin.com/shareArticle?mini=true&url=http://personalityhero.com&title=Personality%20Hero%20Test&summary=My%20favorite%20developer%20program&source=LinkedIn";
+    window.open("https://www.linkedin.com/shareArticle?mini=true&url=http://personalityhero.com&title=Personality%20Hero%20Test&summary=My%20favorite%20developer%20program&source=LinkedIn", "_blank");
   }
 }
 

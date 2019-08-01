@@ -45,7 +45,6 @@ li a:hover {
 }
 
 .navbar-custom {
-	/*	background-color: #0D0B0B;  0, 0, 0, 0.5*/
 	background-color: rgba(13, 11, 11, 0.3);
 }
 
@@ -67,13 +66,6 @@ li a:hover {
 	width: 50px;
 	height: 50px;
 }
-
-/*position: relative;
-		left: 21%;
-		transform: translate(-40%, 0px);
-		width: 200px !important;
-		height: 200px;
-		top: -190px;*/
 
 .card-img-top {
 	position: absolute;
@@ -183,461 +175,450 @@ img {
 }
 
 .preference{}
-	.traits {}
-	.careers{}
+.traits {}
+.careers{}
 
-	.card-text{
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
+.card-text{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.question1{}
+.question2{
+	display: none;
+}
+
+.question3{
+	display: none;
+}
+
+.result{
+	display: none;
+}
+
+.minus-top-buffer {
+	margin-top:-30px;
+}
+
+.top-buffer {
+	margin-top:20px;
+}
+
+.medium-top-buffer {
+	margin-top:50px;
+}
+
+.big-top-buffer {
+	margin-top:70px;
+}
+
+.career-top-buffer {
+	margin-top:110px;
+}
+
+.traits-top-buffer{
+		margin-top:130px;
+}
+
+.bottom-buffer {
+	margin-bottom: 4em;
+}
+
+.big-bottom-buffer {
+	margin-bottom: 6em;
+}
+
+
+.division-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+button {
+	margin-top: 4em;
+	height: 4em;
+	width: 12em;
+}
+
+.button{
+	margin-top: 4em;
+	height: 4em;
+	width: 12em;
+	line-height: 50px;
+}
+
+section{
+	min-height: 100vh;
+	height: 100%;
+	padding: 50px 0px;
+}
+
+title{
+	text-transform: uppercase;
+}
+
+.btn-nicegreen{
+	color: #fff;
+	background-color: #00bd9d;
+	border-color: #00bd9d;
+}
+
+.btn-brightgreen:hover{
+	color: #fff;
+	background-color: #02dbb7;
+	border-color: #02dbb7;
+}
+
+/*--------------------------------------------------------------
+# Sibling Fade
+--------------------------------------------------------------*/
+
+.sibling-fade { visibility: hidden; }
+/* Prevents :hover from triggering in the gaps between items */
+
+.sibling-fade > * { visibility: visible; }
+/* Brings the child items back in, even though the parent is `hidden` */
+
+.sibling-fade > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+/* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+
+.sibling-fade:hover > * { opacity: 0.4; transform: scale(1); }
+/* Fade out all items when the parent is hovered */
+
+.sibling-fade > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+/* Fade in the currently hovered item */
+
+.sibling-fade {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*.results-card:hover {
+box-shadow: rgba(0, 0, 0, 0.22) 0px 29px 43px;
+transform: translate3d(5px, -10px, 0px);
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}*/
+
+/*--------------------------------------------------------------
+# Radio Buttons
+--------------------------------------------------------------*/
+
+.radio{display:inline-block;}
+
+.right{
+	left: 13%;
+}
+
+.left{
+	right: 15%;
+}
+
+label{
+	width: 120px;
+	height: 44px;
+	border-radius: 4px;
+	border: 2px solid #ffffff;
+	text-align: center;
+	padding-top: 8px;
+}
+
+label:hover {
+	background-color: #ffffff;
+	color: #1d5ac7;
+}
+
+input[type="radio"]:checked + label {
+	background-color: #ffffff;
+	color: #1d5ac7;
+}
+
+input.radio:empty {
+	visibility: hidden;
+	position: absolute;
+}
+
+input[type=checkbox]:checked + label{
+	background-color: #ffffff;
+	color: #1d5ac7;
+}
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer .footer-top {
+	padding: 30px 0 30px 0;
+	background: #333333;
+}
+
+#footer .footer-top .social-links a {
+	font-size: 36px;
+	display: inline-block;
+	background: #00000;
+	color: #ffffff;
+	line-height: 1;
+	padding: 8px 0;
+	margin-right: 4px;
+	border-radius: 50%;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	transition: 0.3s;
+	border: 2px solid #000;
+	border-color: #ffffff;
+}
+
+#footer .footer-top .social-links a:hover {
+	background: #ffffff;
+	color: #000;
+}
+
+#footer .copyright {
+	text-align: center;
+	padding-top: 30px;
+	font-size: 18px;
+}
+
+#footer .credits {
+	text-align: center;
+	padding-top: 4px;
+	font-size: 18px;
+}
+
+.btn-footer{
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+	background: #333333;
+	color: #ffffff;
+	border: 2px solid white;
+}
+
+.btn-footer:hover{
+	color: #333333;
+	background-color: #ffffff;
+}
+/*--------------------------------------------------------------
+# Social Share Buttons
+--------------------------------------------------------------*/
+
+.share-content{
+	position: relative;
+	bottom: -50px;
+	left: 50%;
+	transform: translate(-50%, 0px);
+}
+
+.btn-social-outline {
+	background-color: transparent;
+	background-image: none;
+	text-decoration: none;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.btn-fb-outline {
+	color: #ffffff;
+	background-color: #3b5998;
+}
+
+.btn-fb-outline:hover,
+.btn-fb-outline:active {
+	color: #ffffff;
+	background-color: #4265ad;
+}
+
+.btn-in-results-card{
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+	background: #007bb5;
+	color: white;
+	border: 2px solid #007bb5;
+
+}
+
+.btn-in-results-card:hover{
+	color: #0088cf;
+	background-color: #ffffff;
+}
+
+.btn-fb-results-card{
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+	background: #3B5998;
+	color: white;
+	border: 2px solid #3B5998;
+}
+
+.btn-fb-results-card:hover{
+	color: #3B5998;
+	background-color: #ffffff;
+}
+
+
+.btn-tw-results-card{
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+	background: #55ACEE;
+	color: white;
+	border: 2px solid #55ACEE;
+}
+
+.btn-tw-results-card:hover{
+	color: #1faaff;
+	background-color: #ffffff;
+}
+
+.btn-tw-outline {
+	color: #ffffff;
+	background-color: #1da1f2;
+}
+
+.btn-tw-outline:hover,
+.btn-tw-outline:active {
+	color: #ffffff;
+	background-color: #1faaff;
+}
+
+.btn-in-outline {
+	color: #ffffff;
+	background-color: #0077b5;
+}
+
+.btn-in-outline:hover,
+.btn-in-outline:active {
+	color: #ffffff;
+	background-color: #0088cf;
+}
+
+.btn-gp-outline {
+	color: #db4437;
+	border-color: #db4437;
+}
+
+.btn-gp-outline:hover,
+.btn-gp-outline:active {
+	color: #ffffff;
+	background-color: #db4437;
+}
+
+.btn-rd-outline {
+	color: #ff4500;
+	border-color: #ff4500;
+}
+
+.btn-rd-outline:hover,
+.btn-rd-outline:active {
+	color: #ffffff;
+	background-color: #ff4500;
+}
+
+.btn-hn-outline {
+	color: #ff4000;
+	border-color: #ff4000;
+}
+
+.btn-hn-outline:hover,
+.btn-hn-outline:active {
+	color: #ffffff;
+	background-color: #ff4000;
+}
+
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media (min-width: 1px) {
+	.container-tiny {
+		width: 100%;
 	}
-
-	.question1{}
-		.question2{
-			display: none;
-		}
-
-		.question3{
-			display: none;
-		}
-
-		.result{
-			display: none;
-		}
-
-		.minus-top-buffer {
-			margin-top:-30px;
-		}
-
-		.top-buffer {
-			margin-top:20px;
-		}
-
-		.medium-top-buffer {
-			margin-top:50px;
-		}
-
-		.big-top-buffer {
-			margin-top:70px;
-		}
-
-		.career-top-buffer {
-			margin-top:110px;
-		}
-
-		.traits-top-buffer{
-				margin-top:130px;
-		}
-
-		.bottom-buffer {
-			margin-bottom: 4em;
-		}
-
-		.big-bottom-buffer {
-			margin-bottom: 6em;
-		}
-
-
-		.division-text{
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-
-		button {
-			margin-top: 4em;
-			height: 4em;
-			width: 12em;
-		}
-
-		.button{
-			margin-top: 4em;
-			height: 4em;
-			width: 12em;
-			line-height: 50px;
-		}
-
-		section{
-			min-height: 100vh;
-			height: 100%;
-			padding: 50px 0px;
-		}
-
-		title{
-			text-transform: uppercase;
-		}
-
-		.btn-nicegreen{
-			color: #fff;
-			background-color: #00bd9d;
-			border-color: #00bd9d;
-		}
-
-		.btn-brightgreen:hover{
-			color: #fff;
-			background-color: #02dbb7;
-			border-color: #02dbb7;
-		}
-
-		/*--------------------------------------------------------------
-		# Sibling Fade
-		--------------------------------------------------------------*/
-
-		/*.results-card{
-		transition: opacity: 0.2s;
-		opacity: 1;
+	.offset-3{
+		margin-left: 0%;
 	}
-
-	.results-container:hover .results-card:not(:hover) {
-	opacity: 0.75 !important;
-	}*/
-
-	.sibling-fade { visibility: hidden; }
-	/* Prevents :hover from triggering in the gaps between items */
-
-	.sibling-fade > * { visibility: visible; }
-	/* Brings the child items back in, even though the parent is `hidden` */
-
-	.sibling-fade > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
-	/* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
-
-	.sibling-fade:hover > * { opacity: 0.4; transform: scale(1); }
-	/* Fade out all items when the parent is hovered */
-
-	.sibling-fade > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
-	/* Fade in the currently hovered item */
-
-	.sibling-fade {
-		display: flex;
-		flex-wrap: wrap;
+	.results-card{
+	min-height: 32em;
 	}
-
-	/*.results-card:hover {
-	box-shadow: rgba(0, 0, 0, 0.22) 0px 29px 43px;
-	transform: translate3d(5px, -10px, 0px);
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	}*/
-
-	/*--------------------------------------------------------------
-	# Radio Buttons
-	--------------------------------------------------------------*/
-
-	.radio{display:inline-block;}
-
-	.right{
-		left: 13%;
+	.card-img-top {
+	left: 36%;
 	}
+}
 
-	.left{
-		right: 15%;
+@media (min-width: 480px) {
+	.container-tiny {
+		width: 85%;
 	}
-
-	label{
-		width: 120px;
-		height: 44px;
-		border-radius: 4px;
-		border: 2px solid #ffffff;
-		text-align: center;
-		padding-top: 8px;
+	.offset-3{
+		margin-left: 0%;
 	}
-
-	label:hover {
-		background-color: #ffffff;
-		color: #1d5ac7;
+	.results-card{
+	min-height: 32em;
 	}
-
-	input[type="radio"]:checked + label {
-		background-color: #ffffff;
-		color: #1d5ac7;
+	.card-img-top {
+	left: 36%;
 	}
+}
 
-	input.radio:empty {
-		visibility: hidden;
-		position: absolute;
+@media (min-width: 767px) {
+	.container-tiny {
+		width: 55%;
 	}
-
-	input[type=checkbox]:checked + label{
-		background-color: #ffffff;
-		color: #1d5ac7;
+	.offset-3{
+		margin-left: 25%;
 	}
-
-	input[type=checkbox] {
-		visibility: hidden;
+	.results-card{
+	min-height: 38em;
 	}
-
-	/*--------------------------------------------------------------
-	# Footer
-	--------------------------------------------------------------*/
-	#footer .footer-top {
-		padding: 30px 0 30px 0;
-		background: #333333;
+	.card-img-top {
+	left: 28%;
 	}
+}
 
-	#footer .footer-top .social-links a {
-		font-size: 36px;
-		display: inline-block;
-		background: #00000;
-		color: #ffffff;
-		line-height: 1;
-		padding: 8px 0;
-		margin-right: 4px;
-		border-radius: 50%;
-		text-align: center;
-		width: 50px;
-		height: 50px;
-		transition: 0.3s;
-		border: 2px solid #000;
-		border-color: #ffffff;
+@media (min-width: 1000px) {
+	.container-tiny {
+		width: 40%;
 	}
-
-	#footer .footer-top .social-links a:hover {
-		background: #ffffff;
-		color: #000;
+	.offset-3{
+		margin-left: 25%;
 	}
-
-	#footer .copyright {
-		text-align: center;
-		padding-top: 30px;
-		font-size: 18px;
+	.results-card{
+	min-height: 32em;
 	}
-
-	#footer .credits {
-		text-align: center;
-		padding-top: 4px;
-		font-size: 18px;
+	.card-img-top {
+	left: 38%;
 	}
+}
 
-	.btn-footer{
-		padding: 10px;
-		font-size: 30px;
-		text-align: center;
-		text-decoration: none;
-		margin: 5px 2px;
-		border-radius: 50%;
-		background: #333333;
-		color: #ffffff;
-		border: 2px solid white;
+@media (min-width: 1500px) {
+	.container-tiny {
+		width: 25%;
 	}
-
-	.btn-footer:hover{
-		color: #333333;
-		background-color: #ffffff;
+	.offset-3{
+		margin-left: 25%;
 	}
-	/*--------------------------------------------------------------
-	# Social Share Buttons
-	--------------------------------------------------------------*/
-
-	.share-content{
-		position: relative;
-		bottom: -50px;
-		left: 50%;
-		transform: translate(-50%, 0px);
+	.results-card{
+	min-height: 32em;
 	}
-
-	.btn-social-outline {
-		background-color: transparent;
-		background-image: none;
-		text-decoration: none;
-		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+	.card-img-top {
+	left: 38%;
 	}
-
-	.btn-fb-outline {
-		color: #ffffff;
-		background-color: #3b5998;
-	}
-
-	.btn-fb-outline:hover,
-	.btn-fb-outline:active {
-		color: #ffffff;
-		background-color: #4265ad;
-	}
-
-
-
-	.btn-in-results-card{
-		padding: 10px;
-		font-size: 30px;
-		text-align: center;
-		text-decoration: none;
-		margin: 5px 2px;
-		border-radius: 50%;
-		background: #007bb5;
-		color: white;
-		border: 2px solid #007bb5;
-
-	}
-
-	.btn-in-results-card:hover{
-		color: #0088cf;
-		background-color: #ffffff;
-	}
-
-	.btn-fb-results-card{
-		padding: 10px;
-		font-size: 30px;
-		text-align: center;
-		text-decoration: none;
-		margin: 5px 2px;
-		border-radius: 50%;
-		background: #3B5998;
-		color: white;
-		border: 2px solid #3B5998;
-	}
-
-	.btn-fb-results-card:hover{
-		color: #3B5998;
-		background-color: #ffffff;
-	}
-
-
-	.btn-tw-results-card{
-		padding: 10px;
-		font-size: 30px;
-		text-align: center;
-		text-decoration: none;
-		margin: 5px 2px;
-		border-radius: 50%;
-		background: #55ACEE;
-		color: white;
-		border: 2px solid #55ACEE;
-	}
-
-	.btn-tw-results-card:hover{
-		color: #1faaff;
-		background-color: #ffffff;
-	}
-
-	.btn-tw-outline {
-		color: #ffffff;
-		background-color: #1da1f2;
-	}
-
-	.btn-tw-outline:hover,
-	.btn-tw-outline:active {
-		color: #ffffff;
-		background-color: #1faaff;
-	}
-
-	.btn-in-outline {
-		color: #ffffff;
-		background-color: #0077b5;
-	}
-
-	.btn-in-outline:hover,
-	.btn-in-outline:active {
-		color: #ffffff;
-		background-color: #0088cf;
-	}
-
-	.btn-gp-outline {
-		color: #db4437;
-		border-color: #db4437;
-	}
-
-	.btn-gp-outline:hover,
-	.btn-gp-outline:active {
-		color: #ffffff;
-		background-color: #db4437;
-	}
-
-	.btn-rd-outline {
-		color: #ff4500;
-		border-color: #ff4500;
-	}
-
-	.btn-rd-outline:hover,
-	.btn-rd-outline:active {
-		color: #ffffff;
-		background-color: #ff4500;
-	}
-
-	.btn-hn-outline {
-		color: #ff4000;
-		border-color: #ff4000;
-	}
-
-	.btn-hn-outline:hover,
-	.btn-hn-outline:active {
-		color: #ffffff;
-		background-color: #ff4000;
-	}
-
-
-	/*--------------------------------------------------------------
-	# Media Queries
-	--------------------------------------------------------------*/
-	@media (min-width: 1px) {
-		.container-tiny {
-			width: 100%;
-		}
-		.offset-3{
-			margin-left: 0%;
-		}
-		.results-card{
-		min-height: 32em;
-		}
-		.card-img-top {
-		left: 36%;
-		}
-	}
-
-	@media (min-width: 480px) {
-		.container-tiny {
-			width: 85%;
-		}
-		.offset-3{
-			margin-left: 0%;
-		}
-		.results-card{
-		min-height: 32em;
-		}
-		.card-img-top {
-		left: 36%;
-		}
-	}
-
-	@media (min-width: 767px) {
-		.container-tiny {
-			width: 55%;
-		}
-		.offset-3{
-			margin-left: 25%;
-		}
-		.results-card{
-		min-height: 38em;
-		}
-		.card-img-top {
-		left: 28%;
-		}
-	}
-
-	@media (min-width: 1000px) {
-		.container-tiny {
-			width: 40%;
-		}
-		.offset-3{
-			margin-left: 25%;
-		}
-		.results-card{
-		min-height: 32em;
-		}
-		.card-img-top {
-		left: 38%;
-		}
-	}
-
-	@media (min-width: 1500px) {
-		.container-tiny {
-			width: 25%;
-		}
-		.offset-3{
-			margin-left: 25%;
-		}
-		.results-card{
-		min-height: 32em;
-		}
-		.card-img-top {
-		left: 38%;
-		}
-	}
+}
