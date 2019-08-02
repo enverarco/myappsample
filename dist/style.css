@@ -353,10 +353,14 @@ input[type=checkbox] {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-/*.footer-svg{
-	width: 200px;
-	height: 200px;
-}*/
+.fab{
+ line-height: 1.1;
+}
+
+.footer-svg{
+	width: 70px;
+	height: 70px;
+}
 
 
 #footer .footer-top {
