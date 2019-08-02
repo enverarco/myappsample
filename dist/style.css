@@ -213,11 +213,11 @@ img {
 }
 
 .career-top-buffer {
-	margin-top:110px;
+	margin-top:90px;
 }
 
 .traits-top-buffer{
-		margin-top:130px;
+		margin-top:90px;
 }
 
 .bottom-buffer {
@@ -328,6 +328,7 @@ label{
 label:hover {
 	background-color: #ffffff;
 	color: #1d5ac7;
+	cursor: pointer;
 }
 
 input[type="radio"]:checked + label {
@@ -352,6 +353,12 @@ input[type=checkbox] {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+/*.footer-svg{
+	width: 200px;
+	height: 200px;
+}*/
+
+
 #footer .footer-top {
 	padding: 30px 0 30px 0;
 	background: #333333;
@@ -401,21 +408,29 @@ input[type=checkbox] {
 	background: #333333;
 	color: #ffffff;
 	border: 2px solid white;
+	width: 55px;
+	height: 55px;
+}
+
+.btn-img{
+    margin-top:7px;
 }
 
 .btn-footer:hover{
 	color: #333333;
 	background-color: #ffffff;
+	text-decoration: none;
 }
 /*--------------------------------------------------------------
 # Social Share Buttons
 --------------------------------------------------------------*/
 
 .share-content{
-	position: relative;
-	bottom: -50px;
+	position: absolute;
+	bottom: 60px;
 	left: 50%;
 	transform: translate(-50%, 0px);
+	width: 100%;
 }
 
 .btn-social-outline {
@@ -446,6 +461,8 @@ input[type=checkbox] {
 	background: #007bb5;
 	color: white;
 	border: 2px solid #007bb5;
+	width: 55px;
+	height: 55px;
 
 }
 
@@ -464,6 +481,8 @@ input[type=checkbox] {
 	background: #3B5998;
 	color: white;
 	border: 2px solid #3B5998;
+	width: 55px;
+	height: 55px;
 }
 
 .btn-fb-results-card:hover{
@@ -482,6 +501,8 @@ input[type=checkbox] {
 	background: #55ACEE;
 	color: white;
 	border: 2px solid #55ACEE;
+	width: 55px;
+	height: 55px;
 }
 
 .btn-tw-results-card:hover{
