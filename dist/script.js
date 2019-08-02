@@ -61,7 +61,7 @@ function redirecttoShare(platform, personalitytype){
   }
   else if(platform == 'twitter'){
     stringType = personalitytype;
-    window.open("http://twitter.com/share?text= I found out my personality type " + stringType + ". Find out your type at personalityhero.com @Mastered_IE" + "&url=https://personalityhero.com&hashtags=personalityhero,whatsyourpersonality,quiz", "_blank");
+    window.open("http://twitter.com/share?text= I found out my personality type " + stringType + ". Find out your type at personalityhero.com" + "&url=https://personalityhero.com&hashtags=personalityhero", "_blank");
   }
   else if(platform == 'linkedin'){
     stringType = personalitytype;
